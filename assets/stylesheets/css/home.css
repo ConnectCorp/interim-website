@@ -1,0 +1,12 @@
+@import url(../css/fonts.css);
+#hero {
+  background: url(../../img/hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100vh;
+  margin: -20px -20px 0;
+  font-family: "edmondsansregular";
+}
+
+/*# sourceMappingURL=home.css.map */
