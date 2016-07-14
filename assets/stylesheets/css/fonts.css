@@ -3,7 +3,7 @@
 
 
 @font-face {
-    font-family: 'edmondsansmedium';
+    font-family: 'Edmondsans-Medium';
     src: url('../../fonts/edmondsans-medium-webfont.eot');
     src: url('../../fonts/edmondsans-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../fonts/edmondsans-medium-webfont.woff2') format('woff2'),
@@ -19,7 +19,7 @@
 
 
 @font-face {
-    font-family: 'edmondsansbold';
+    font-family: 'Edmondsans-Bold';
     src: url('../../fonts/edmondsans-bold-webfont.eot');
     src: url('../../fonts/edmondsans-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../fonts/edmondsans-bold-webfont.woff2') format('woff2'),
@@ -35,7 +35,7 @@
 
 
 @font-face {
-    font-family: 'edmondsansregular';
+    font-family: 'Edmondsans-Regular';
     src: url('../../fonts/edmondsans-regular-webfont.eot');
     src: url('../../fonts/edmondsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../../fonts/edmondsans-regular-webfont.woff2') format('woff2'),
