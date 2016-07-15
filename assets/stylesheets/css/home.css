@@ -5,11 +5,21 @@
 -Text Styles
 -Hero
 -Arrow
+-AboutConnect
+-Footer
  */
+@import url(../css/fonts.css);
+@import url(../../../bower_components/normalize-css/normalize.css);
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+}
+
 /* =========================================================================
                             Imports
 =======================================================================*/
-@import url(../css/fonts.css);
 /* =========================================================================
                             Text Styles
 =======================================================================*/
@@ -38,6 +48,14 @@ h4 {
   color: #9a9a9a;
 }
 
+.alignCenter {
+  text-align: center !important;
+}
+
+.blackText {
+  color: #171616 !important;
+}
+
 /* =========================================================================
                             Hero
 =======================================================================*/
@@ -56,7 +74,7 @@ h4 {
 }
 
 #hero .container {
-  width: 1200px;
+  width: 1000px;
 }
 
 #hero .resizeLogo {
@@ -112,7 +130,7 @@ h4 {
   height: 60px;
   width: 300px;
   font-family: 'Edmondsans-Medium';
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   margin-left: 25px;
 }
@@ -198,10 +216,171 @@ h4 {
   }
 }
 
-.cta {
+/* =========================================================================
+                            AboutConnect
+=======================================================================*/
+#AboutConnect .center {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+}
+
+#AboutConnect .container {
+  width: 800px;
+  text-align: center;
+}
+
+#AboutConnect .peaceSize {
+  font-size: 75px;
+  padding-top: 100px;
+}
+
+#AboutConnect h2 {
+  font-size: 48px;
+}
+
+#AboutConnect h3 {
+  line-height: 36px;
+}
+
+#AboutConnect hr {
+  width: 100px;
+  margin-top: 225px;
+  margin-bottom: 225px;
+}
+
+#AboutConnect .verticalLine {
+  border-left: thin solid #9a9a9a;
+  height: 100px;
+  left: 50%;
+  position: absolute;
+  margin-top: 50px;
+}
+
+.teamResize {
+  height: auto;
+  width: auto;
+  max-width: 800px;
+  margin-top: 200px;
+  margin-bottom: -125px;
+}
+
+/* =========================================================================
+                            MissionTeam
+=======================================================================*/
+#MissionTeam {
+  background-color: #F5F5F7;
+  padding-bottom: 150px;
+}
+
+#MissionTeam h2 {
+  margin-top: 150px;
+  font-size: 48px;
+}
+
+#MissionTeam h3 {
+  line-height: 36px;
+}
+
+#MissionTeam .center {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+}
+
+#MissionTeam .container {
+  width: 800px;
+  text-align: center;
+  margin-top: 175px;
+}
+
+#MissionTeam .teamButton {
+  background: #1DB95C;
+  border-color: #1DB95C;
+  height: 60px;
+  width: 300px;
+  font-family: 'Edmondsans-Medium';
+  font-size: 18px;
+  color: white;
+}
+
+/* =========================================================================
+                            Footer
+=======================================================================*/
+#Footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ECEDEF;
+}
+
+#Footer h3.cta {
   font-family: 'Edmondsans-Bold';
   font-size: 16px;
+  color: #4A4A4A;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#Footer .center {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+}
+
+#Footer .container {
+  width: 1200px;
+}
+
+#Footer .signup-margin {
+  display: -webkit-flex;
+  -webkit-justify-content: center !important;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+#Footer .signup-margin input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 4px solid black;
+  font-size: 24px;
+  color: black;
+  width: 600px;
+  font-family: 'Edmondsans-Medium';
+  padding-bottom: 25px;
+}
+
+#Footer .signup-margin ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: black;
+}
+
+#Footer .signup-margin ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+}
+
+#Footer .signup-margin :-ms-input-placeholder {
+  /* IE 10+ */
+  color: black;
+}
+
+#Footer .signup-margin :-moz-placeholder {
+  /* Firefox 18- */
+  color: black;
+}
+
+#Footer .signup-margin .betaButton {
+  background: #FF6551;
+  border-color: #FF6551;
+  height: 60px;
+  width: 300px;
+  font-family: 'Edmondsans-Medium';
+  font-size: 18px;
   color: white;
+  margin-left: 25px;
+}
+
+#Footer .byeSize {
+  font-size: 75px;
+  padding-top: 100px;
 }
 
 .form {
