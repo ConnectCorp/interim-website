@@ -10,6 +10,7 @@
  */
 @import url(../css/fonts.css);
 @import url(../../../bower_components/normalize-css/normalize.css);
+@import url(../css/flexboxgrid.css);
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
@@ -65,16 +66,7 @@ h4 {
   background-position: center center;
   position: relative;
   height: 100vh;
-  margin: -20px -20px 0;
-}
-
-#hero .center {
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-}
-
-#hero .container {
-  width: 1000px;
+  margin: 0;
 }
 
 #hero .resizeLogo {
@@ -99,7 +91,7 @@ h4 {
   border-bottom: 4px solid white;
   font-size: 24px;
   color: white;
-  width: 600px;
+  width: 400px;
   font-family: 'Edmondsans-Medium';
   padding-bottom: 25px;
 }
@@ -133,6 +125,7 @@ h4 {
   font-size: 18px;
   color: white;
   margin-left: 25px;
+  outline: none;
 }
 
 /* =========================================================================
@@ -219,16 +212,6 @@ h4 {
 /* =========================================================================
                             AboutConnect
 =======================================================================*/
-#AboutConnect .center {
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-}
-
-#AboutConnect .container {
-  width: 800px;
-  text-align: center;
-}
-
 #AboutConnect .peaceSize {
   font-size: 75px;
   padding-top: 100px;
@@ -281,17 +264,6 @@ h4 {
   line-height: 36px;
 }
 
-#MissionTeam .center {
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-}
-
-#MissionTeam .container {
-  width: 800px;
-  text-align: center;
-  margin-top: 175px;
-}
-
 #MissionTeam .teamButton {
   background: #1DB95C;
   border-color: #1DB95C;
@@ -317,15 +289,6 @@ h4 {
   color: #4A4A4A;
   text-transform: uppercase;
   text-align: center;
-}
-
-#Footer .center {
-  display: -webkit-flex;
-  -webkit-justify-content: center;
-}
-
-#Footer .container {
-  width: 1200px;
 }
 
 #Footer .signup-margin {
