@@ -24,7 +24,7 @@ html {
 =======================================================================*/
 @import "../css/fonts.css";
 @import "../../../bower_components/normalize-css/normalize.css";
-@import "../css/flexboxgrid.css";
+@import '../../../jeet/jeet.scss';
 
 
 
@@ -37,6 +37,8 @@ h1 {
 	font-size: 56px;
 	color: white;
 	font-weight: normal;
+	@include col(6/12);
+
 }
 
 h2 {
@@ -91,6 +93,7 @@ h4 {
 
 	.signup-margin {
 		margin-top: 60px;
+		@include col(6/12);
 
 		input {
 		    border: 0;
@@ -136,7 +139,7 @@ h4 {
 =======================================================================*/
 .arrow {
   position: absolute;
-  left: 27.5%;
+  left: 36%;
   top: 90%;
   margin-left:-20px;
 }

@@ -10,7 +10,6 @@
  */
 @import url(../css/fonts.css);
 @import url(../../../bower_components/normalize-css/normalize.css);
-@import url(../css/flexboxgrid.css);
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
@@ -29,6 +28,15 @@ h1 {
   font-size: 56px;
   color: white;
   font-weight: normal;
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+h1:last-child {
+  margin-right: 0;
 }
 
 h2 {
@@ -82,6 +90,15 @@ h4 {
 
 #hero .signup-margin {
   margin-top: 60px;
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+#hero .signup-margin:last-child {
+  margin-right: 0;
 }
 
 #hero .signup-margin input {
@@ -133,7 +150,7 @@ h4 {
 =======================================================================*/
 .arrow {
   position: absolute;
-  left: 27.5%;
+  left: 36%;
   top: 90%;
   margin-left: -20px;
 }
