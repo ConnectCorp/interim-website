@@ -28,15 +28,6 @@ h1 {
   font-size: 56px;
   color: white;
   font-weight: normal;
-  float: left;
-  clear: none;
-  width: 48.5%;
-  margin-left: 0;
-  margin-right: 3%;
-}
-
-h1:last-child {
-  margin-right: 0;
 }
 
 h2 {
@@ -77,6 +68,23 @@ h4 {
   margin: 0;
 }
 
+#hero .wrap-container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+#hero .row .col-1 {
+  float: left;
+  clear: none;
+  width: 82.8333333333%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+#hero .row .col-1:last-child {
+  margin-right: 0;
+}
+
 #hero .resizeLogo {
   height: auto;
   width: auto;
@@ -90,15 +98,6 @@ h4 {
 
 #hero .signup-margin {
   margin-top: 60px;
-  float: left;
-  clear: none;
-  width: 48.5%;
-  margin-left: 0;
-  margin-right: 3%;
-}
-
-#hero .signup-margin:last-child {
-  margin-right: 0;
 }
 
 #hero .signup-margin input {
@@ -150,7 +149,7 @@ h4 {
 =======================================================================*/
 .arrow {
   position: absolute;
-  left: 36%;
+  left: 27.5%;
   top: 90%;
   margin-left: -20px;
 }

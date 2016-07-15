@@ -24,7 +24,7 @@ html {
 =======================================================================*/
 @import "../css/fonts.css";
 @import "../../../bower_components/normalize-css/normalize.css";
-@import '../../../jeet/jeet.scss';
+@import "../../../jeet/jeet.scss";
 
 
 
@@ -37,8 +37,6 @@ h1 {
 	font-size: 56px;
 	color: white;
 	font-weight: normal;
-	@include col(6/12);
-
 }
 
 h2 {
@@ -79,6 +77,15 @@ h4 {
   height: 100vh;
   margin: 0;
 
+ .wrap-container {
+  	max-width: 1260px;
+  	margin: 0 auto;
+ }
+ 	.row {
+ 		.col-1 {
+ 			@include col(10/12);
+ 		}
+ 	}
 
 	.resizeLogo {
 	  height: auto; 
@@ -93,7 +100,6 @@ h4 {
 
 	.signup-margin {
 		margin-top: 60px;
-		@include col(6/12);
 
 		input {
 		    border: 0;
@@ -139,7 +145,7 @@ h4 {
 =======================================================================*/
 .arrow {
   position: absolute;
-  left: 36%;
+  left: 27.5%;
   top: 90%;
   margin-left:-20px;
 }
