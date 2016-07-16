@@ -184,6 +184,8 @@ h4 {
   left: 27.5%;
   top: 90%;
   margin-left: -20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .bounce {
@@ -264,6 +266,8 @@ h4 {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #AboutConnect .row .col-1 {
@@ -320,6 +324,8 @@ h4 {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #MissionTeam .row .col-1 {
@@ -368,6 +374,8 @@ h4 {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #Footer .row .col-1 {
@@ -514,6 +522,37 @@ h4 {
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
+  }
+  #hero .wrap-container .row .col-1 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hero .wrap-container .row .col-1:first-child {
+    margin-left: auto;
+  }
+  #hero .wrap-container .row .col-1:last-child {
+    margin-right: auto;
+  }
+  #hero .wrap-container .row .col-2 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hero .wrap-container .row .col-2:first-child {
+    margin-left: auto;
+  }
+  #hero .wrap-container .row .col-2:last-child {
+    margin-right: auto;
+  }
+  #hero .wrap-container .betaButton {
+    margin-top: 20px;
   }
 }
 
