@@ -476,6 +476,10 @@ h4 {
 	  	padding-right: 30px;
 	  	margin: 0 auto;
 
+	  	h1.headerText {
+		 	font-size: 36px;
+		}
+
 	  	.row {
 	 		.col-1 {
 	 			@include stack();
@@ -491,7 +495,61 @@ h4 {
 	 }
 	
   }
+  @include breakpoint($small) {
+  	.wrap-container {
+	  	padding-left: 30px;
+	  	padding-right: 30px;
+	  	margin: 0 auto;
 
+	  	h1.headerText {
+		 	font-size: 32px;
+		 	margin-top: 50px;
+		}
+ 		.betaButton {
+ 			height: 40px;
+		    width: 225px;
+		    font-size: 16px;
+ 		}
+	 }
+  }
+}
+
+
+#MissionTeam {
+
+	@include breakpoint($large) {
+		.teamResize {
+			height: auto; 
+			width: auto; 
+			max-width: 800px;
+		}
+	
+  }
+	@include breakpoint($medium) {
+		.teamResize {
+			height: auto; 
+			width: auto; 
+			max-width: 700px; 
+		}
+	
+  }
+  @include breakpoint($small) {
+		.teamResize {
+			height: auto; 
+			width: auto; 
+			max-width: 420px; 
+		}
+	
+  }
+
+  @include breakpoint($x-small) {
+		.teamResize {
+			height: auto; 
+			width: auto; 
+			max-width: 300px; 
+		}
+	
+  }
 
 }
 

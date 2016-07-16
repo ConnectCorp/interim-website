@@ -523,6 +523,9 @@ h4 {
     padding-right: 30px;
     margin: 0 auto;
   }
+  #hero .wrap-container h1.headerText {
+    font-size: 36px;
+  }
   #hero .wrap-container .row .col-1 {
     display: block;
     clear: both;
@@ -553,6 +556,55 @@ h4 {
   }
   #hero .wrap-container .betaButton {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero .wrap-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+  #hero .wrap-container h1.headerText {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  #hero .wrap-container .betaButton {
+    height: 40px;
+    width: 225px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 855px) {
+  #MissionTeam .teamResize {
+    height: auto;
+    width: auto;
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 720px) {
+  #MissionTeam .teamResize {
+    height: auto;
+    width: auto;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 480px) {
+  #MissionTeam .teamResize {
+    height: auto;
+    width: auto;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 320px) {
+  #MissionTeam .teamResize {
+    height: auto;
+    width: auto;
+    max-width: 300px;
   }
 }
 
