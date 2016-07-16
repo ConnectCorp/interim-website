@@ -311,7 +311,7 @@ h4 {
 
 .teamResize {
   height: auto;
-  width: auto;
+  width: 100%;
   max-width: 800px;
   margin-top: 200px;
   margin-bottom: 125px;
@@ -578,32 +578,24 @@ h4 {
 
 @media (max-width: 855px) {
   #MissionTeam .teamResize {
-    height: auto;
-    width: auto;
     max-width: 800px;
   }
 }
 
 @media (max-width: 720px) {
   #MissionTeam .teamResize {
-    height: auto;
-    width: auto;
     max-width: 700px;
   }
 }
 
 @media (max-width: 480px) {
   #MissionTeam .teamResize {
-    height: auto;
-    width: auto;
     max-width: 420px;
   }
 }
 
 @media (max-width: 320px) {
   #MissionTeam .teamResize {
-    height: auto;
-    width: auto;
     max-width: 300px;
   }
 }

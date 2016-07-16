@@ -269,7 +269,7 @@ h4 {
 }
 	.teamResize {
 		height: auto; 
-		width: auto; 
+		width: 100%; 
 		max-width: 800px; 
 		margin-top: 200px;
 		margin-bottom: 125px;
@@ -519,24 +519,18 @@ h4 {
 
 	@include breakpoint($large) {
 		.teamResize {
-			height: auto; 
-			width: auto; 
 			max-width: 800px;
 		}
 	
   }
 	@include breakpoint($medium) {
 		.teamResize {
-			height: auto; 
-			width: auto; 
 			max-width: 700px; 
 		}
 	
   }
   @include breakpoint($small) {
 		.teamResize {
-			height: auto; 
-			width: auto; 
 			max-width: 420px; 
 		}
 	
@@ -544,8 +538,6 @@ h4 {
 
   @include breakpoint($x-small) {
 		.teamResize {
-			height: auto; 
-			width: auto; 
 			max-width: 300px; 
 		}
 	
