@@ -69,7 +69,7 @@ h4 {
 }
 
 #hero .wrap-container {
-  max-width: 1260px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -82,6 +82,30 @@ h4 {
 }
 
 #hero .row .col-1:last-child {
+  margin-right: 0;
+}
+
+#hero .row .col-2 {
+  float: left;
+  clear: none;
+  width: 57.0833333333%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+#hero .row .col-2:last-child {
+  margin-right: 0;
+}
+
+#hero .row .col-3 {
+  float: left;
+  clear: none;
+  width: 39.9166666667%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+#hero .row .col-3:last-child {
   margin-right: 0;
 }
 
@@ -142,6 +166,7 @@ h4 {
   color: white;
   margin-left: 25px;
   outline: none;
+  border-radius: 50px;
 }
 
 /* =========================================================================
@@ -228,9 +253,27 @@ h4 {
 /* =========================================================================
                             AboutConnect
 =======================================================================*/
+#AboutConnect .wrap-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#AboutConnect .row .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+#AboutConnect .row .col-1:last-child {
+  margin-right: 0;
+}
+
 #AboutConnect .peaceSize {
   font-size: 75px;
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 #AboutConnect h2 {
@@ -260,15 +303,28 @@ h4 {
   width: auto;
   max-width: 800px;
   margin-top: 200px;
-  margin-bottom: -125px;
+  margin-bottom: 125px;
 }
 
 /* =========================================================================
                             MissionTeam
 =======================================================================*/
-#MissionTeam {
-  background-color: #F5F5F7;
-  padding-bottom: 150px;
+#MissionTeam .wrap-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#MissionTeam .row .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+#MissionTeam .row .col-1:last-child {
+  margin-right: 0;
 }
 
 #MissionTeam h2 {
@@ -288,15 +344,35 @@ h4 {
   font-family: 'Edmondsans-Medium';
   font-size: 18px;
   color: white;
+  margin-top: -250px;
+  border-radius: 50px;
+  outline: none;
 }
 
 /* =========================================================================
                             Footer
 =======================================================================*/
 #Footer {
-  padding-top: 100px;
+  padding-top: 500px;
   padding-bottom: 100px;
-  background-color: #ECEDEF;
+}
+
+#Footer .wrap-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#Footer .row .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+#Footer .row .col-1:last-child {
+  margin-right: 0;
 }
 
 #Footer h3.cta {
@@ -355,6 +431,8 @@ h4 {
   font-size: 18px;
   color: white;
   margin-left: 25px;
+  border-radius: 50px;
+  outline: none;
 }
 
 #Footer .byeSize {

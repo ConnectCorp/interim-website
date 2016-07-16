@@ -78,12 +78,18 @@ h4 {
   margin: 0;
 
  .wrap-container {
-  	max-width: 1260px;
+  	max-width: 1200px;
   	margin: 0 auto;
  }
  	.row {
  		.col-1 {
  			@include col(10/12);
+ 		}
+ 		.col-2 {
+ 			@include col(7/12);
+ 		}
+ 		.col-3 {
+ 			@include col(5/12);
  		}
  	}
 
@@ -135,6 +141,7 @@ h4 {
 		  color: white;
 		  margin-left: 25px;
 		  outline: none;
+	  	  border-radius: 50px;
 		}
 	}
 
@@ -201,11 +208,21 @@ h4 {
                             AboutConnect
 =======================================================================*/
 #AboutConnect {
+	 .wrap-container {
+	  	max-width: 1200px;
+	  	margin: 0 auto;
+	  	text-align: center;
+	 }
+	.row {
+		.col-1{
+			@include col(12/12);
+		}
+	}
 
 
 	.peaceSize {
 		font-size: 75px;
-		padding-top: 100px;
+		padding-top: 75px;
 	}
 
 	h2 {
@@ -231,14 +248,12 @@ h4 {
 
 
 }
-
-
 	.teamResize {
 		height: auto; 
 		width: auto; 
 		max-width: 800px; 
 		margin-top: 200px;
-		margin-bottom: -125px;
+		margin-bottom: 125px;
 	}
 
 /* =========================================================================
@@ -246,8 +261,18 @@ h4 {
 =======================================================================*/	
 
 #MissionTeam {
-	background-color: #F5F5F7;
-	padding-bottom:150px;
+	// background-color: #F5F5F7;
+
+	.wrap-container {
+	  	max-width: 1200px;
+	  	margin: 0 auto;
+	  	text-align: center;
+	 }
+	.row {
+		.col-1{
+			@include col(12/12);
+		}
+	}
 
 	h2 {
 		margin-top: 150px;
@@ -267,6 +292,9 @@ h4 {
 	  font-family: 'Edmondsans-Medium';
 	  font-size: 18px;
 	  color: white;
+	  margin-top: -250px;
+	  border-radius: 50px;
+	  outline: none;
 	}
 }
 
@@ -276,9 +304,21 @@ h4 {
 =======================================================================*/	
 
 #Footer {
-	padding-top: 100px;
+	padding-top: 500px;
 	padding-bottom: 100px;
-	background-color: #ECEDEF;
+	// background-color: #ECEDEF;
+
+	.wrap-container {
+	  	max-width: 1200px;
+	  	margin: 0 auto;
+	  	text-align: center;
+	 }
+	.row {
+		.col-1{
+			@include col(12/12);
+		}
+	}
+
 
 	h3.cta { 
 		font-family: 'Edmondsans-Bold';
@@ -330,6 +370,8 @@ h4 {
 		  font-size: 18px;
 		  color: white;
 		  margin-left: 25px;
+		  border-radius: 50px;
+	  	  outline: none;
 		}
 	}
 
