@@ -1,11 +1,13 @@
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 -Imports
+-Breakpoints
 -Text Styles
 -Hero
 -Arrow
 -AboutConnect
 -Footer
+-Media Queries
  */
 
 
@@ -27,6 +29,16 @@ html {
 @import "../../../jeet/jeet.scss";
 @import "../../../bower_components/breakpoint-sass/stylesheets/breakpoint.scss";
 
+
+/* =========================================================================
+                            Breakpoints
+=======================================================================*/
+$xx-large: max-width 1260px;
+$x-large: max-width 1035px;
+$large: max-width 855px;
+$medium: max-width 720px;
+$small: max-width 480px;
+$x-small: max-width 320px;
 
 
 /* =========================================================================
@@ -79,8 +91,10 @@ h4 {
   margin: 0;
 
  .wrap-container {
-  	max-width: 1200px;
+  	max-width: 1100px;
   	margin: 0 auto;
+  	padding-left: 30px;
+	padding-right: 30px;
  }
  	.row {
  		.col-1 {
@@ -97,12 +111,12 @@ h4 {
 	.resizeLogo {
 	  height: auto; 
 	  width: auto; 
-	  max-width: 200px; 
-	  margin-top: 100px;
+	  max-width: 175px; 
+	  margin-top: 50px;
 	}
 
 	.headerText {
-		margin-top: 175px;
+		margin-top: 115px;
 	}
 
 	.signup-margin {
@@ -393,6 +407,74 @@ h4 {
 	}
 
 }
+
+
+/* =========================================================================
+                            Media Queries
+=======================================================================*/	
+
+#hero {
+  @include breakpoint($xx-large) {
+  	.wrap-container {
+	  	padding-left: 30px;
+	  	padding-right: 30px;
+	  	margin: 0 auto;
+	 }
+	 h1.headerText {
+	 	font-size: 52px;
+		margin-top: 125px;
+	}
+  }
+  @include breakpoint($x-large) {
+  	.wrap-container {
+	  	padding-left: 30px;
+	  	padding-right: 30px;
+	  	margin: 0 auto;
+
+	  	.betaButton {
+		 	height: 50px;
+			width: 275px;
+			font-size: 16px;
+		 }
+		 input {
+		    border: 0;
+		    outline: 0;
+		    background: transparent;
+		    border-bottom: 3px solid white;
+		    font-size: 20px;
+		    color: white;
+		    width: 300px;
+		    font-family: 'Edmondsans-Medium';
+		    padding-bottom: 25px;
+		}
+	 }
+  }
+  @include breakpoint($large) {
+  	.wrap-container {
+	  	padding-left: 30px;
+	  	padding-right: 30px;
+	  	margin: 0 auto;
+
+		 h1.headerText {
+		 	font-size: 48px;
+			margin-top: 100px;
+		}
+	 }
+	
+  }
+  @include breakpoint($medium) {
+  	.wrap-container {
+	  	padding-left: 30px;
+	  	padding-right: 30px;
+	  	margin: 0 auto;
+
+	 }
+	
+  }
+
+
+}
+
 
 
 

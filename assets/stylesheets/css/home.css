@@ -2,11 +2,13 @@
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 -Imports
+-Breakpoints
 -Text Styles
 -Hero
 -Arrow
 -AboutConnect
 -Footer
+-Media Queries
  */
 @import url(../css/fonts.css);
 @import url(../../../bower_components/normalize-css/normalize.css);
@@ -19,6 +21,9 @@ html {
 
 /* =========================================================================
                             Imports
+=======================================================================*/
+/* =========================================================================
+                            Breakpoints
 =======================================================================*/
 /* =========================================================================
                             Text Styles
@@ -69,8 +74,10 @@ h4 {
 }
 
 #hero .wrap-container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #hero .row .col-1 {
@@ -112,12 +119,12 @@ h4 {
 #hero .resizeLogo {
   height: auto;
   width: auto;
-  max-width: 200px;
-  margin-top: 100px;
+  max-width: 175px;
+  margin-top: 50px;
 }
 
 #hero .headerText {
-  margin-top: 175px;
+  margin-top: 115px;
 }
 
 #hero .signup-margin {
@@ -449,6 +456,65 @@ h4 {
   font-family: 'Edmondsans-Bold';
   font-size: 14px;
   color: #9a9a9a;
+}
+
+/* =========================================================================
+                            Media Queries
+=======================================================================*/
+@media (max-width: 1260px) {
+  #hero .wrap-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+  #hero h1.headerText {
+    font-size: 52px;
+    margin-top: 125px;
+  }
+}
+
+@media (max-width: 1035px) {
+  #hero .wrap-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+  #hero .wrap-container .betaButton {
+    height: 50px;
+    width: 275px;
+    font-size: 16px;
+  }
+  #hero .wrap-container input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 3px solid white;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    font-family: 'Edmondsans-Medium';
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 855px) {
+  #hero .wrap-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
+  #hero .wrap-container h1.headerText {
+    font-size: 48px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 720px) {
+  #hero .wrap-container {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
