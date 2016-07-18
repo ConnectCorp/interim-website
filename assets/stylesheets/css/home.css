@@ -80,7 +80,7 @@ h4 {
   padding-right: 30px;
 }
 
-#hero .row .col-1 {
+#hero .wrap-container .row .col-1 {
   float: left;
   clear: none;
   width: 82.8333333333%;
@@ -88,11 +88,11 @@ h4 {
   margin-right: 3%;
 }
 
-#hero .row .col-1:last-child {
+#hero .wrap-container .row .col-1:last-child {
   margin-right: 0;
 }
 
-#hero .row .col-2 {
+#hero .wrap-container .row .col-2 {
   float: left;
   clear: none;
   width: 57.0833333333%;
@@ -100,11 +100,11 @@ h4 {
   margin-right: 3%;
 }
 
-#hero .row .col-2:last-child {
+#hero .wrap-container .row .col-2:last-child {
   margin-right: 0;
 }
 
-#hero .row .col-3 {
+#hero .wrap-container .row .col-3 {
   float: left;
   clear: none;
   width: 39.9166666667%;
@@ -112,26 +112,26 @@ h4 {
   margin-right: 3%;
 }
 
-#hero .row .col-3:last-child {
+#hero .wrap-container .row .col-3:last-child {
   margin-right: 0;
 }
 
-#hero .resizeLogo {
+#hero .wrap-container .resizeLogo {
   height: auto;
   width: auto;
   max-width: 175px;
   margin-top: 50px;
 }
 
-#hero .headerText {
+#hero .wrap-container .headerText {
   margin-top: 115px;
 }
 
-#hero .signup-margin {
+#hero .wrap-container .signup-margin {
   margin-top: 60px;
 }
 
-#hero .signup-margin input {
+#hero .wrap-container .signup-margin input {
   border: 0;
   outline: 0;
   background: transparent;
@@ -143,27 +143,27 @@ h4 {
   padding-bottom: 25px;
 }
 
-#hero .signup-margin ::-webkit-input-placeholder {
+#hero .wrap-container .signup-margin ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: white;
 }
 
-#hero .signup-margin ::-moz-placeholder {
+#hero .wrap-container .signup-margin ::-moz-placeholder {
   /* Firefox 19+ */
   color: white;
 }
 
-#hero .signup-margin :-ms-input-placeholder {
+#hero .wrap-container .signup-margin :-ms-input-placeholder {
   /* IE 10+ */
   color: white;
 }
 
-#hero .signup-margin :-moz-placeholder {
+#hero .wrap-container .signup-margin :-moz-placeholder {
   /* Firefox 18- */
   color: white;
 }
 
-#hero .signup-margin .betaButton {
+#hero .wrap-container .signup-margin .betaButton {
   background: #FF6551;
   border-color: #FF6551;
   height: 60px;
@@ -266,11 +266,11 @@ h4 {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
-#AboutConnect .row .col-1 {
+#AboutConnect .wrap-container .row .col-1 {
   float: left;
   clear: none;
   width: 100%;
@@ -278,43 +278,36 @@ h4 {
   margin-right: 3%;
 }
 
-#AboutConnect .row .col-1:last-child {
+#AboutConnect .wrap-container .row .col-1:last-child {
   margin-right: 0;
 }
 
-#AboutConnect .peaceSize {
+#AboutConnect .wrap-container .peaceSize {
   font-size: 75px;
   padding-top: 75px;
 }
 
-#AboutConnect h2 {
+#AboutConnect .wrap-container h2.blackText {
   font-size: 48px;
+  margin-top: -50px;
 }
 
-#AboutConnect h3 {
+#AboutConnect .wrap-container h3 {
   line-height: 36px;
 }
 
-#AboutConnect hr {
+#AboutConnect .wrap-container hr {
   width: 100px;
   margin-top: 225px;
   margin-bottom: 225px;
 }
 
-#AboutConnect .verticalLine {
+#AboutConnect .wrap-container .verticalLine {
   border-left: thin solid #9a9a9a;
   height: 100px;
   left: 50%;
   position: absolute;
   margin-top: 50px;
-}
-
-.teamResize {
-  height: auto;
-  width: 100%;
-  max-width: 800px;
-  margin-top: 200px;
-  margin-bottom: 125px;
 }
 
 /* =========================================================================
@@ -324,11 +317,11 @@ h4 {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
-#MissionTeam .row .col-1 {
+#MissionTeam .wrap-container .row .col-1 {
   float: left;
   clear: none;
   width: 100%;
@@ -336,20 +329,20 @@ h4 {
   margin-right: 3%;
 }
 
-#MissionTeam .row .col-1:last-child {
+#MissionTeam .wrap-container .row .col-1:last-child {
   margin-right: 0;
 }
 
-#MissionTeam h2 {
+#MissionTeam .wrap-container h2 {
   margin-top: 150px;
   font-size: 48px;
 }
 
-#MissionTeam h3 {
+#MissionTeam .wrap-container h3 {
   line-height: 36px;
 }
 
-#MissionTeam .teamButton {
+#MissionTeam .wrap-container .teamButton {
   background: #1DB95C;
   border-color: #1DB95C;
   height: 60px;
@@ -360,6 +353,14 @@ h4 {
   margin-top: -250px;
   border-radius: 50px;
   outline: none;
+}
+
+#MissionTeam .wrap-container .teamResize {
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 200px;
+  margin-bottom: 125px;
 }
 
 /* =========================================================================
@@ -374,11 +375,11 @@ h4 {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
-#Footer .row .col-1 {
+#Footer .wrap-container .row .col-1 {
   float: left;
   clear: none;
   width: 100%;
@@ -386,26 +387,27 @@ h4 {
   margin-right: 3%;
 }
 
-#Footer .row .col-1:last-child {
+#Footer .wrap-container .row .col-1:last-child {
   margin-right: 0;
 }
 
-#Footer h3.cta {
+#Footer .wrap-container h3.cta {
   font-family: 'Edmondsans-Bold';
   font-size: 16px;
   color: #4A4A4A;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 200px;
 }
 
-#Footer .signup-margin {
+#Footer .wrap-container .signup-margin {
   display: -webkit-flex;
   -webkit-justify-content: center !important;
   padding-top: 100px;
   margin: 0 auto;
 }
 
-#Footer .signup-margin input {
+#Footer .wrap-container .signup-margin input {
   border: 0;
   outline: 0;
   background: transparent;
@@ -417,27 +419,27 @@ h4 {
   padding-bottom: 25px;
 }
 
-#Footer .signup-margin ::-webkit-input-placeholder {
+#Footer .wrap-container .signup-margin ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   color: black;
 }
 
-#Footer .signup-margin ::-moz-placeholder {
+#Footer .wrap-container .signup-margin ::-moz-placeholder {
   /* Firefox 19+ */
   color: black;
 }
 
-#Footer .signup-margin :-ms-input-placeholder {
+#Footer .wrap-container .signup-margin :-ms-input-placeholder {
   /* IE 10+ */
   color: black;
 }
 
-#Footer .signup-margin :-moz-placeholder {
+#Footer .wrap-container .signup-margin :-moz-placeholder {
   /* Firefox 18- */
   color: black;
 }
 
-#Footer .signup-margin .betaButton {
+#Footer .wrap-container .signup-margin .betaButton {
   background: #FF6551;
   border-color: #FF6551;
   height: 60px;
@@ -450,17 +452,17 @@ h4 {
   outline: none;
 }
 
-#Footer .byeSize {
+#Footer .wrap-container .byeSize {
   font-size: 50px;
 }
 
-#Footer .makeCenter {
+#Footer .wrap-container .makeCenter {
   display: -webkit-flex !important;
   -webkit-justify-content: center !important;
   margin-top: 100px;
 }
 
-#Footer h4 {
+#Footer .wrap-container h4 {
   font-family: 'Edmondsans-Bold';
   font-size: 14px;
   color: #9a9a9a;
@@ -471,8 +473,8 @@ h4 {
 =======================================================================*/
 @media (max-width: 1260px) {
   #hero .wrap-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
     margin: 0 auto;
   }
   #hero h1.headerText {
@@ -483,8 +485,8 @@ h4 {
 
 @media (max-width: 1035px) {
   #hero .wrap-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
     margin: 0 auto;
   }
   #hero .wrap-container .betaButton {
@@ -507,8 +509,8 @@ h4 {
 
 @media (max-width: 855px) {
   #hero .wrap-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
     margin: 0 auto;
   }
   #hero .wrap-container h1.headerText {
@@ -519,8 +521,8 @@ h4 {
 
 @media (max-width: 720px) {
   #hero .wrap-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
     margin: 0 auto;
   }
   #hero .wrap-container h1.headerText {
@@ -561,8 +563,8 @@ h4 {
 
 @media (max-width: 480px) {
   #hero .wrap-container {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
     margin: 0 auto;
   }
   #hero .wrap-container h1.headerText {
@@ -577,6 +579,33 @@ h4 {
 }
 
 @media (max-width: 855px) {
+  #AboutConnect .wrap-container h2.blackText {
+    font-size: 42px;
+  }
+  #AboutConnect .wrap-container h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 720px) {
+  #AboutConnect .wrap-container h2.blackText {
+    font-size: 38px;
+  }
+  #AboutConnect .wrap-container h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #AboutConnect .wrap-container h2.blackText {
+    font-size: 32px;
+  }
+  #AboutConnect .wrap-container h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 855px) {
   #MissionTeam .teamResize {
     max-width: 800px;
   }
@@ -586,17 +615,40 @@ h4 {
   #MissionTeam .teamResize {
     max-width: 700px;
   }
+  #MissionTeam h2.blackText {
+    font-size: 38px;
+  }
+  #MissionTeam h3 {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
   #MissionTeam .teamResize {
     max-width: 420px;
   }
+  #MissionTeam h2.blackText {
+    font-size: 32px;
+  }
+  #MissionTeam h3 {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 320px) {
   #MissionTeam .teamResize {
     max-width: 300px;
+  }
+}
+
+@media (max-width: 720px) {
+  #Footer .wrap-container {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0 auto;
+  }
+  #Footer .wrap-container .betaButton {
+    margin-top: 20px;
   }
 }
 

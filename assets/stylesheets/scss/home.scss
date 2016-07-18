@@ -95,69 +95,71 @@ h4 {
   	margin: 0 auto;
   	padding-left: 30px;
 	padding-right: 30px;
- }
- 	.row {
- 		.col-1 {
- 			@include col(10/12);
- 		}
- 		.col-2 {
- 			@include col(7/12);
- 		}
- 		.col-3 {
- 			@include col(5/12);
- 		}
- 	}
+ 
+	 	.row {
+	 		.col-1 {
+	 			@include col(10/12);
+	 		}
+	 		.col-2 {
+	 			@include col(7/12);
+	 		}
+	 		.col-3 {
+	 			@include col(5/12);
+	 		}
+	 	}
 
-	.resizeLogo {
-	  height: auto; 
-	  width: auto; 
-	  max-width: 175px; 
-	  margin-top: 50px;
-	}
-
-	.headerText {
-		margin-top: 115px;
-	}
-
-	.signup-margin {
-		margin-top: 60px;
-
-		input {
-		    border: 0;
-		    outline: 0;
-		    background: transparent;
-		    border-bottom: 4px solid white;
-		    font-size: 24px;
-		    color: white;
-		    width: 400px;
-		    font-family: 'Edmondsans-Medium';
-		    padding-bottom: 25px;
+		.resizeLogo {
+		  height: auto; 
+		  width: auto; 
+		  max-width: 175px; 
+		  margin-top: 50px;
 		}
 
-		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	  		color: white;
+		.headerText {
+			margin-top: 115px;
 		}
-		::-moz-placeholder { /* Firefox 19+ */
-		  color: white;
+
+		.signup-margin {
+			margin-top: 60px;
+
+			input {
+			    border: 0;
+			    outline: 0;
+			    background: transparent;
+			    border-bottom: 4px solid white;
+			    font-size: 24px;
+			    color: white;
+			    width: 400px;
+			    font-family: 'Edmondsans-Medium';
+			    padding-bottom: 25px;
+			}
+
+			::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  		color: white;
+			}
+			::-moz-placeholder { /* Firefox 19+ */
+			  color: white;
+			}
+			:-ms-input-placeholder { /* IE 10+ */
+			  color: white;
+			}
+			:-moz-placeholder { /* Firefox 18- */
+			  color: white;
+			}
+			.betaButton {
+			  background: #FF6551;
+			  border-color: #FF6551;
+			  height: 60px;
+			  width: 300px;
+			  font-family: 'Edmondsans-Medium';
+			  font-size: 18px;
+			  color: white;
+			  margin-left: 25px;
+			  outline: none;
+		  	  border-radius: 50px;
+			}
 		}
-		:-ms-input-placeholder { /* IE 10+ */
-		  color: white;
-		}
-		:-moz-placeholder { /* Firefox 18- */
-		  color: white;
-		}
-		.betaButton {
-		  background: #FF6551;
-		  border-color: #FF6551;
-		  height: 60px;
-		  width: 300px;
-		  font-family: 'Edmondsans-Medium';
-		  font-size: 18px;
-		  color: white;
-		  margin-left: 25px;
-		  outline: none;
-	  	  border-radius: 50px;
-		}
+
 	}
 
 }
@@ -229,51 +231,47 @@ h4 {
 	  	max-width: 1100px;
 	  	margin: 0 auto;
 	  	text-align: center;
-	  	padding-left: 30px;
-	  	padding-right: 30px;
-	 }
-	.row {
-		.col-1{
-			@include col(12/12);
+	  	padding-left: 3%;
+	  	padding-right: 3%;
+	  
+	 
+		.row {
+			.col-1{
+				@include col(12/12);
+			}
 		}
-	}
 
 
-	.peaceSize {
-		font-size: 75px;
-		padding-top: 75px;
-	}
+		.peaceSize {
+			font-size: 75px;
+			padding-top: 75px;
+		}
 
-	h2 {
-		font-size: 48px;
-	}
+		h2.blackText {
+			font-size: 48px;
+			margin-top: -50px;
+		}
 
-	h3 {
-		line-height: 36px;
-	}
+		h3 {
+			line-height: 36px;
+		}
 
-	hr {
-		width: 100px;
-		margin-top: 225px;
-		margin-bottom: 225px;
-	}
-	.verticalLine {
-	    border-left: thin solid #9a9a9a;
-	    height: 100px;
-	    left:50%;
-	    position: absolute;
-	    margin-top: 50px;
-	}
+		hr {
+			width: 100px;
+			margin-top: 225px;
+			margin-bottom: 225px;
+		}
+		.verticalLine {
+		    border-left: thin solid #9a9a9a;
+		    height: 100px;
+		    left:50%;
+		    position: absolute;
+		    margin-top: 50px;
+		}
 
+	}
 
 }
-	.teamResize {
-		height: auto; 
-		width: 100%; 
-		max-width: 800px; 
-		margin-top: 200px;
-		margin-bottom: 125px;
-	}
 
 /* =========================================================================
                             MissionTeam
@@ -286,36 +284,44 @@ h4 {
 	  	max-width: 1100px;
 	  	margin: 0 auto;
 	  	text-align: center;
-	  	padding-left: 30px;
-	  	padding-right: 30px;
-	 }
-	.row {
-		.col-1{
-			@include col(12/12);
+	  	padding-left: 3%;
+	  	padding-right: 3%;
+	 
+		.row {
+			.col-1{
+				@include col(12/12);
+			}
 		}
-	}
 
-	h2 {
-		margin-top: 150px;
-		font-size: 48px;
-	}
+		h2 {
+			margin-top: 150px;
+			font-size: 48px;
+		}
 
-	h3 {
-		line-height: 36px;
-	}
+		h3 {
+			line-height: 36px;
+		}
 
 
-	.teamButton {
-	  background: #1DB95C;
-	  border-color: #1DB95C;
-	  height: 60px;
-	  width: 300px;
-	  font-family: 'Edmondsans-Medium';
-	  font-size: 18px;
-	  color: white;
-	  margin-top: -250px;
-	  border-radius: 50px;
-	  outline: none;
+		.teamButton {
+		  background: #1DB95C;
+		  border-color: #1DB95C;
+		  height: 60px;
+		  width: 300px;
+		  font-family: 'Edmondsans-Medium';
+		  font-size: 18px;
+		  color: white;
+		  margin-top: -250px;
+		  border-radius: 50px;
+		  outline: none;
+		}
+		.teamResize {
+			height: auto; 
+			width: 100%; 
+			max-width: 800px; 
+			margin-top: 200px;
+			margin-bottom: 125px;
+		}
 	}
 }
 
@@ -327,91 +333,92 @@ h4 {
 #Footer {
 	padding-top: 500px;
 	padding-bottom: 100px;
-	// background-color: #ECEDEF;
 
 	.wrap-container {
 	  	max-width: 1100px;
 	  	margin: 0 auto;
 	  	text-align: center;
-	  	padding-left: 30px;
-	  	padding-right: 30px;
-	 }
-	.row {
-		.col-1{
-			@include col(12/12);
+	  	padding-left: 3%;
+	  	padding-right: 3%;
+	 
+		.row {
+			.col-1{
+				@include col(12/12);
+			}
 		}
-	}
+		
 
-
-	h3.cta { 
-		font-family: 'Edmondsans-Bold';
-		font-size: 16px;
-		color: #4A4A4A;
-		text-transform: uppercase;
-		text-align: center;
-	}
-
-
-	.signup-margin {
-		display:-webkit-flex;
-	    -webkit-justify-content: center !important;
-		padding-top: 100px;
-		margin: 0 auto;
-
-
-
-		input {
-		    border: 0;
-		    outline: 0;
-		    background: transparent;
-		    border-bottom: 4px solid black;
-		    font-size: 24px;
-		    color: black;
-		    width: 600px;
-		    font-family: 'Edmondsans-Medium';
-		    padding-bottom: 25px;
+		h3.cta { 
+			font-family: 'Edmondsans-Bold';
+			font-size: 16px;
+			color: #4A4A4A;
+			text-transform: uppercase;
+			text-align: center;
+			padding-top: 200px;
 		}
 
-		::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-	  		color: black;
-		}
-		::-moz-placeholder { /* Firefox 19+ */
-		  color: black;
-		}
-		:-ms-input-placeholder { /* IE 10+ */
-		  color: black;
-		}
-		:-moz-placeholder { /* Firefox 18- */
-		  color: black;
-		}
-		.betaButton {
-		  background: #FF6551;
-		  border-color: #FF6551;
-		  height: 60px;
-		  width: 300px;
-		  font-family: 'Edmondsans-Medium';
-		  font-size: 18px;
-		  color: white;
-		  margin-left: 25px;
-		  border-radius: 50px;
-	  	  outline: none;
-		}
-	}
 
-	.byeSize {
-		font-size: 50px;
-	}
+		.signup-margin {
+			display:-webkit-flex;
+		    -webkit-justify-content: center !important;
+			padding-top: 100px;
+			margin: 0 auto;
 
-	.makeCenter {
-		display:-webkit-flex !important;
-	   -webkit-justify-content: center !important;
-	   margin-top: 100px;
-	}
 
-	h4 {
-		font-family: 'Edmondsans-Bold';
-		font-size: 14px;
-		color: #9a9a9a;
+
+			input {
+			    border: 0;
+			    outline: 0;
+			    background: transparent;
+			    border-bottom: 4px solid black;
+			    font-size: 24px;
+			    color: black;
+			    width: 600px;
+			    font-family: 'Edmondsans-Medium';
+			    padding-bottom: 25px;
+			}
+
+			::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		  		color: black;
+			}
+			::-moz-placeholder { /* Firefox 19+ */
+			  color: black;
+			}
+			:-ms-input-placeholder { /* IE 10+ */
+			  color: black;
+			}
+			:-moz-placeholder { /* Firefox 18- */
+			  color: black;
+			}
+			.betaButton {
+			  background: #FF6551;
+			  border-color: #FF6551;
+			  height: 60px;
+			  width: 300px;
+			  font-family: 'Edmondsans-Medium';
+			  font-size: 18px;
+			  color: white;
+			  margin-left: 25px;
+			  border-radius: 50px;
+		  	  outline: none;
+			}
+		}
+
+		.byeSize {
+			font-size: 50px;
+		}
+
+		.makeCenter {
+			display:-webkit-flex !important;
+		   -webkit-justify-content: center !important;
+		   margin-top: 100px;
+		}
+
+		h4 {
+			font-family: 'Edmondsans-Bold';
+			font-size: 14px;
+			color: #9a9a9a;
+		}
 	}
 
 }
@@ -424,8 +431,8 @@ h4 {
 #hero {
   @include breakpoint($xx-large) {
   	.wrap-container {
-	  	padding-left: 30px;
-	  	padding-right: 30px;
+	  	padding-left: 3%;
+	  	padding-right: 3%;
 	  	margin: 0 auto;
 	 }
 	 h1.headerText {
@@ -435,8 +442,8 @@ h4 {
   }
   @include breakpoint($x-large) {
   	.wrap-container {
-	  	padding-left: 30px;
-	  	padding-right: 30px;
+	  	padding-left: 3%;
+	  	padding-right: 3%;
 	  	margin: 0 auto;
 
 	  	.betaButton {
@@ -459,8 +466,8 @@ h4 {
   }
   @include breakpoint($large) {
   	.wrap-container {
-	  	padding-left: 30px;
-	  	padding-right: 30px;
+	  	padding-left: 3%;
+	  	padding-right: 3%;
 	  	margin: 0 auto;
 
 		 h1.headerText {
@@ -472,8 +479,8 @@ h4 {
   }
   @include breakpoint($medium) {
   	.wrap-container {
-	  	padding-left: 30px;
-	  	padding-right: 30px;
+	  	padding-left: 3%;
+	  	padding-right: 3%;
 	  	margin: 0 auto;
 
 	  	h1.headerText {
@@ -497,8 +504,8 @@ h4 {
   }
   @include breakpoint($small) {
   	.wrap-container {
-	  	padding-left: 30px;
-	  	padding-right: 30px;
+	  	padding-left: 3%;
+	  	padding-right: 3%;
 	  	margin: 0 auto;
 
 	  	h1.headerText {
@@ -514,37 +521,99 @@ h4 {
   }
 }
 
+#AboutConnect {
+
+	.wrap-container {
+
+	@include breakpoint($large) {
+			h2.blackText {
+				font-size: 42px;
+			}
+			
+			h3 {
+				font-size: 17px;
+			}
+			
+		}	
+		@include breakpoint($medium) {
+			h2.blackText {
+				font-size: 38px;
+			}
+			
+			h3 {
+				font-size: 16px;
+			}
+			
+		}
+		@include breakpoint($small) {
+
+			h2.blackText {
+				font-size: 32px;
+			}
+		h3 {
+			font-size: 14px;
+		}
+			
+		}
+	}
+}
+
 
 #MissionTeam {
-
 	@include breakpoint($large) {
 		.teamResize {
 			max-width: 800px;
 		}
-	
   }
 	@include breakpoint($medium) {
 		.teamResize {
 			max-width: 700px; 
 		}
-	
+		h2.blackText {
+			font-size: 38px;
+		}
+		
+		h3 {
+			font-size: 16px;
+		}
   }
   @include breakpoint($small) {
 		.teamResize {
 			max-width: 420px; 
 		}
-	
+		h2.blackText {
+			font-size: 32px;
+		}
+	h3 {
+		font-size: 14px;
+	}
   }
-
   @include breakpoint($x-small) {
 		.teamResize {
 			max-width: 300px; 
 		}
-	
   }
-
 }
 
+#Footer {
+	@include breakpoint($medium) {
+  	.wrap-container {
+	  	padding-left: 3%;
+	  	padding-right: 3%;
+	  	margin: 0 auto;
 
+ 		.betaButton {
+ 			margin-top: 20px;
+ 		}
+
+	 }
+	
+  }
+}
+
+@mixin font-size($sizeValue: 1.6) {
+ font-size: ($sizeValue * 10) + px;
+ font-size: $sizeValue + rem;
+}
 
 
