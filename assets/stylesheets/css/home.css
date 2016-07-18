@@ -8,7 +8,6 @@
 -Arrow
 -AboutConnect
 -Footer
--Media Queries
  */
 @import url(../css/fonts.css);
 @import url(../../../bower_components/normalize-css/normalize.css);
@@ -76,8 +75,8 @@ h4 {
 #hero .wrap-container {
   max-width: 1100px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 #hero .wrap-container .row .col-1 {
@@ -95,7 +94,7 @@ h4 {
 #hero .wrap-container .row .col-2 {
   float: left;
   clear: none;
-  width: 57.0833333333%;
+  width: 48.5%;
   margin-left: 0;
   margin-right: 3%;
 }
@@ -107,7 +106,7 @@ h4 {
 #hero .wrap-container .row .col-3 {
   float: left;
   clear: none;
-  width: 39.9166666667%;
+  width: 48.5%;
   margin-left: 0;
   margin-right: 3%;
 }
@@ -174,6 +173,127 @@ h4 {
   margin-left: 25px;
   outline: none;
   border-radius: 50px;
+}
+
+@media (max-width: 1260px) {
+  #hero .wrap-container {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0 auto;
+  }
+  #hero h1.headerText {
+    font-size: 52px;
+    margin-top: 125px;
+  }
+}
+
+@media (max-width: 1035px) {
+  #hero .wrap-container {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0 auto;
+  }
+  #hero .wrap-container .row .betaButton {
+    height: 50px;
+    width: 275px;
+    font-size: 16px;
+  }
+  #hero .wrap-container .row input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 3px solid white;
+    font-size: 20px;
+    color: white;
+    width: 300px;
+    font-family: 'Edmondsans-Medium';
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 855px) {
+  #hero .wrap-container {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0 auto;
+  }
+  #hero .wrap-container h1.headerText {
+    font-size: 48px;
+    margin-top: 100px;
+  }
+  #hero .wrap-container .row .betaButton {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 720px) {
+  #hero .wrap-container {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0 auto;
+  }
+  #hero .wrap-container h1.headerText {
+    font-size: 36px;
+  }
+  #hero .wrap-container .row .col-1 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hero .wrap-container .row .col-1:first-child {
+    margin-left: auto;
+  }
+  #hero .wrap-container .row .col-1:last-child {
+    margin-right: auto;
+  }
+  #hero .wrap-container .row .col-2 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #hero .wrap-container .row .col-2:first-child {
+    margin-left: auto;
+  }
+  #hero .wrap-container .row .col-2:last-child {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  #hero .wrap-container {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 0 auto;
+  }
+  #hero .wrap-container h1.headerText {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  #hero .wrap-container .betaButton {
+    height: 40px;
+    width: 225px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  #hero .wrap-container h1.headerText {
+    font-size: 28px;
+  }
+  #hero .wrap-container .row .signup-margin {
+    margin-top: 20px;
+  }
+  #hero .wrap-container .row .betaButton {
+    height: 40px;
+    width: 200px;
+    font-size: 16px;
+  }
 }
 
 /* =========================================================================
@@ -310,6 +430,33 @@ h4 {
   margin-top: 50px;
 }
 
+@media (max-width: 855px) {
+  #AboutConnect .wrap-container h2.blackText {
+    font-size: 42px;
+  }
+  #AboutConnect .wrap-container h3 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 720px) {
+  #AboutConnect .wrap-container h2.blackText {
+    font-size: 38px;
+  }
+  #AboutConnect .wrap-container h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #AboutConnect .wrap-container h2.blackText {
+    font-size: 32px;
+  }
+  #AboutConnect .wrap-container h3 {
+    font-size: 14px;
+  }
+}
+
 /* =========================================================================
                             MissionTeam
 =======================================================================*/
@@ -343,8 +490,8 @@ h4 {
 }
 
 #MissionTeam .wrap-container .teamButton {
-  background: #1DB95C;
-  border-color: #1DB95C;
+  background: #3DB8B5;
+  border-color: #3DB8B5;
   height: 60px;
   width: 300px;
   font-family: 'Edmondsans-Medium';
@@ -360,7 +507,43 @@ h4 {
   width: 100%;
   max-width: 800px;
   margin-top: 200px;
-  margin-bottom: 125px;
+  margin-bottom: 75px;
+}
+
+@media (max-width: 855px) {
+  #MissionTeam .wrap-container .teamResize {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 720px) {
+  #MissionTeam .wrap-container .teamResize {
+    max-width: 700px;
+  }
+  #MissionTeam .wrap-container h2.blackText {
+    font-size: 38px;
+  }
+  #MissionTeam .wrap-container h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #MissionTeam .wrap-container .teamResize {
+    max-width: 420px;
+  }
+  #MissionTeam .wrap-container h2.blackText {
+    font-size: 32px;
+  }
+  #MissionTeam .wrap-container h3 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  #MissionTeam .wrap-container .teamResize {
+    max-width: 300px;
+  }
 }
 
 /* =========================================================================
@@ -379,6 +562,11 @@ h4 {
   padding-right: 3%;
 }
 
+#Footer .wrap-container .row {
+  margin: 0 auto;
+  text-align: center;
+}
+
 #Footer .wrap-container .row .col-1 {
   float: left;
   clear: none;
@@ -391,6 +579,30 @@ h4 {
   margin-right: 0;
 }
 
+#Footer .wrap-container .row .col-2 {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+#Footer .wrap-container .row .col-2:last-child {
+  margin-right: 0;
+}
+
+#Footer .wrap-container .row .col-3 {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+#Footer .wrap-container .row .col-3:last-child {
+  margin-right: 0;
+}
+
 #Footer .wrap-container h3.cta {
   font-family: 'Edmondsans-Bold';
   font-size: 16px;
@@ -398,11 +610,10 @@ h4 {
   text-transform: uppercase;
   text-align: center;
   padding-top: 200px;
+  margin-bottom: 100px;
 }
 
 #Footer .wrap-container .signup-margin {
-  display: -webkit-flex;
-  -webkit-justify-content: center !important;
   padding-top: 100px;
   margin: 0 auto;
 }
@@ -414,7 +625,7 @@ h4 {
   border-bottom: 4px solid black;
   font-size: 24px;
   color: black;
-  width: 600px;
+  width: 400px;
   font-family: 'Edmondsans-Medium';
   padding-bottom: 25px;
 }
@@ -456,79 +667,23 @@ h4 {
   font-size: 50px;
 }
 
-#Footer .wrap-container .makeCenter {
-  display: -webkit-flex !important;
-  -webkit-justify-content: center !important;
-  margin-top: 100px;
-}
-
 #Footer .wrap-container h4 {
   font-family: 'Edmondsans-Bold';
   font-size: 14px;
   color: #9a9a9a;
-}
-
-/* =========================================================================
-                            Media Queries
-=======================================================================*/
-@media (max-width: 1260px) {
-  #hero .wrap-container {
-    padding-left: 3%;
-    padding-right: 3%;
-    margin: 0 auto;
-  }
-  #hero h1.headerText {
-    font-size: 52px;
-    margin-top: 125px;
-  }
-}
-
-@media (max-width: 1035px) {
-  #hero .wrap-container {
-    padding-left: 3%;
-    padding-right: 3%;
-    margin: 0 auto;
-  }
-  #hero .wrap-container .betaButton {
-    height: 50px;
-    width: 275px;
-    font-size: 16px;
-  }
-  #hero .wrap-container input {
-    border: 0;
-    outline: 0;
-    background: transparent;
-    border-bottom: 3px solid white;
-    font-size: 20px;
-    color: white;
-    width: 300px;
-    font-family: 'Edmondsans-Medium';
-    padding-bottom: 25px;
-  }
-}
-
-@media (max-width: 855px) {
-  #hero .wrap-container {
-    padding-left: 3%;
-    padding-right: 3%;
-    margin: 0 auto;
-  }
-  #hero .wrap-container h1.headerText {
-    font-size: 48px;
-    margin-top: 100px;
-  }
+  padding-top: 100px;
 }
 
 @media (max-width: 720px) {
-  #hero .wrap-container {
+  #Footer .wrap-container .wrap-container {
     padding-left: 3%;
     padding-right: 3%;
     margin: 0 auto;
   }
-  #hero .wrap-container h1.headerText {
-    font-size: 36px;
+  #Footer .wrap-container .wrap-container .betaButton {
+    margin-top: 20px;
   }
-  #hero .wrap-container .row .col-1 {
+  #Footer .wrap-container .wrap-container .row .col-2 {
     display: block;
     clear: both;
     float: none;
@@ -536,13 +691,13 @@ h4 {
     margin-left: auto;
     margin-right: auto;
   }
-  #hero .wrap-container .row .col-1:first-child {
+  #Footer .wrap-container .wrap-container .row .col-2:first-child {
     margin-left: auto;
   }
-  #hero .wrap-container .row .col-1:last-child {
+  #Footer .wrap-container .wrap-container .row .col-2:last-child {
     margin-right: auto;
   }
-  #hero .wrap-container .row .col-2 {
+  #Footer .wrap-container .wrap-container .row .col-3 {
     display: block;
     clear: both;
     float: none;
@@ -550,105 +705,11 @@ h4 {
     margin-left: auto;
     margin-right: auto;
   }
-  #hero .wrap-container .row .col-2:first-child {
+  #Footer .wrap-container .wrap-container .row .col-3:first-child {
     margin-left: auto;
   }
-  #hero .wrap-container .row .col-2:last-child {
+  #Footer .wrap-container .wrap-container .row .col-3:last-child {
     margin-right: auto;
-  }
-  #hero .wrap-container .betaButton {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  #hero .wrap-container {
-    padding-left: 3%;
-    padding-right: 3%;
-    margin: 0 auto;
-  }
-  #hero .wrap-container h1.headerText {
-    font-size: 32px;
-    margin-top: 50px;
-  }
-  #hero .wrap-container .betaButton {
-    height: 40px;
-    width: 225px;
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 855px) {
-  #AboutConnect .wrap-container h2.blackText {
-    font-size: 42px;
-  }
-  #AboutConnect .wrap-container h3 {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 720px) {
-  #AboutConnect .wrap-container h2.blackText {
-    font-size: 38px;
-  }
-  #AboutConnect .wrap-container h3 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  #AboutConnect .wrap-container h2.blackText {
-    font-size: 32px;
-  }
-  #AboutConnect .wrap-container h3 {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 855px) {
-  #MissionTeam .teamResize {
-    max-width: 800px;
-  }
-}
-
-@media (max-width: 720px) {
-  #MissionTeam .teamResize {
-    max-width: 700px;
-  }
-  #MissionTeam h2.blackText {
-    font-size: 38px;
-  }
-  #MissionTeam h3 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  #MissionTeam .teamResize {
-    max-width: 420px;
-  }
-  #MissionTeam h2.blackText {
-    font-size: 32px;
-  }
-  #MissionTeam h3 {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 320px) {
-  #MissionTeam .teamResize {
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 720px) {
-  #Footer .wrap-container {
-    padding-left: 3%;
-    padding-right: 3%;
-    margin: 0 auto;
-  }
-  #Footer .wrap-container .betaButton {
-    margin-top: 20px;
   }
 }
 
