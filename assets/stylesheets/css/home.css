@@ -25,9 +25,63 @@ Imports
 */
 /* 
 ========================================================================================
-Breakpoints
+Mixins
 ========================================================================================
 */
+/* 
+========================================================================================
+Body > Universal Classes
+========================================================================================
+*/
+body {
+  font-family: 'Edmondsans-Medium';
+}
+
+.center {
+  width: auto;
+  max-width: 500px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.rule {
+  margin: 150px auto 150px auto;
+  width: 32px;
+  border-top: 2px solid #e5e5e5;
+}
+
+@media (max-width: 640px) {
+  .rule {
+    margin: 100px auto 100px auto;
+  }
+}
+
+button {
+  border: none;
+  height: 60px;
+  font-family: 'Edmondsans-Medium';
+  font-size: 18px;
+  color: white;
+  outline: none;
+  border-radius: 50px;
+}
+
 /* 
 ========================================================================================
 Text Styles
@@ -38,25 +92,48 @@ h1 {
   font-size: 56px;
   color: white;
   font-weight: normal;
+  -webkit-font-smoothing: normal;
+}
+
+@media (max-width: 640px) {
+  h1 {
+    font-size: 36px;
+  }
 }
 
 h2 {
   font-family: 'Edmondsans-Medium';
   font-size: 32px;
-  color: black;
+  color: #393939;
+}
+
+@media (max-width: 640px) {
+  h2 {
+    font-size: 28px;
+  }
 }
 
 h3 {
-  font-family: 'Edmondsans-Regular';
+  font-family: 'Edmondsans-Medium';
   font-size: 18px;
   color: #9a9a9a;
   line-height: 26px;
+  font-weight: normal;
+}
+
+@media (max-width: 640px) {
+  h3 {
+    font-size: 17px;
+  }
 }
 
 h4 {
-  font-family: 'Edmondsans-Bold';
+  font-family: 'Edmondsans-Medium';
   font-size: 14px;
   color: #9a9a9a;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  line-height: 20px;
 }
 
 /* 
@@ -73,11 +150,16 @@ Hero
   margin: 0;
 }
 
+@media (max-width: 1260px) {
+  .hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 .hero .container-hero {
   max-width: 1100px;
   margin: 0 auto;
-  padding-left: 3%;
-  padding-right: 3%;
 }
 
 .hero .container-hero .logo {
@@ -87,6 +169,12 @@ Hero
   width: 170px;
   height: 50px;
   padding-top: 5%;
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .logo {
+    background-size: 140px;
+  }
 }
 
 .hero .container-hero .row-header {
@@ -161,6 +249,23 @@ Hero
   margin-top: 4px;
 }
 
+@media (max-width: 640px) {
+  .hero .container-hero .row-signup .col-1 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .container-hero .row-signup .col-1:first-child {
+    margin-left: auto;
+  }
+  .hero .container-hero .row-signup .col-1:last-child {
+    margin-right: auto;
+  }
+}
+
 .hero .container-hero .row-signup .col-2 {
   float: left;
   clear: none;
@@ -175,19 +280,44 @@ Hero
 
 .hero .container-hero .row-signup .col-2 button {
   background: #FF6551;
-  border: none;
-  height: 60px;
   width: 100%;
-  font-family: 'Edmondsans-Medium';
-  font-size: 18px;
-  color: white;
   margin-left: 25px;
-  outline: none;
-  border-radius: 50px;
 }
 
-/* 
-========================================================================================
+.hero .container-hero .row-signup .col-2 button:hover {
+  background: #e65b49;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-signup .col-2 button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-signup .col-2 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .container-hero .row-signup .col-2:first-child {
+    margin-left: auto;
+  }
+  .hero .container-hero .row-signup .col-2:last-child {
+    margin-right: auto;
+  }
+}
+
+/* ========================================================================================
 Arrows
 ========================================================================================
 */
@@ -273,31 +403,9 @@ Arrows
 
 /* 
 ========================================================================================
-About Connect
+About
 ========================================================================================
 */
-.center {
-  width: auto;
-  max-width: 500px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.rule {
-  margin: 150px auto;
-  width: 32px;
-  border-top: 2px solid #e5e5e5;
-}
-
-.container-body {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 .about {
   text-align: center;
 }
@@ -316,15 +424,25 @@ About Connect
 Team
 ========================================================================================
 */
-#MissionTeam .wrap-container {
+.team {
+  text-align: center;
   max-width: 1100px;
   margin: 0 auto;
-  text-align: center;
-  padding-left: 3%;
-  padding-right: 3%;
 }
 
-#MissionTeam .wrap-container .row .col-1 {
+.team .row-team {
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+.team .row-team .line-vertical {
+  width: 2px;
+  height: 150px;
+  margin: 0 auto;
+  background: #e5e5e5;
+}
+
+.team .row-team .photo-team {
   float: left;
   clear: none;
   width: 100%;
@@ -332,74 +450,40 @@ Team
   margin-right: 3%;
 }
 
-#MissionTeam .wrap-container .row .col-1:last-child {
+.team .row-team .photo-team:last-child {
   margin-right: 0;
 }
 
-#MissionTeam .wrap-container h2 {
-  margin-top: 150px;
-  font-size: 48px;
+@media (max-width: 640px) {
+  .team .row-team .photo-team {
+    width: 1000px;
+    height: auto;
+    margin: 0 -45%;
+  }
 }
 
-#MissionTeam .wrap-container h3 {
-  line-height: 36px;
+.team .row-team button {
+  margin-top: 40px;
+  background: #3cb8b4;
+  padding: 0 80px 0 80px;
 }
 
-#MissionTeam .wrap-container .teamButton {
-  background: #3DB8B5;
-  border-color: #3DB8B5;
-  height: 60px;
-  width: 300px;
-  font-family: 'Edmondsans-Medium';
-  font-size: 18px;
-  color: white;
-  margin-top: -250px;
-  border-radius: 50px;
-  outline: none;
-}
-
-#MissionTeam .wrap-container .teamResize {
-  height: auto;
+/* 
+========================================================================================
+Team
+========================================================================================
+*/
+.mission {
+  background: #f5f5f5;
   width: 100%;
-  max-width: 800px;
-  margin-top: 200px;
-  margin-bottom: 75px;
+  height: 100%;
+  padding-top: 240px;
+  margin-top: -220px;
+  padding-bottom: 180px;
 }
 
-@media (max-width: 855px) {
-  #MissionTeam .wrap-container .teamResize {
-    max-width: 800px;
-  }
-}
-
-@media (max-width: 720px) {
-  #MissionTeam .wrap-container .teamResize {
-    max-width: 700px;
-  }
-  #MissionTeam .wrap-container h2.blackText {
-    font-size: 38px;
-  }
-  #MissionTeam .wrap-container h3 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  #MissionTeam .wrap-container .teamResize {
-    max-width: 420px;
-  }
-  #MissionTeam .wrap-container h2.blackText {
-    font-size: 32px;
-  }
-  #MissionTeam .wrap-container h3 {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 320px) {
-  #MissionTeam .wrap-container .teamResize {
-    max-width: 300px;
-  }
+.mission .row-why {
+  text-align: center;
 }
 
 /* 
@@ -407,168 +491,153 @@ Team
 Footer
 ========================================================================================
 */
-#Footer {
-  padding-top: 500px;
-  padding-bottom: 100px;
-}
-
-#Footer .wrap-container {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-  padding-left: 3%;
-  padding-right: 3%;
-}
-
-#Footer .wrap-container .row {
-  margin: 0 auto;
-  text-align: center;
-}
-
-#Footer .wrap-container .row .col-1 {
-  float: left;
-  clear: none;
+.footer {
+  background: #ededed;
   width: 100%;
-  margin-left: 0;
-  margin-right: 3%;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
-#Footer .wrap-container .row .col-1:last-child {
-  margin-right: 0;
-}
-
-#Footer .wrap-container .row .col-2 {
-  float: left;
-  clear: none;
-  width: 48.5%;
-  margin-left: 0;
-  margin-right: 3%;
-}
-
-#Footer .wrap-container .row .col-2:last-child {
-  margin-right: 0;
-}
-
-#Footer .wrap-container .row .col-3 {
-  float: left;
-  clear: none;
-  width: 48.5%;
-  margin-left: 0;
-  margin-right: 3%;
-}
-
-#Footer .wrap-container .row .col-3:last-child {
-  margin-right: 0;
-}
-
-#Footer .wrap-container h3.cta {
-  font-family: 'Edmondsans-Bold';
-  font-size: 16px;
-  color: #4A4A4A;
-  text-transform: uppercase;
+.footer h4 {
   text-align: center;
-  padding-top: 200px;
-  margin-bottom: 100px;
 }
 
-#Footer .wrap-container .signup-margin {
-  padding-top: 100px;
-  margin: 0 auto;
+.footer .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 20%;
 }
 
-#Footer .wrap-container .signup-margin input {
+.footer .row-signup .col-1 {
+  position: relative;
+  left: 8.5833333333%;
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.footer .row-signup .col-1:last-child {
+  margin-right: 0;
+}
+
+.footer .row-signup .col-1 input {
   border: 0;
   outline: 0;
+  margin-top: 14px;
+  padding-bottom: 14px;
   background: transparent;
-  border-bottom: 4px solid black;
+  border-bottom: 4px solid #393939;
   font-size: 24px;
-  color: black;
-  width: 400px;
-  font-family: 'Edmondsans-Medium';
-  padding-bottom: 25px;
-}
-
-#Footer .wrap-container .signup-margin ::-webkit-input-placeholder {
-  /* Chrome/Opera/Safari */
-  color: black;
-}
-
-#Footer .wrap-container .signup-margin ::-moz-placeholder {
-  /* Firefox 19+ */
-  color: black;
-}
-
-#Footer .wrap-container .signup-margin :-ms-input-placeholder {
-  /* IE 10+ */
-  color: black;
-}
-
-#Footer .wrap-container .signup-margin :-moz-placeholder {
-  /* Firefox 18- */
-  color: black;
-}
-
-#Footer .wrap-container .signup-margin .betaButton {
-  background: #FF6551;
-  border-color: #FF6551;
-  height: 60px;
-  width: 300px;
-  font-family: 'Edmondsans-Medium';
-  font-size: 18px;
   color: white;
+  width: 100%;
+  text-align: center;
+  font-family: 'Edmondsans-Medium';
+}
+
+.footer .row-signup .col-1 input::-webkit-input-placeholder {
+  color: #393939;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+.footer .row-signup .col-1 input::-moz-placeholder {
+  color: #393939;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+.footer .row-signup .col-1 input:-moz-placeholder {
+  color: #393939;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+.footer .row-signup .col-1 input:-ms-input-placeholder {
+  color: #393939;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .footer .row-signup .col-1 {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 0;
+  }
+  .footer .row-signup .col-1:first-child {
+    margin-left: auto;
+  }
+  .footer .row-signup .col-1:last-child {
+    margin-right: auto;
+  }
+}
+
+.footer .row-signup .col-2 {
+  position: relative;
+  left: 8.5833333333%;
+  float: left;
+  clear: none;
+  width: 31.3333333333%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.footer .row-signup .col-2:last-child {
+  margin-right: 0;
+}
+
+.footer .row-signup .col-2 button {
+  background: #FF6551;
+  width: 100%;
   margin-left: 25px;
-  border-radius: 50px;
-  outline: none;
 }
 
-#Footer .wrap-container .byeSize {
-  font-size: 50px;
-}
-
-#Footer .wrap-container h4 {
-  font-family: 'Edmondsans-Bold';
-  font-size: 14px;
-  color: #9a9a9a;
-  padding-top: 100px;
-}
-
-@media (max-width: 720px) {
-  #Footer .wrap-container .wrap-container {
-    padding-left: 3%;
-    padding-right: 3%;
-    margin: 0 auto;
-  }
-  #Footer .wrap-container .wrap-container .betaButton {
+@media (max-width: 640px) {
+  .footer .row-signup .col-2 button {
+    width: 100%;
     margin-top: 20px;
+    margin-left: 0px;
   }
-  #Footer .wrap-container .wrap-container .row .col-2 {
+}
+
+@media (max-width: 640px) {
+  .footer .row-signup .col-2 {
     display: block;
     clear: both;
     float: none;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    left: 0;
   }
-  #Footer .wrap-container .wrap-container .row .col-2:first-child {
+  .footer .row-signup .col-2:first-child {
     margin-left: auto;
   }
-  #Footer .wrap-container .wrap-container .row .col-2:last-child {
+  .footer .row-signup .col-2:last-child {
     margin-right: auto;
   }
-  #Footer .wrap-container .wrap-container .row .col-3 {
-    display: block;
-    clear: both;
-    float: none;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #Footer .wrap-container .wrap-container .row .col-3:first-child {
-    margin-left: auto;
-  }
-  #Footer .wrap-container .wrap-container .row .col-3:last-child {
-    margin-right: auto;
-  }
+}
+
+.footer .emoji-footer {
+  font-size: 32px;
+  line-height: 0;
+  text-align: center;
+}
+
+.footer span {
+  text-align: center;
+  font-size: 12px;
+  color: #9a9a9a;
 }
 
 /*# sourceMappingURL=home.css.map */
