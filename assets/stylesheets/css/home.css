@@ -249,6 +249,11 @@ Hero
   margin-top: 4px;
 }
 
+.hero .container-hero .row-signup .col-1 p.firstInvalidText {
+  font-size: 18px;
+  color: white;
+}
+
 @media (max-width: 640px) {
   .hero .container-hero .row-signup .col-1 {
     display: block;
@@ -532,9 +537,9 @@ Footer
   background: transparent;
   border-bottom: 4px solid #393939;
   font-size: 24px;
-  color: white;
+  color: #393939;
   width: 100%;
-  text-align: center;
+  text-align: justify;
   font-family: 'Edmondsans-Medium';
 }
 
@@ -560,6 +565,11 @@ Footer
   color: #393939;
   opacity: 100;
   margin-top: 4px;
+}
+
+.footer .row-signup .col-1 p.secondInvalidText {
+  font-size: 18px;
+  color: #393939;
 }
 
 @media (max-width: 640px) {

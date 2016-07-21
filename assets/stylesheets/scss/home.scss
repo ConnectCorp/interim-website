@@ -206,6 +206,12 @@ Hero
 						margin-top: 4px;
 					}
 				}
+				p.firstInvalidText {
+					font-size: 18px;
+					color: white;
+
+				}
+
 				@include breakpoint($small) {
 					@include stack();
 				}
@@ -406,15 +412,19 @@ Footer
 				background: transparent;
 				border-bottom: 4px solid $black;
 				font-size: 24px;
-				color: white;
+				color: $black;
 				width: 100%;
-				text-align: center;
+				text-align: justify;
 				font-family: 'Edmondsans-Medium';
 				@include placeholder {
 					color: $black;
 					opacity: 100;
 					margin-top: 4px;
 				}
+			}
+			p.secondInvalidText {
+					font-size: 18px;
+					color: $black;
 			}
 			@include breakpoint($small) {
 				@include stack();
