@@ -1,0 +1,21 @@
+{
+  "name": "interim-website",
+  "homepage": "https://github.com/ConnectCorp/interim-website",
+  "authors": [
+    "rrtigga <rrtigga@ucdavis.edu>"
+  ],
+  "description": "",
+  "main": "Gruntfile.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^4.2.0"
+  }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Connect</title>
+	<link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.png'/>
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
+	<link rel='stylesheet' href='assets/stylesheets/css/home.css'/>
+</head>
+<body>
+
+
+	<section class="hero">
+			<div class="container-hero">
+				<div class="logo"></div>
+				<div class="row-header">
+					<div class="col-1">
+						<h1 class="headerText">Because there is nothing as important as time with your #bestie</h1>
+					</div>
+				</div>
+				<div class="row-signup">
+					<div class="col-1">
+						<input id="firstEmail" type="text" name="email" placeholder="Enter your email" autocomplete="off">
+						<p id="firstInvalidText" class="firstInvalidText"></p>
+					</div>
+					<div class="col-2">
+						<button id="firstButton" onclick="writeFirstEmail()">Get early access</button>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="about container">
+		<div class="row-about center">
+			<p class="emoji-about">✌🏽</p>
+			<h2>Benefit Statement to show benefits</h2>
+			<h3>The new Connect is currently in early private Beta. We're working hard to make sure it meets your standards before we release to the world.</h3>
+			<div class="rule"></div>
+		</div>
+		<div class="row-who center">
+			<h2>A team of real humans</h2>
+			<h3>We believe technology should serve our humanity, not the other way around. Most social tech is designed to steal your attention and leave you addicted to screens. We are not building that here. We're creating elegant tech that facilitates the original "social" — face to face time with humans you love.</h3>				
+		</div>
+	</section>
+
+	<section class="team">
+		<div class="row-team">
+			<div class="line-vertical"></div>
+			<img class="photo-team" src="assets/img/team_photo.jpg">
+			<a href="https://jobs.lever.co/connect" target="_blank"><button class="teamButton">Join our team</button></a>
+		</div>
+	</section>
+
+	<section class="mission">
+		<div class="row-why container">
+			<div class="rule"></div>
+			<div class="center">
+				<h2>Relationships = Happiness</h2>
+				<h3>Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. The key to more success is to get a massage once a week, very important, major key, cloth talk.</h3>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="footer">
+		<div class="row-footer container">
+			<h4>Sign up for early access to the private beta</h4>
+			<div class="row-signup">
+				<div class="col-1">
+					<input id="secondEmail" type="text" name="email" placeholder="Enter your email" autocomplete="off">
+					<p class="secondInvalidText" id="secondInvalidText"></p>
+				</div>
+				<div class="col-2">
+					<button id="secondButton" onclick="writeSecondEmail()">I want that</button>
+				</div>
+			</div>
+			<p class="emoji-footer">👋🏿</p>
+			<span class="center"> Copyright ©2016 Connect. All Rights Reserved</span>	
+		</div>
+	</section>
+
+<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+<script src="assets/js/emailsFirebase.js"></script>
+</body>
+</html>
