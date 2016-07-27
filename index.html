@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Connect</title>
+	<!-- Meta Information-->	
+	<meta name="description" content="Connect is a map and address book of all your friends. It syncs your contacts from many sources (Facebook, LinkedIn, Instagram, Twitter, Foursquare, your iPhone, and more) and lets you know when they travel and check in nearby.">
+    <meta name="keywords" content="map friends, connect, sync friends, sync contacts, map contacts, social map, sync social networks">
+    <meta name="author" content="Connect">
+    <meta property="og:site_name" content="Connect" />
+        <meta property="og:image" content="http://connect.com/images/connect-share.jpg" />
+    <meta property="og:title" content="Bring friendships to life!" />
+    <meta property="og:description" content="Connect maps all your digital contacts from social networks, email and your phone, letting you know who is around you -- no matter where you are. Chat, share locations, and see more of your friends in the real world." />
+    <meta property="og:url" content="http://connect.com" />
+	<!--Stylesheets-->	
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
 	<link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.png'/>
-	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
 	<link rel='stylesheet' href='assets/stylesheets/css/home.css'/>
+	<!--Google Analytics tracking Code-->	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-43854936-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
 </head>
 <body>
-
-
 	<section class="hero">
 			<div class="container-hero">
 				<div class="logo"></div>
@@ -25,7 +44,7 @@
 							<input id="text" type="email" name="EMAIL" placeholder="Enter your email" autocomplete="off">
 						</div>
 						<div class="col-2">
-							<button type="submit" id="mce-success-response">Yes!</button>
+							<button type="submit" id="mce-success-response">Get Early Access!</button>
 						</div>
 					</form>
 				</div>
@@ -61,7 +80,6 @@
 		</div>
 	</section>
 
-
 	<section class="footer">
 		<div class="row-footer container">
 			<h4>Sign up for early access to the private beta</h4>
@@ -79,14 +97,13 @@
 			<span class="center"> Copyright ©2016 Connect. All Rights Reserved</span>	
 		</div>
 	</section>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bower_components/typed.js/dist/typed.min.js"></script>
 <script>
   $(function(){
       $(".recycle").typed({
         strings: ["#ladies","#sweetheart", "#mom", "#wingwoman", "#littlebrother", "#crew", "#husband", "#mentor", "#girlfriend", "#kids", "#sister", "#wife","#friends"],
-        typeSpeed: 100,
+        typeSpeed: 150,
         // time before typing starts
         startDelay: 1000,
         // backspacing speed
