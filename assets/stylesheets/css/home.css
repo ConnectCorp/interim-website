@@ -508,6 +508,7 @@ About
 */
 .about {
   text-align: center;
+  padding-bottom: 180px;
 }
 
 .about .row-about {
@@ -558,6 +559,11 @@ Team
   padding-top: 340px;
   margin-top: -220px;
   padding-bottom: 180px;
+}
+
+.mission .emoji-mission {
+  font-size: 68px;
+  line-height: 0;
 }
 
 .mission .row-why {
