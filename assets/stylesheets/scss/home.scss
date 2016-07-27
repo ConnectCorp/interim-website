@@ -177,6 +177,18 @@ Hero
 				background-size: 140px;
 			}
 		}
+		h3.joinTeam {
+			font-size: 20px;
+			color: white;
+			float: right;
+			margin-top: -30px;
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+			}
+		}
 		.row-header {
 			width: 100%;
 			padding-top: 10%;
