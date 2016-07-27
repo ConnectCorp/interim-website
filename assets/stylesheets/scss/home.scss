@@ -114,6 +114,12 @@ h1 {
 	@include breakpoint($small) {
 		font-size: 36px;
 	}
+	@include breakpoint(max-width 480px) {
+		font-size: 32px;
+	}
+	@include breakpoint($x-small) {
+		font-size: 30px;
+	}
 }
 
 h2 {
@@ -273,6 +279,9 @@ Arrows
   position: absolute;
   left: 50%;
   top: 90%;
+  @include breakpoint($small) {
+		visibility: hidden;
+	}
 }
 
 .bounce {

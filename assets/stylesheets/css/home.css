@@ -103,6 +103,18 @@ h1 {
   }
 }
 
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
 h2 {
   font-family: 'Edmondsans-Medium';
   font-size: 32px;
@@ -362,6 +374,12 @@ Arrows
   position: absolute;
   left: 50%;
   top: 90%;
+}
+
+@media (max-width: 640px) {
+  .arrow {
+    visibility: hidden;
+  }
 }
 
 .bounce {
