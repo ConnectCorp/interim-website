@@ -15,7 +15,7 @@
 				<h3 class="joinTeam">Join Our Team</h3>
 				<div class="row-header">
 					<div class="col-1">
-						<h1 class="headerText">Because there's nothing more important than time with your #bestie</h1>
+						<h1 class="headerText">Because there's nothing more important than time with your <span class="recycle">#bestie</span></h1>
 					</div>
 					<h3 class="waitlistText"> Connect is currently in private beta. Join our waitlist to get first access.</h3>
 				</div>
@@ -80,5 +80,19 @@
 
 <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
 <script src="assets/js/emailsFirebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bower_components/typed.js/dist/typed.min.js"></script>
+<script>
+  $(function(){
+      $(".recycle").typed({
+        strings: ["#ladies","#sweetheart", "#mom", "#wingwoman", "#littlebrother", "#crew", "#husband", "#mentor", "#girlfriend", "#kids", "#sister", "#wife","#friends"],
+        typeSpeed: 100,
+        // time before typing starts
+        startDelay: 1000,
+        // backspacing speed
+        backSpeed: 50
+      });
+  });
+</script>
 </body>
 </html>
