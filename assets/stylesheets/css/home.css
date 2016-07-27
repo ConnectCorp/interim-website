@@ -147,7 +147,7 @@ Hero
   background-size: cover;
   background-position: center center;
   position: relative;
-  height: 90vh;
+  height: 100vh;
   margin: 0;
 }
 
@@ -193,6 +193,17 @@ Hero
 
 .hero .container-hero .row-header .col-1:last-child {
   margin-right: 0;
+}
+
+.hero .container-hero .row-header h3.waitlistText {
+  color: white;
+  font-size: 22px;
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-header h3.waitlistText {
+    font-size: 17px;
+  }
 }
 
 .hero .container-hero .row-signup {
@@ -329,11 +340,8 @@ Arrows
 */
 .arrow {
   position: absolute;
-  left: 27.5%;
+  left: 50%;
   top: 90%;
-  margin-left: -20px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .bounce {
@@ -431,47 +439,25 @@ Team
 ========================================================================================
 */
 .team {
-  text-align: center;
-  max-width: 1100px;
-  margin: 0 auto;
+  background: url(../../img/team_photo.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 50vh;
+  margin: 0;
 }
 
 .team .row-team {
-  padding-top: 30px;
-  overflow: hidden;
-}
-
-.team .row-team .line-vertical {
-  width: 2px;
-  height: 150px;
   margin: 0 auto;
-  background: #e5e5e5;
-}
-
-.team .row-team .photo-team {
-  float: left;
-  clear: none;
-  width: 100%;
-  margin-left: 0;
-  margin-right: 3%;
-}
-
-.team .row-team .photo-team:last-child {
-  margin-right: 0;
-}
-
-@media (max-width: 640px) {
-  .team .row-team .photo-team {
-    width: 1000px;
-    height: auto;
-    margin: 0 -45%;
-  }
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .team .row-team button {
-  margin-top: 40px;
   background: #3cb8b4;
-  padding: 0 80px 0 80px;
+  width: 65%;
 }
 
 /* 
@@ -483,7 +469,7 @@ Team
   background: #f5f5f5;
   width: 100%;
   height: 100%;
-  padding-top: 240px;
+  padding-top: 340px;
   margin-top: -220px;
   padding-bottom: 180px;
 }
