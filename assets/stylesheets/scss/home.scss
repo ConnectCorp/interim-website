@@ -308,9 +308,19 @@ Arrows
 */
 
 
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 90%;
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+}
+
+
 .arrow {
   position: absolute;
-  left: 50%;
+  left: 45%;
   top: 90%;
   @include breakpoint($small) {
 		visibility: hidden;
