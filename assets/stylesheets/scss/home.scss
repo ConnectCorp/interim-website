@@ -25,6 +25,7 @@ Imports
 
 
 @import "../css/fonts.css";
+@import "../css/twemoji-awesome.css";
 @import "../../../bower_components/normalize-css/normalize.css";
 @import "../../../jeet/jeet.scss";
 @import "../../../bower_components/breakpoint-sass/stylesheets/breakpoint.scss";
@@ -520,6 +521,9 @@ Footer
 		text-align: center;
 		font-size: 12px;
 		color: $grey;
+	}
+	i {
+		padding-bottom: 35px;
 	}
 }
 
