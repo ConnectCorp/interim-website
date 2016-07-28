@@ -94,6 +94,21 @@ module.exports = function(grunt) {
         },
 
         //--------------------
+        // uglify :: minify javascript files
+        //----------------
+        uglify: {
+          options: {
+            // the banner is inserted at the top of the output
+            banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+          },
+          dist: {
+            files: {
+              'dist/assets/js/typed.js': ['assets/js/typed.js']
+            }
+          }
+        },
+
+        //--------------------
         // watch :: run tasks in response to file changes
         //--------------------
         
@@ -132,11 +147,11 @@ module.exports = function(grunt) {
     });
 
     //-- load packages
-
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-html-build');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
@@ -144,7 +159,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     //-- tasks
-
     grunt.registerTask('default', [
         'sass:dev',
         'connect:dev',
@@ -156,10 +170,14 @@ module.exports = function(grunt) {
         'copy',
         'sass:dist',
         'imagemin',
+        'uglify',
         'htmlbuild',
         'connect:dist',
         'watch:dist'
     ]);
+
+    grunt.registerTask ('deploy', ['gh-pages']);
+
 
 };
 
