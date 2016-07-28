@@ -100,11 +100,8 @@ button {
 }
 
 
-input, textarea, select {
-	-webkit-appearance: none !important;
-	-webkit-border-radius:0 !important; 
-	border-radius:0 !important;
-	appearance: none !important;
+input[type=text] {
+  -webkit-appearance: none;
 }
 
 /* 
