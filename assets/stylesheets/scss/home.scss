@@ -254,6 +254,7 @@ Hero
 			clear: both;
 			padding-top: 5%;
 			padding-bottom: 40%;
+			overflow: hidden;
 			h3.waitlistText{
 				color: white;
 				font-size: 22px;
@@ -286,10 +287,8 @@ Hero
 					color: white;
 
 				}
-
 				@include breakpoint($small) {
 					@include stack();
-					width: 90%;
 				}
 			}
 			.col-2 {
