@@ -201,6 +201,9 @@ Hero
 			font-size: 20px;
 			color: white;
 			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
 			@include breakpoint($medium) {
 				font-size: 18px;
 			}
@@ -429,6 +432,11 @@ Team
 		button {
 			background: $teal;
 			width: 65%;
+			&:hover {
+				background: shade($teal, 10%);
+				cursor: pointer;
+				@include animation(scale 1.0s ease-in, slide 2.0s ease);
+			}
 		}
 	}
 }
@@ -514,6 +522,11 @@ Footer
 				background: $pink;
 				width: 100%;		
 				margin-left: 25px;
+				&:hover {
+					background: shade($pink, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
 				@include breakpoint($small) {
 					width: 100%;
 					margin-top: 20px;

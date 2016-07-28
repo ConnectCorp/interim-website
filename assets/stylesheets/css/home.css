@@ -247,6 +247,10 @@ Hero
   text-decoration: none;
 }
 
+.hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .hero .nav .joinTeam {
     font-size: 18px;
@@ -632,6 +636,14 @@ Team
   width: 65%;
 }
 
+.team .row-team button:hover {
+  background: #36a6a2;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
 /* 
 ========================================================================================
 Team
@@ -773,6 +785,14 @@ Footer
   background: #FF6551;
   width: 100%;
   margin-left: 25px;
+}
+
+.footer .row-signup .col-2 button:hover {
+  background: #e65b49;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
 }
 
 @media (max-width: 640px) {
