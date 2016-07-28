@@ -172,7 +172,7 @@ Hero
 	background-position: center center;
 	position: relative;
 	height: 100%;
-	padding-bottom: 30vh;
+	// padding-bottom: 30vh;
 	@include breakpoint($x-large) {
 		padding-left: 5%;
 		padding-right: 5%;
@@ -246,6 +246,7 @@ Hero
 			width: 100%;
 			clear: both;
 			padding-top: 5%;
+			padding-bottom: 40%;
 			h3.waitlistText{
 				color: white;
 				font-size: 22px;
@@ -267,6 +268,9 @@ Hero
 					color: white;
 					width: 100%;
 					font-family: 'Edmondsans-Medium';
+					-webkit-appearance: none;
+					-webkit-border-radius:0; 
+    				border-radius:0;
 					@include placeholder {
 						color: white;
 						opacity: 100;
@@ -371,9 +375,9 @@ About
 
 .about {
 	text-align: center;
-	padding-bottom: 180px;
+	padding-bottom: 160px;
 	.row-about {
-		padding-top: 80px;
+		padding-top: 120px;
 		.emoji-about {
 			font-size: 68px;
 			line-height: 0;
@@ -422,12 +426,9 @@ Team
 
 
 .mission {
-	background: #f5f5f5;
 	width: 100%;
-	height: 100%;
-	padding-top: 340px;
-	margin-top: -220px;
-	padding-bottom: 180px;
+	padding-top: 140px;
+	padding-bottom: 160px;
 	.emoji-mission {
 			font-size: 68px;
 			line-height: 0;
