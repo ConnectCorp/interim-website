@@ -102,7 +102,6 @@ button {
 
 input[type=text] {
   -webkit-appearance: none;
-  padding: none;
 }
 
 
@@ -273,7 +272,7 @@ Hero
 					border-bottom: 4px solid white;
 					font-size: 24px;
 					color: white;
-					width: 100%;
+					width: 70%;
 					font-family: 'Edmondsans-Medium';
 					@include placeholder {
 						color: white;
