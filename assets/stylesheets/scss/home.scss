@@ -111,6 +111,9 @@ h1 {
 	color: white;
 	font-weight: normal;
 	-webkit-font-smoothing: normal;
+	@include breakpoint($medium) {
+		font-size: 48px;
+	}
 	@include breakpoint($small) {
 		font-size: 36px;
 	}
@@ -151,6 +154,9 @@ h4 {
 	line-height: 20px;
 }
 
+a:link {
+	text-decoration: none;
+}
 
 /* 
 ========================================================================================
@@ -170,26 +176,32 @@ Hero
 		padding-left: 5%;
 		padding-right: 5%;
 	}
-
-	.container-hero {
-		max-width: 1100px;
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
 		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
 		.logo {
 			background: url(../../img/connect_logo.png) no-repeat;
 			background-size: 170px;
 			background-position: 0 100%;
 			width: 170px;
 			height: 50px;
-			padding-top: 5%;
 			@include breakpoint($small) {
 				background-size: 140px;
 			}
 		}
-		h3.joinTeam {
+		.joinTeam {
 			font-size: 20px;
 			color: white;
-			float: right;
-			margin-top: -30px;
+			padding-top: 4px;
+			text-decoration: none;
 			@include breakpoint($medium) {
 				font-size: 18px;
 			}
@@ -197,17 +209,25 @@ Hero
 				font-size: 16px;
 			}
 		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
 		.row-header {
 			width: 100%;
 			padding-top: 10%;
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
 			.col-1 {
 				@include col(11/12);
-			}
-			h3.waitlistText{
-				color: white;
-				font-size: 22px;
 				@include breakpoint($small) {
-					font-size: 17px;
+					@include col(12/12);
+				}
+				.headerText {
+					@include breakpoint($small) {
+						min-height: 160px;
+					}
 				}
 			}
 		}
@@ -215,6 +235,13 @@ Hero
 			width: 100%;
 			clear: both;
 			padding-top: 5%;
+			h3.waitlistText{
+				color: white;
+				font-size: 22px;
+				@include breakpoint($small) {
+					font-size: 17px;
+				}
+			}
 			.col-1 {
 				@include col(6/12);
 				input {

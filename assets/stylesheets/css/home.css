@@ -97,6 +97,12 @@ h1 {
   -webkit-font-smoothing: normal;
 }
 
+@media (max-width: 900px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
 @media (max-width: 640px) {
   h1 {
     font-size: 36px;
@@ -150,6 +156,10 @@ h4 {
   line-height: 20px;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 /* 
 ========================================================================================
 Hero
@@ -171,48 +181,99 @@ Hero
   }
 }
 
-.hero .container-hero {
-  max-width: 1100px;
+.hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
 }
 
-.hero .container-hero .logo {
+@media (max-width: 1260px) {
+  .hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.hero .nav .logo {
   background: url(../../img/connect_logo.png) no-repeat;
   background-size: 170px;
   background-position: 0 100%;
   width: 170px;
   height: 50px;
-  padding-top: 5%;
 }
 
 @media (max-width: 640px) {
-  .hero .container-hero .logo {
+  .hero .nav .logo {
     background-size: 140px;
   }
 }
 
-.hero .container-hero h3.joinTeam {
+.hero .nav .joinTeam {
   font-size: 20px;
   color: white;
-  float: right;
-  margin-top: -30px;
+  padding-top: 4px;
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
-  .hero .container-hero h3.joinTeam {
+  .hero .nav .joinTeam {
     font-size: 18px;
   }
 }
 
 @media (max-width: 640px) {
-  .hero .container-hero h3.joinTeam {
+  .hero .nav .joinTeam {
     font-size: 16px;
   }
+}
+
+.hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .hero .container-hero .row-header {
   width: 100%;
   padding-top: 10%;
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-header {
+    padding-top: 25%;
+  }
 }
 
 .hero .container-hero .row-header .col-1 {
@@ -227,14 +288,22 @@ Hero
   margin-right: 0;
 }
 
-.hero .container-hero .row-header h3.waitlistText {
-  color: white;
-  font-size: 22px;
+@media (max-width: 640px) {
+  .hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 640px) {
-  .hero .container-hero .row-header h3.waitlistText {
-    font-size: 17px;
+  .hero .container-hero .row-header .col-1 .headerText {
+    min-height: 160px;
   }
 }
 
@@ -242,6 +311,17 @@ Hero
   width: 100%;
   clear: both;
   padding-top: 5%;
+}
+
+.hero .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
+  }
 }
 
 .hero .container-hero .row-signup .col-1 {
