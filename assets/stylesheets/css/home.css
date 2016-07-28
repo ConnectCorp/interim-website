@@ -404,12 +404,21 @@ Hero
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    width: 100%;
   }
   .hero .container-hero .row-signup .col-1:first-child {
     margin-left: auto;
   }
   .hero .container-hero .row-signup .col-1:last-child {
     margin-right: auto;
+  }
+  .hero .container-hero .row-signup .col-1:last-child {
+    margin-right: 0;
   }
 }
 

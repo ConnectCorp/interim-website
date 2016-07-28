@@ -282,6 +282,8 @@ Hero
 
 				@include breakpoint($small) {
 					@include stack();
+					@include col(12/12);
+					width: 100%;
 				}
 			}
 			.col-2 {
