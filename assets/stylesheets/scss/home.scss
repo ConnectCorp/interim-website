@@ -102,10 +102,7 @@ button {
 
 input[type=text] {
   -webkit-appearance: none;
-  text-indent: -8px;
-  @include breakpoint($small) {
-  	width: 50% !important;
-  }
+  padding: none;
 }
 
 
