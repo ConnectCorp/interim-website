@@ -103,6 +103,9 @@ button {
 input[type=text] {
   -webkit-appearance: none;
   text-indent: -8px;
+  @include breakpoint($small) {
+  	width: 50% !important;
+  }
 }
 
 
@@ -254,7 +257,6 @@ Hero
 			clear: both;
 			padding-top: 5%;
 			padding-bottom: 40%;
-			overflow: hidden;
 			h3.waitlistText{
 				color: white;
 				font-size: 22px;
