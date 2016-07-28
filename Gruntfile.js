@@ -26,7 +26,15 @@ module.exports = function(grunt) {
                 ],
                 dest: 'dist',
                 filter: 'isFile',
-                dot: true
+                dot: true,
+                files : [
+                    {
+                        expand: true,
+                        cwd: 'assets/fonts/',
+                        src: ['*'],
+                        dest: 'dist/assets/fonts'
+                    }
+                ]
             }
         },
 
@@ -55,6 +63,19 @@ module.exports = function(grunt) {
                 }
             }
         },
+
+        //--------------------
+        // embed fonts :: attach all fonts
+        //--------------------
+
+        embedFonts: {
+            all: {
+              files: {
+                'dist/assets/stylesheets/css/home.css': ['assets/stylesheets/css/home.css']
+              }
+            }
+          },
+
 
         //--------------------
         // imagemin :: optimize images
@@ -86,7 +107,7 @@ module.exports = function(grunt) {
                     styles: {
                         main: {
                             cwd: 'dist',
-                            files: 'styles/*.css'
+                            files: 'styles/*.css',
                         }
                     }
                 }
@@ -151,18 +172,21 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
+    grunt.loadNpmTasks('grunt-embed-fonts');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-html-build');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-clean');
+    
 
     //-- tasks
     grunt.registerTask('default', [
         'sass:dev',
         'connect:dev',
-        'watch:dev'
+        'watch:dev',
+        'embedFonts'
     ]);
 
     grunt.registerTask('dist', [
@@ -173,7 +197,7 @@ module.exports = function(grunt) {
         'uglify',
         'htmlbuild',
         'connect:dist',
-        'watch:dist'
+        'watch:dist',
     ]);
 
     grunt.registerTask ('deploy', ['gh-pages']);

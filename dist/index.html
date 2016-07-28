@@ -29,28 +29,28 @@
 </head>
 <body>
 	<section class="hero">
-			<div class="container-hero">
+			<div class="nav">
 				<div class="logo"></div>
-				<a target="_blank" href="https://jobs.lever.co/connect"><h3 class="joinTeam">Join Our Team</h3></a>
+				<a target="_blank" href="https://jobs.lever.co/connect"><h3 class="joinTeam">Join our team</h3></a>
+			</div>
+			<div class="container-hero">
 				<div class="row-header">
 					<div class="col-1">
 						<h1 class="headerText">Because there's nothing more important than time with your #<span class="recycle">bestie</span></h1>
 					</div>
-					<h3 class="waitlistText"> Connect is currently in private beta. Join our waitlist to get first access.</h3>
 				</div>
 				<div class="row-signup">
+					<h3 class="waitlistText"> Connect is currently in private beta. Join our waitlist to get first access.</h3>
 					<form action="//connect.us13.list-manage.com/subscribe/post?u=a11c6ff8da895373a0ece50d9&amp;id=96f062fb52" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
 						<div class="col-1">
 							<input id="text" type="email" name="EMAIL" placeholder="Enter your email" autocomplete="off">
 						</div>
 						<div class="col-2">
-							<button type="submit" id="mce-success-response">Get Early Access!</button>
+							<button type="submit" id="mce-success-response">Get early access!</button>
 						</div>
 					</form>
 				</div>
-				<div class="arrow animated">
-	            	<img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyDQoJbDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzgsNTMuMTY0LTE5LjkxMyw3My42NzIsMC41OTVsMCwwYzIwLjUwOCwyMC41MDksMjAuNzcyLDUzLjQ5MiwwLjU5NSw3My42NzFMMjkzLjc1MSw0NTUuODY4eiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyMC4yNDksNDU1Ljg2OGMyMC4xOCwyMC4xNzksNTMuMTY0LDE5LjkxMyw3My42NzItMC41OTVsMCwwYzIwLjUwOS0yMC41MDgsMjAuNzc0LTUzLjQ5MywwLjU5Ni03My42NzINCglsLTE5MC0xOTBjLTIwLjE3OC0yMC4xNzgtNTMuMTY0LTE5LjkxMy03My42NzEsMC41OTVsMCwwYy0yMC41MDgsMjAuNTA5LTIwLjc3Miw1My40OTItMC41OTUsNzMuNjcxTDIyMC4yNDksNDU1Ljg2OHoiLz4NCjwvc3ZnPg0K" />
-	          </div>
+            	<img class="Absolute-Center" alt="" height="30" width src="assets/img/down.svg"/>
 			</div>
 	</section>
 
@@ -104,11 +104,13 @@
   $(function(){
       $(".recycle").typed({
         strings: ["ladies","sweetheart", "mom", "wingwoman", "littlebrother", "crew", "husband", "mentor", "girlfriend", "kids", "sister", "wife","friends"],
-        typeSpeed: 210,
+        typeSpeed: 150,
         // time before typing starts
-        startDelay: 1000,
+        startDelay: 1800,
         // backspacing speed
-        backSpeed: 10,
+        backSpeed: 30,
+         // time before backspacing
+        backDelay: 1800,
         //infinite
         loop: true
       });
