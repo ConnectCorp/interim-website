@@ -99,6 +99,14 @@ button {
 	border-radius: 50px;
 }
 
+
+input, textarea, select {
+	-webkit-appearance: none;
+	-webkit-border-radius:0; 
+	border-radius:0;
+	appearance: none;
+}
+
 /* 
 ========================================================================================
 Text Styles
@@ -268,9 +276,6 @@ Hero
 					color: white;
 					width: 100%;
 					font-family: 'Edmondsans-Medium';
-					-webkit-appearance: none;
-					-webkit-border-radius:0; 
-    				border-radius:0;
 					@include placeholder {
 						color: white;
 						opacity: 100;
