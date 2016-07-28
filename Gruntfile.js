@@ -22,19 +22,19 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: '.',
                 src: [
-                    '*'
+                    '**/*', '!**/bourbon/**', '!**/bower_components/**', '!**/jeet/**', '!**/node_modules/**'
                 ],
                 dest: 'dist',
                 filter: 'isFile',
                 dot: true,
-                files : [
-                    {
-                        expand: true,
-                        cwd: 'assets/fonts/',
-                        src: ['*'],
-                        dest: 'dist/assets/fonts'
-                    }
-                ]
+                // files: [
+                //     {
+                //         expand: true,
+                //         src: ['*/assets/fonts/*'],
+                //         dest: 'dist',
+                //         filter: 'isFile'
+                //     }
+                // ]
             }
         },
 
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
         embedFonts: {
             all: {
               files: {
-                'dist/assets/stylesheets/css/home.css': ['assets/stylesheets/css/home.css']
+                'dist/assets/stylesheets/css/home.css': ['*/assets/stylesheets/css/home.css']
               }
             }
           },
