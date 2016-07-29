@@ -485,6 +485,12 @@ Arrows
   right: 0;
 }
 
+@media (max-width: 640px) {
+  .Absolute-Center {
+    visibility: hidden;
+  }
+}
+
 .arrow {
   position: absolute;
   left: 45%;
