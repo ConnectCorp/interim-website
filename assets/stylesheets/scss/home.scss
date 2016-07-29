@@ -10,15 +10,6 @@
 -Footer
  */
 
-html,body { 
-	font-size: 62.5%;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: geometricPrecision;
-	image-rendering:optimizeQuality;
-	// height: 100%; doesn't work on mobile for android input
-}
-
-
 
 /* 
 ========================================================================================
@@ -64,6 +55,18 @@ $pink: #FF6551;
 Body > Universal Classes
 ========================================================================================
 */
+
+html,body { 
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: geometricPrecision;
+	image-rendering:optimizeQuality;
+	height: 100%;
+
+	@include breakpoint($small) {
+		height: auto;
+	}
+}
 
 body {
 	font-family: 'Edmondsans-Medium';

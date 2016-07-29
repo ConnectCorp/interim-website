@@ -10,21 +10,14 @@
 -AboutConnect
 -Footer
  */
-@import url(../css/fonts.css);
-@import url(../css/twemoji-awesome.css);
-@import url(../../../bower_components/normalize-css/normalize.css);
-html, body {
-  font-size: 62.5%;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: geometricPrecision;
-  image-rendering: optimizeQuality;
-}
-
 /* 
 ========================================================================================
 Imports
 ========================================================================================
 */
+@import url(../css/fonts.css);
+@import url(../css/twemoji-awesome.css);
+@import url(../../../bower_components/normalize-css/normalize.css);
 /* 
 ========================================================================================
 Mixins
@@ -35,6 +28,20 @@ Mixins
 Body > Universal Classes
 ========================================================================================
 */
+html, body {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  image-rendering: optimizeQuality;
+  height: 100%;
+}
+
+@media (max-width: 640px) {
+  html, body {
+    height: auto;
+  }
+}
+
 body {
   font-family: 'Edmondsans-Medium';
   margin: 0;
