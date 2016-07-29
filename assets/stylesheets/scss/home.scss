@@ -179,7 +179,7 @@ Hero
 	background-position: center center;
 	position: relative;
 	height: 100%;
-	// padding-bottom: 30vh;
+	padding-bottom: 5%;
 	@include breakpoint($x-large) {
 		padding-left: 5%;
 		padding-right: 5%;
