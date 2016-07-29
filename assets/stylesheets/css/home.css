@@ -85,11 +85,6 @@ button {
   border-radius: 50px;
 }
 
-input[type=text] {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
 /* 
 ========================================================================================
 Text Styles
@@ -275,7 +270,9 @@ Hero
 }
 
 .hero .container-hero .row-header {
-  width: 100%;
+  width: 95%;
+  -webkit-appearance: none;
+  border-radius: 0;
   padding-top: 10%;
 }
 
@@ -663,7 +660,9 @@ Footer
   border-bottom: 4px solid #393939;
   font-size: 24px;
   color: #393939;
-  width: 100%;
+  width: 95%;
+  -webkit-appearance: none;
+  border-radius: 0;
   text-align: justify;
   font-family: 'Edmondsans-Medium';
 }
