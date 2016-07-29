@@ -18,7 +18,6 @@ html, body {
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
   image-rendering: optimizeQuality;
-  height: 100%;
 }
 
 /* 
@@ -173,6 +172,7 @@ Hero
   background-position: center center;
   position: relative;
   height: 100%;
+  padding-bottom: 5%;
 }
 
 @media (max-width: 1260px) {
