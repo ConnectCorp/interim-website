@@ -174,7 +174,7 @@ Hero
 
 
 .hero {
-	background: url(../../img/hero.jpg);
+	background: url(../../img/hero-whitetext-fix.png);
 	background-size: cover;
 	background-position: center center;
 	position: relative;
@@ -226,7 +226,7 @@ Hero
 		max-width: 1100px;
 		margin: 0 auto;
 		.row-header {
-			padding-top: 10%;
+			padding-top: 5%;
 			@include breakpoint($x-large) {
 				padding-top: 15%;
 			}
@@ -252,14 +252,14 @@ Hero
 			width: 100%;
 			clear: both;
 			padding-top: 5%;
-			padding-bottom: 40%;
+			padding-bottom: 30%;
 			@include breakpoint($small) {
 				padding-top: 2.5%;
 			}
 			h3.waitlistText{
 				color: white;
 				font-size: 22px;
-				text-shadow: 0px 0px 40px rgba(40, 124, 149, 0.6);
+				text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
 				@include breakpoint($small) {
 					font-size: 17px;
 				}
@@ -329,7 +329,7 @@ Arrows
 .Absolute-Center {
   margin: auto;
   position: absolute;
-  top: 90%;
+  top: 85%;
   left: 0; 
   bottom: 0; 
   right: 0;
