@@ -288,7 +288,7 @@ Hero
 .hero .container-hero .row-header .col-1 {
   float: left;
   clear: none;
-  width: 91.4166666667%;
+  width: 100%;
   margin-left: 0;
   margin-right: 3%;
 }
@@ -318,7 +318,7 @@ Hero
 
 @media (max-width: 640px) {
   .hero .container-hero .row-header .col-1 .headerText {
-    min-height: 160px;
+    min-height: 180px;
   }
 }
 
@@ -327,6 +327,12 @@ Hero
   clear: both;
   padding-top: 5%;
   padding-bottom: 40%;
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
 }
 
 .hero .container-hero .row-signup h3.waitlistText {

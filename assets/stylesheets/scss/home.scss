@@ -234,7 +234,7 @@ Hero
 				padding-top: 25%;
 			}
 			.col-1 {
-				@include col(11/12);
+				@include col(12/12);
 				@include breakpoint($small) {
 					@include col(12/12);
 				}
@@ -243,7 +243,7 @@ Hero
 						min-height: 220px;
 					}
 					@include breakpoint($small) {
-						min-height: 160px;
+						min-height: 180px;
 					}
 				}
 			}
@@ -253,6 +253,9 @@ Hero
 			clear: both;
 			padding-top: 5%;
 			padding-bottom: 40%;
+			@include breakpoint($small) {
+				padding-top: 2.5%;
+			}
 			h3.waitlistText{
 				color: white;
 				font-size: 22px;
