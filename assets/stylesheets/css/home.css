@@ -270,9 +270,6 @@ Hero
 }
 
 .hero .container-hero .row-header {
-  width: 95%;
-  -webkit-appearance: none;
-  border-radius: 0;
   padding-top: 10%;
 }
 
@@ -365,7 +362,9 @@ Hero
   border-bottom: 4px solid white;
   font-size: 24px;
   color: white;
-  width: 90%;
+  width: 95%;
+  -webkit-appearance: none;
+  border-radius: 0;
   font-family: 'Edmondsans-Medium';
 }
 

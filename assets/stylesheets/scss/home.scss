@@ -226,9 +226,6 @@ Hero
 		max-width: 1100px;
 		margin: 0 auto;
 		.row-header {
-			width: 95%;
-			-webkit-appearance: none;
-  			border-radius: 0;
 			padding-top: 10%;
 			@include breakpoint($x-large) {
 				padding-top: 15%;
@@ -275,7 +272,9 @@ Hero
 					border-bottom: 4px solid white;
 					font-size: 24px;
 					color: white;
-					width: 90%;
+					width: 95%;
+					-webkit-appearance: none;
+		  			border-radius: 0;
 					font-family: 'Edmondsans-Medium';
 					@include placeholder {
 						color: white;
@@ -469,7 +468,7 @@ Footer
 			@include col(6/12);
 			input {
 				border: 0;
-				outline: 0;
+				outline: 0;  
 				margin-top: 14px;
 				padding-bottom: 14px;
 				background: transparent;
