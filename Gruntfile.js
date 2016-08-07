@@ -49,7 +49,8 @@ module.exports = function(grunt) {
                     sourceMap: true
                 },
                 files: {
-                    'assets/stylesheets/css/home.css': 'assets/stylesheets/scss/home.scss'
+                    'assets/stylesheets/css/home.css': 'assets/stylesheets/scss/home.scss',
+                    'assets/stylesheets/css/influencers.css': 'assets/stylesheets/scss/influencers.scss',
 
                 }
             },
@@ -59,7 +60,8 @@ module.exports = function(grunt) {
                     sourceMap: false
                 },
                 files: {
-                    'dist/assets/stylesheets/css/home.css': 'assets/stylesheets/scss/home.scss'
+                    'dist/assets/stylesheets/css/home.css': 'assets/stylesheets/scss/home.scss',
+                    'dist/assets/stylesheets/css/influencers.css': 'assets/stylesheets/scss/influencers.scss'
                 }
             }
         },
@@ -124,7 +126,7 @@ module.exports = function(grunt) {
           },
           dist: {
             files: {
-              'dist/assets/js/typed.js': ['assets/js/typed.js']
+              'dist/assets/js': ['assets/js/typed.js','assets/js/smooth-scroll.js']
             }
           }
         },

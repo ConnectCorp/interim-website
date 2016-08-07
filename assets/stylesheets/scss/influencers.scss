@@ -1,0 +1,581 @@
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+-Imports
+-Breakpoints
+-Text Styles
+-Hero
+-Arrow
+-Blinking Cursor
+-AboutConnect
+-Footer
+ */
+
+
+/* 
+========================================================================================
+Imports
+========================================================================================
+*/
+
+
+@import "../css/fonts.css";
+@import "../css/twemoji-awesome.css";
+@import "../../../bower_components/normalize-css/normalize.css";
+@import "../../../jeet/jeet.scss";
+@import "../../../bower_components/breakpoint-sass/stylesheets/breakpoint.scss";
+@import "../../../bourbon/_bourbon.scss";
+
+
+/* 
+========================================================================================
+Mixins
+========================================================================================
+*/
+
+
+$xx-large: max-width 1600px;
+$x-large: max-width 1260px;
+$large: max-width 1080px;
+$medium: max-width 900px;
+$small: max-width 640px;
+$x-small: max-width 320px;
+
+$black: #393939;
+$grey: #9a9a9a;
+$light-grey: #e5e5e5;
+$teal: #3cb8b4;
+$pink: #FF6551;
+
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+/* 
+========================================================================================
+Body > Universal Classes
+========================================================================================
+*/
+
+html,body { 
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: geometricPrecision;
+	image-rendering:optimizeQuality;
+	height: 100%;
+
+	@include breakpoint($small) {
+		height: auto;
+	}
+}
+
+body {
+	font-family: 'Edmondsans-Medium';
+	margin: 0;
+}
+
+.center {
+	@include center(500px);
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	@include breakpoint($small) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+.rule {
+	margin: 150px auto 150px auto;
+	width: 32px;
+	border-top: 2px solid $light-grey;
+	@include breakpoint($small) {
+		margin: 100px auto 100px auto;
+	}
+}
+
+button {
+	border: none;
+	height: 60px;
+	font-family: 'Edmondsans-Medium';
+	font-size: 18px;
+	color: white;
+	outline: none;
+	border-radius: 50px;
+}
+
+
+// input[type=text] {
+//   -webkit-appearance: none;
+//   border-radius: 0;
+// }
+
+
+/* 
+========================================================================================
+Text Styles
+========================================================================================
+*/
+
+
+h1 {
+	font-family: 'Edmondsans-Medium';
+	font-size: 56px;
+	color: white;
+	font-weight: normal;
+	-webkit-font-smoothing: normal;
+	@include breakpoint($medium) {
+		font-size: 48px;
+	}
+	@include breakpoint($small) {
+		font-size: 36px;
+	}
+	@include breakpoint(max-width 480px) {
+		font-size: 32px;
+	}
+	@include breakpoint($x-small) {
+		font-size: 30px;
+	}
+}
+
+h2 {
+	font-family: 'Edmondsans-Medium';
+	font-size: 32px;
+	color: $black;
+	@include breakpoint($small) {
+		font-size: 28px;
+	}
+}
+
+h3 {
+	font-family: 'Edmondsans-Medium';
+	font-size: 18px;
+	color: $grey;
+	line-height: 26px;
+	font-weight: normal;
+	@include breakpoint($small) {
+		font-size: 17px;
+	}
+}
+
+h4 {
+	font-family: 'Edmondsans-Medium';
+	font-size: 14px;
+	color: $grey;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	line-height: 20px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+/* 
+========================================================================================
+Hero
+========================================================================================
+*/
+
+
+.hero {
+	background: url(../../img/influencer-cover.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100%;
+	padding-bottom: 5%;
+	@include breakpoint($x-large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
+		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
+		.logo {
+			background: url(../../img/connect_logo.png) no-repeat;
+			background-size: 170px;
+			background-position: 0 100%;
+			width: 170px;
+			height: 50px;
+			@include breakpoint($small) {
+				background-size: 140px;
+			}
+		}
+		.joinTeam {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding-top: 5px;
+			&:hover {
+				text-decoration: underline;
+				// padding-bottom: 2px;
+			}
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+			}
+		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
+		.row-header {
+			padding-top: 5%;
+			@include breakpoint($x-large) {
+				padding-top: 15%;
+			}
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
+			.col-1 {
+				@include col(12/12);
+				@include breakpoint($small) {
+					@include col(12/12);
+				}
+				.headerText {
+					@include breakpoint(max-width 1140px) {
+						min-height: 220px;
+					}
+					@include breakpoint($small) {
+						min-height: 180px;
+					}
+				}
+			}
+		}
+		.row-signup {
+			width: 100%;
+			clear: both;
+			padding-top: 5%;
+			padding-bottom: 30%;
+			@include breakpoint($small) {
+				padding-top: 2.5%;
+			}
+			h3.waitlistText{
+				color: white;
+				font-size: 22px;
+				text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+				text-align: center;
+				@include breakpoint($small) {
+					font-size: 17px;
+				}
+			}
+
+			button {
+				background: #1DB95C;
+				width: 100%;		
+				&:hover {
+					background: shade(#1DB95C, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
+				@include breakpoint($small) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+			
+		}
+	}
+}
+
+
+/* ========================================================================================
+Arrows
+========================================================================================
+*/
+
+
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 75%;
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+  @include breakpoint($small) {
+		visibility: hidden;
+	}
+}
+
+
+.arrow {
+  position: absolute;
+  left: 45%;
+  top: 90%;
+  @include breakpoint($small) {
+		visibility: hidden;
+	}
+}
+
+
+/* 
+========================================================================================
+Blinking Cursor
+========================================================================================
+*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* 
+========================================================================================
+About
+========================================================================================
+*/
+
+
+.about {
+	text-align: center;
+	padding-bottom: 160px;
+	.row-about {
+		padding-top: 120px;
+		.emoji-about {
+			font-size: 68px;
+			line-height: 0;
+		}
+	}
+}
+
+/* 
+========================================================================================
+Form
+========================================================================================
+*/
+
+
+.form {
+	h2 {
+		margin-bottom: 75px;
+	}
+	.rule {
+		margin: 10px auto 10px auto;
+		width: 32px;
+		border-top: 2px solid $light-grey;
+		@include breakpoint($small) {
+			margin: 5px auto 5px auto;
+		}
+	}
+	text-align: center;
+	padding-bottom: 160px;
+	.row-form {
+		padding-top: 120px;
+	}
+	span {
+		font-size: 24px;
+		@include breakpoint($small) {
+			font-size: 18px;
+		}
+
+	}
+	div.input {
+		border: 0;
+		outline: 0;  
+		margin-top: 14px;
+		padding-bottom: 14px;
+		background: transparent;
+		font-size: 24px;
+		color: $black;
+		width: 100%;
+		-webkit-appearance: none;
+		border-radius: 0;
+		text-align: center;
+		font-family: 'Edmondsans-Medium';
+		@include placeholder {
+			color: $black;
+			opacity: 100;
+			margin-top: 4px;
+		}
+	}
+	input.hs-button.primary.large {
+		background: $teal;
+		width: 65%;
+		border: none;
+		height: 60px;
+		font-family: 'Edmondsans-Medium';
+		font-size: 18px;
+		color: white;
+		outline: none;
+		border-radius: 50px;
+		&:hover {
+			background: shade($teal, 10%);
+			cursor: pointer;
+			@include animation(scale 1.0s ease-in, slide 2.0s ease);
+		}
+	}
+
+}
+/* 
+========================================================================================
+Team
+========================================================================================
+*/	
+
+
+.team {
+	background: url(../../img/team_photo.jpg);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 50vh;
+	margin: 0;
+	.row-team{
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+		button {
+			background: $teal;
+			width: 65%;
+			&:hover {
+				background: shade($teal, 10%);
+				cursor: pointer;
+				@include animation(scale 1.0s ease-in, slide 2.0s ease);
+			}
+		}
+	}
+}
+
+/* 
+========================================================================================
+Mission
+========================================================================================
+*/	
+
+
+.mission {
+	width: 100%;
+	padding-top: 140px;
+	padding-bottom: 160px;
+	.emoji-mission {
+			font-size: 68px;
+			line-height: 0;
+		}
+	.row-why {
+		text-align: center;
+	}
+}
+
+
+/* 
+========================================================================================
+Footer
+========================================================================================
+*/
+
+.footer {
+	background: #ededed;
+	width: 100%;
+	padding-top: 80px;
+	padding-bottom: 60px;
+	h4 {
+		text-align: center;
+	}
+	.row-signup {
+		width: 100%;
+		clear: both;
+		padding-top: 4%;
+		padding-bottom: 16%;
+		.col-1 {
+			@include shift(1/12);
+			@include col(6/12);
+			input {
+				border: 0;
+				outline: 0;  
+				margin-top: 14px;
+				padding-bottom: 14px;
+				background: transparent;
+				border-bottom: 4px solid $black;
+				font-size: 24px;
+				color: $black;
+				width: 92.5%;
+				-webkit-appearance: none;
+	  			border-radius: 0;
+				text-align: justify;
+				font-family: 'Edmondsans-Medium';
+				@include placeholder {
+					color: $black;
+					opacity: 100;
+					margin-top: 4px;
+				}
+			}
+			p.secondInvalidText {
+					font-size: 18px;
+					color: $black;
+			}
+			@include breakpoint($small) {
+				@include stack();
+				@include shift(0/12);
+			}
+		}
+		.col-2 {
+			@include shift(1/12);
+			@include col(4/12);
+			button {
+				background: $pink;
+				width: 100%;		
+				margin-left: 25px;
+				&:hover {
+					background: shade($pink, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
+				@include breakpoint($small) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+			@include breakpoint($small) {
+				@include stack();
+				@include shift(0/12);
+			}	
+		}
+	}
+	.emoji-footer {
+		font-size: 32px;
+		line-height: 0;
+		text-align: center;
+	}
+	span {
+		text-align: center;
+		font-size: 12px;
+		color: $grey;
+	}
+	i {
+		padding-bottom: 35px;
+	}
+}
+
+

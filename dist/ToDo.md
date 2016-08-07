@@ -1,4 +1,0 @@
--Install Google Analytics 
--Firebase
--Background section colors
--Responsiveness, QA
