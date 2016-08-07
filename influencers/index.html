@@ -42,7 +42,7 @@
 				<div class="row-signup">
 					<div class="center">
 						<h3 class="waitlistText">If you're an influencer, Connect needs your help!</h3>
-						<a href="section.form"><button id="influenceButton">Become a Connect Influencer</button></a>
+						<a data-scroll data-options='{ "easing": "easeInOutQuad" }' href="#form"><button id="influenceButton">Become a Connect Influencer</button></a>
 					</div>
 				</div>
             	<img class="Absolute-Center" alt="" height="24" width src="../assets/img/down.svg"/>
@@ -56,7 +56,7 @@
 			<h3>Do more of the things you love, with the people you love. No more endless group chats, dropped text messages, and friend intentions gone awry. Connect makes it easy to capture your social ideas and make them happen.</h3>
 		</div>
 	</section>
-	<section class="form">
+	<section class="form" id="form">
 		<div class="rule"></div>
 		<div class="row-form center">
 			<h2>Sign up to be an influencer</h2>			
@@ -119,13 +119,7 @@
         loop: true
       });
   });
-
-  $('#influenceButton').on('click', function() {
-    $.smoothScroll({
-      scrollElement: $('section.form')
-    });
-    return false;
-  });
+  smoothScroll.init();
 </script>
 </body>
 </html>
