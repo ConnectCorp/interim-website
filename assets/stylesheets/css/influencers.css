@@ -475,6 +475,12 @@ About
   line-height: 0;
 }
 
+.socialResize {
+  max-width: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 /* 
 ========================================================================================
 Form
@@ -635,7 +641,6 @@ Footer
 ========================================================================================
 */
 .footer {
-  background: #ededed;
   width: 100%;
   padding-top: 80px;
   padding-bottom: 60px;
