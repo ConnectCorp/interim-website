@@ -105,6 +105,10 @@ button {
 	border-radius: 50px;
 }
 
+.blackText {
+	color:black;
+}
+
 
 // input[type=text] {
 //   -webkit-appearance: none;
@@ -365,6 +369,11 @@ About
 			line-height: 0;
 		}
 	}
+}
+
+.socialResize {
+	max-width: 50px;
+	margin-left: 20px;
 }
 
 /* 

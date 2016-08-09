@@ -92,6 +92,10 @@ button {
   border-radius: 50px;
 }
 
+.blackText {
+  color: black;
+}
+
 /* 
 ========================================================================================
 Text Styles
@@ -478,7 +482,6 @@ About
 .socialResize {
   max-width: 50px;
   margin-left: 20px;
-  margin-right: 20px;
 }
 
 /* 
