@@ -437,7 +437,7 @@ Form
 		outline: none;
 		border-radius: 50px;
 		&:hover {
-			background: shade(#1DB95C;, 10%);
+			background: shade(#1DB95C, 10%);
 			cursor: pointer;
 			@include animation(scale 1.0s ease-in, slide 2.0s ease);
 		}

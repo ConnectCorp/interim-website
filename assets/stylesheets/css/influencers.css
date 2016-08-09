@@ -564,7 +564,7 @@ Form
 }
 
 .form input.hs-button.primary.large {
-  background: #3cb8b4;
+  background: #1DB95C;
   width: 65%;
   border: none;
   height: 60px;
@@ -576,7 +576,7 @@ Form
 }
 
 .form input.hs-button.primary.large:hover {
-  background: #36a6a2;
+  background: #1aa753;
   cursor: pointer;
   -webkit-animation: scale 1s ease-in, slide 2s ease;
   -moz-animation: scale 1s ease-in, slide 2s ease;
