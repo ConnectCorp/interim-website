@@ -355,7 +355,7 @@ Hero
   }
 }
 
-.hero .container-hero .row-signup .col-1 {
+.hero .container-hero .row-signup #maitre-field-email {
   float: left;
   clear: none;
   width: 48.5%;
@@ -363,11 +363,11 @@ Hero
   margin-right: 3%;
 }
 
-.hero .container-hero .row-signup .col-1:last-child {
+.hero .container-hero .row-signup #maitre-field-email:last-child {
   margin-right: 0;
 }
 
-.hero .container-hero .row-signup .col-1 input {
+.hero .container-hero .row-signup #maitre-field-email input {
   border: 0;
   outline: 0;
   margin-top: 14px;
@@ -382,37 +382,32 @@ Hero
   font-family: 'Edmondsans-Medium';
 }
 
-.hero .container-hero .row-signup .col-1 input::-webkit-input-placeholder {
+.hero .container-hero .row-signup #maitre-field-email input::-webkit-input-placeholder {
   color: white;
   opacity: 100;
   margin-top: 4px;
 }
 
-.hero .container-hero .row-signup .col-1 input::-moz-placeholder {
+.hero .container-hero .row-signup #maitre-field-email input::-moz-placeholder {
   color: white;
   opacity: 100;
   margin-top: 4px;
 }
 
-.hero .container-hero .row-signup .col-1 input:-moz-placeholder {
+.hero .container-hero .row-signup #maitre-field-email input:-moz-placeholder {
   color: white;
   opacity: 100;
   margin-top: 4px;
 }
 
-.hero .container-hero .row-signup .col-1 input:-ms-input-placeholder {
+.hero .container-hero .row-signup #maitre-field-email input:-ms-input-placeholder {
   color: white;
   opacity: 100;
   margin-top: 4px;
-}
-
-.hero .container-hero .row-signup .col-1 p.firstInvalidText {
-  font-size: 18px;
-  color: white;
 }
 
 @media (max-width: 640px) {
-  .hero .container-hero .row-signup .col-1 {
+  .hero .container-hero .row-signup #maitre-field-email {
     display: block;
     clear: both;
     float: none;
@@ -420,15 +415,15 @@ Hero
     margin-left: auto;
     margin-right: auto;
   }
-  .hero .container-hero .row-signup .col-1:first-child {
+  .hero .container-hero .row-signup #maitre-field-email:first-child {
     margin-left: auto;
   }
-  .hero .container-hero .row-signup .col-1:last-child {
+  .hero .container-hero .row-signup #maitre-field-email:last-child {
     margin-right: auto;
   }
 }
 
-.hero .container-hero .row-signup .col-2 {
+.hero .container-hero .row-signup #maitre-field-submit {
   float: left;
   clear: none;
   width: 31.3333333333%;
@@ -436,17 +431,17 @@ Hero
   margin-right: 3%;
 }
 
-.hero .container-hero .row-signup .col-2:last-child {
+.hero .container-hero .row-signup #maitre-field-submit:last-child {
   margin-right: 0;
 }
 
-.hero .container-hero .row-signup .col-2 button {
+.hero .container-hero .row-signup #maitre-field-submit button {
   background: #FF6551;
   width: 100%;
   margin-left: 25px;
 }
 
-.hero .container-hero .row-signup .col-2 button:hover {
+.hero .container-hero .row-signup #maitre-field-submit button:hover {
   background: #e65b49;
   cursor: pointer;
   -webkit-animation: scale 1s ease-in, slide 2s ease;
@@ -455,7 +450,7 @@ Hero
 }
 
 @media (max-width: 640px) {
-  .hero .container-hero .row-signup .col-2 button {
+  .hero .container-hero .row-signup #maitre-field-submit button {
     width: 100%;
     margin-top: 20px;
     margin-left: 0px;
@@ -463,7 +458,7 @@ Hero
 }
 
 @media (max-width: 640px) {
-  .hero .container-hero .row-signup .col-2 {
+  .hero .container-hero .row-signup #maitre-field-submit {
     display: block;
     clear: both;
     float: none;
@@ -471,14 +466,16 @@ Hero
     margin-left: auto;
     margin-right: auto;
   }
-  .hero .container-hero .row-signup .col-2:first-child {
+  .hero .container-hero .row-signup #maitre-field-submit:first-child {
     margin-left: auto;
   }
-  .hero .container-hero .row-signup .col-2:last-child {
+  .hero .container-hero .row-signup #maitre-field-submit:last-child {
     margin-right: auto;
   }
 }
 
+/* Mailtre */
+/* end maitre */
 /* ========================================================================================
 Arrows
 ========================================================================================

@@ -270,7 +270,7 @@ Hero
 					font-size: 17px;
 				}
 			}
-			.col-1 {
+			#maitre-field-email {
 				@include col(6/12);
 				input {
 					border: 0;
@@ -291,16 +291,11 @@ Hero
 						margin-top: 4px;
 					}
 				}
-				p.firstInvalidText {
-					font-size: 18px;
-					color: white;
-
-				}
 				@include breakpoint($small) {
 					@include stack();
 				}
 			}
-			.col-2 {
+			#maitre-field-submit {
 				@include col(4/12);
 				button {
 					background: $pink;
@@ -325,6 +320,11 @@ Hero
 	}
 }
 
+
+/* Mailtre */
+
+
+/* end maitre */
 
 /* ========================================================================================
 Arrows
@@ -544,5 +544,7 @@ Footer
 		padding-bottom: 35px;
 	}
 }
+
+
 
 
