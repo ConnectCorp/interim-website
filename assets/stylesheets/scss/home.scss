@@ -117,7 +117,7 @@ button {
 }
 
 #maitre-people-ahead-number {
-  font-size: 20px !important;
+  font-size: 20px;
   @include breakpoint($small) {
 		font-size: 14px;
 	}
@@ -171,8 +171,14 @@ p#maitre-verification {
 	font-weight: 400 !important;
 }
 
-h4#maitre-people-ahead-number, p#maitre-people-ahead-text {
+h4#maitre-people-ahead-number {
 	color: #3498db !important;
+	font-size: 32px !important;
+}
+
+p#maitre-people-ahead-text {
+	color: #3498db !important;
+	font-size: 26px;
 }
 
 p#maitre-instructions {
