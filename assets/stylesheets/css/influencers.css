@@ -573,11 +573,13 @@ Form
   color: white;
   outline: none;
   border-radius: 50px;
+  letter-spacing: 1px;
 }
 
 .form input.hs-button.primary.large:hover {
   background: #1aa753;
   cursor: pointer;
+  box-shadow: none !important;
   -webkit-animation: scale 1s ease-in, slide 2s ease;
   -moz-animation: scale 1s ease-in, slide 2s ease;
   animation: scale 1s ease-in, slide 2s ease;
@@ -644,6 +646,7 @@ Footer
 ========================================================================================
 */
 .footer {
+  background: #ededed;
   width: 100%;
   padding-top: 80px;
   padding-bottom: 60px;

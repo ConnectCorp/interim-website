@@ -436,9 +436,11 @@ Form
 		color: white;
 		outline: none;
 		border-radius: 50px;
+		letter-spacing: 1px;
 		&:hover {
 			background: shade(#1DB95C, 10%);
 			cursor: pointer;
+			box-shadow: none !important;
 			@include animation(scale 1.0s ease-in, slide 2.0s ease);
 		}
 	}
@@ -504,7 +506,7 @@ Footer
 */
 
 .footer {
-	// background: #ededed;
+	background: #ededed;
 	width: 100%;
 	padding-top: 80px;
 	padding-bottom: 60px;
@@ -586,5 +588,3 @@ Footer
 		padding-bottom: 35px;
 	}
 }
-
-
