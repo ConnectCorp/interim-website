@@ -164,7 +164,8 @@ p#maitre-verification {
 
 h4#maitre-people-ahead-number {
   color: #3498db !important;
-  font-size: 32px !important;
+  font-size: 34px !important;
+  font-weight: 500 !important;
 }
 
 p#maitre-people-ahead-text {
