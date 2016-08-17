@@ -295,6 +295,787 @@ Hero
 	}
 }
 
+.foodie-hero {
+	background: url(../../img/foodie.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100%;
+	padding-bottom: 5%;
+	@include breakpoint($x-large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
+		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
+		.logo {
+			background: url(../../img/connect_logo.png) no-repeat;
+			background-size: 170px;
+			background-position: 0 100%;
+			width: 170px;
+			height: 50px;
+			@include breakpoint($small) {
+				background-size: 140px;
+			}
+		}
+		.joinTeam {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding-top: 5px;
+			&:hover {
+				text-decoration: underline;
+				// padding-bottom: 2px;
+			}
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+			}
+		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
+		.row-header {
+			padding-top: 5%;
+			@include breakpoint($x-large) {
+				padding-top: 15%;
+			}
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
+			.col-1 {
+				@include col(12/12);
+				@include breakpoint($small) {
+					@include col(12/12);
+				}
+				.headerText {
+					@include breakpoint(max-width 1140px) {
+						min-height: 220px;
+					}
+					@include breakpoint($small) {
+						min-height: 180px;
+					}
+				}
+			}
+		}
+		.row-signup {
+			width: 100%;
+			clear: both;
+			padding-top: 5%;
+			padding-bottom: 30%;
+			@include breakpoint($small) {
+				padding-top: 2.5%;
+			}
+			h3.waitlistText{
+				color: white;
+				font-size: 22px;
+				text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+				text-align: center;
+				@include breakpoint($small) {
+					font-size: 17px;
+				}
+			}
+
+			button {
+				background: #1DB95C;
+				width: 100%;		
+				&:hover {
+					background: shade(#1DB95C, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
+				@include breakpoint($small) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+			
+		}
+	}
+}
+
+.filmbuffs-hero {
+	background: url(../../img/filmbuff.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100%;
+	padding-bottom: 5%;
+	@include breakpoint($x-large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
+		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
+		.logo {
+			background: url(../../img/connect_logo.png) no-repeat;
+			background-size: 170px;
+			background-position: 0 100%;
+			width: 170px;
+			height: 50px;
+			@include breakpoint($small) {
+				background-size: 140px;
+			}
+		}
+		.joinTeam {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding-top: 5px;
+			&:hover {
+				text-decoration: underline;
+				// padding-bottom: 2px;
+			}
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+			}
+		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
+		.row-header {
+			padding-top: 5%;
+			@include breakpoint($x-large) {
+				padding-top: 15%;
+			}
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
+			.col-1 {
+				@include col(12/12);
+				@include breakpoint($small) {
+					@include col(12/12);
+				}
+				.headerText {
+					@include breakpoint(max-width 1140px) {
+						min-height: 220px;
+					}
+					@include breakpoint($small) {
+						min-height: 180px;
+					}
+				}
+			}
+		}
+		.row-signup {
+			width: 100%;
+			clear: both;
+			padding-top: 5%;
+			padding-bottom: 30%;
+			@include breakpoint($small) {
+				padding-top: 2.5%;
+			}
+			h3.waitlistText{
+				color: white;
+				font-size: 22px;
+				text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+				text-align: center;
+				@include breakpoint($small) {
+					font-size: 17px;
+				}
+			}
+
+			button {
+				background: #1DB95C;
+				width: 100%;		
+				&:hover {
+					background: shade(#1DB95C, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
+				@include breakpoint($small) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+			
+		}
+	}
+}
+.filmbuffs-hero {
+	background: url(../../img/filmbuff.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100%;
+	padding-bottom: 5%;
+	@include breakpoint($x-large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
+		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
+		.logo {
+			background: url(../../img/connect_logo.png) no-repeat;
+			background-size: 170px;
+			background-position: 0 100%;
+			width: 170px;
+			height: 50px;
+			@include breakpoint($small) {
+				background-size: 140px;
+			}
+		}
+		.joinTeam {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding-top: 5px;
+			&:hover {
+				text-decoration: underline;
+				// padding-bottom: 2px;
+			}
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+			}
+		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
+		.row-header {
+			padding-top: 5%;
+			@include breakpoint($x-large) {
+				padding-top: 15%;
+			}
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
+			.col-1 {
+				@include col(12/12);
+				@include breakpoint($small) {
+					@include col(12/12);
+				}
+				.headerText {
+					@include breakpoint(max-width 1140px) {
+						min-height: 220px;
+					}
+					@include breakpoint($small) {
+						min-height: 180px;
+					}
+				}
+			}
+		}
+		.row-signup {
+			width: 100%;
+			clear: both;
+			padding-top: 5%;
+			padding-bottom: 30%;
+			@include breakpoint($small) {
+				padding-top: 2.5%;
+			}
+			h3.waitlistText{
+				color: white;
+				font-size: 22px;
+				text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+				text-align: center;
+				@include breakpoint($small) {
+					font-size: 17px;
+				}
+			}
+
+			button {
+				background: #1DB95C;
+				width: 100%;		
+				&:hover {
+					background: shade(#1DB95C, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
+				@include breakpoint($small) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+			
+		}
+	}
+}
+.thegreatoutdoors-hero {
+	background: url(../../img/greatoutdoors.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100%;
+	padding-bottom: 5%;
+	@include breakpoint($x-large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
+		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
+		.logo {
+			background: url(../../img/connect_logo.png) no-repeat;
+			background-size: 170px;
+			background-position: 0 100%;
+			width: 170px;
+			height: 50px;
+			@include breakpoint($small) {
+				background-size: 140px;
+			}
+		}
+		.joinTeam {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding-top: 5px;
+			&:hover {
+				text-decoration: underline;
+				// padding-bottom: 2px;
+			}
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+			}
+		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
+		.row-header {
+			padding-top: 5%;
+			@include breakpoint($x-large) {
+				padding-top: 15%;
+			}
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
+			.col-1 {
+				@include col(12/12);
+				@include breakpoint($small) {
+					@include col(12/12);
+				}
+				.headerText {
+					@include breakpoint(max-width 1140px) {
+						min-height: 220px;
+					}
+					@include breakpoint($small) {
+						min-height: 180px;
+					}
+				}
+			}
+		}
+		.row-signup {
+			width: 100%;
+			clear: both;
+			padding-top: 5%;
+			padding-bottom: 30%;
+			@include breakpoint($small) {
+				padding-top: 2.5%;
+			}
+			h3.waitlistText{
+				color: white;
+				font-size: 22px;
+				text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+				text-align: center;
+				@include breakpoint($small) {
+					font-size: 17px;
+				}
+			}
+
+			button {
+				background: #1DB95C;
+				width: 100%;		
+				&:hover {
+					background: shade(#1DB95C, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
+				@include breakpoint($small) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+			
+		}
+	}
+}
+
+.music-hero {
+	background: url(../../img/music.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100%;
+	padding-bottom: 5%;
+	@include breakpoint($x-large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
+		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
+		.logo {
+			background: url(../../img/connect_logo.png) no-repeat;
+			background-size: 170px;
+			background-position: 0 100%;
+			width: 170px;
+			height: 50px;
+			@include breakpoint($small) {
+				background-size: 140px;
+			}
+		}
+		.joinTeam {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding-top: 5px;
+			&:hover {
+				text-decoration: underline;
+				// padding-bottom: 2px;
+			}
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+			}
+		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
+		.row-header {
+			padding-top: 5%;
+			@include breakpoint($x-large) {
+				padding-top: 15%;
+			}
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
+			.col-1 {
+				@include col(12/12);
+				@include breakpoint($small) {
+					@include col(12/12);
+				}
+				.headerText {
+					@include breakpoint(max-width 1140px) {
+						min-height: 220px;
+					}
+					@include breakpoint($small) {
+						min-height: 180px;
+					}
+				}
+			}
+		}
+		.row-signup {
+			width: 100%;
+			clear: both;
+			padding-top: 5%;
+			padding-bottom: 30%;
+			@include breakpoint($small) {
+				padding-top: 2.5%;
+			}
+			h3.waitlistText{
+				color: white;
+				font-size: 22px;
+				text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+				text-align: center;
+				@include breakpoint($small) {
+					font-size: 17px;
+				}
+			}
+
+			button {
+				background: #1DB95C;
+				width: 100%;		
+				&:hover {
+					background: shade(#1DB95C, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
+				@include breakpoint($small) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+			
+		}
+	}
+}
+
+.theatre-hero {
+	background: url(../../img/theatre.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100%;
+	padding-bottom: 5%;
+	@include breakpoint($x-large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
+		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
+		.logo {
+			background: url(../../img/connect_logo.png) no-repeat;
+			background-size: 170px;
+			background-position: 0 100%;
+			width: 170px;
+			height: 50px;
+			@include breakpoint($small) {
+				background-size: 140px;
+			}
+		}
+		.joinTeam {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding-top: 5px;
+			&:hover {
+				text-decoration: underline;
+				// padding-bottom: 2px;
+			}
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+			}
+		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
+		.row-header {
+			padding-top: 5%;
+			@include breakpoint($x-large) {
+				padding-top: 15%;
+			}
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
+			.col-1 {
+				@include col(12/12);
+				@include breakpoint($small) {
+					@include col(12/12);
+				}
+				.headerText {
+					@include breakpoint(max-width 1140px) {
+						min-height: 220px;
+					}
+					@include breakpoint($small) {
+						min-height: 180px;
+					}
+				}
+			}
+		}
+		.row-signup {
+			width: 100%;
+			clear: both;
+			padding-top: 5%;
+			padding-bottom: 30%;
+			@include breakpoint($small) {
+				padding-top: 2.5%;
+			}
+			h3.waitlistText{
+				color: white;
+				font-size: 22px;
+				text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+				text-align: center;
+				@include breakpoint($small) {
+					font-size: 17px;
+				}
+			}
+
+			button {
+				background: #1DB95C;
+				width: 100%;		
+				&:hover {
+					background: shade(#1DB95C, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
+				@include breakpoint($small) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+			
+		}
+	}
+}
+
+.sports-hero {
+	background: url(../../img/sports.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100%;
+	padding-bottom: 5%;
+	@include breakpoint($x-large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
+		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
+		.logo {
+			background: url(../../img/connect_logo.png) no-repeat;
+			background-size: 170px;
+			background-position: 0 100%;
+			width: 170px;
+			height: 50px;
+			@include breakpoint($small) {
+				background-size: 140px;
+			}
+		}
+		.joinTeam {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding-top: 5px;
+			&:hover {
+				text-decoration: underline;
+				// padding-bottom: 2px;
+			}
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+			}
+		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
+		.row-header {
+			padding-top: 5%;
+			@include breakpoint($x-large) {
+				padding-top: 15%;
+			}
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
+			.col-1 {
+				@include col(12/12);
+				@include breakpoint($small) {
+					@include col(12/12);
+				}
+				.headerText {
+					@include breakpoint(max-width 1140px) {
+						min-height: 220px;
+					}
+					@include breakpoint($small) {
+						min-height: 180px;
+					}
+				}
+			}
+		}
+		.row-signup {
+			width: 100%;
+			clear: both;
+			padding-top: 5%;
+			padding-bottom: 30%;
+			@include breakpoint($small) {
+				padding-top: 2.5%;
+			}
+			h3.waitlistText{
+				color: white;
+				font-size: 22px;
+				text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+				text-align: center;
+				@include breakpoint($small) {
+					font-size: 17px;
+				}
+			}
+
+			button {
+				background: #1DB95C;
+				width: 100%;		
+				&:hover {
+					background: shade(#1DB95C, 10%);
+					cursor: pointer;
+					@include animation(scale 1.0s ease-in, slide 2.0s ease);
+				}
+				@include breakpoint($small) {
+					width: 100%;
+					margin-top: 20px;
+					margin-left: 0px;
+				}
+			}
+			
+		}
+	}
+}
 
 /* ========================================================================================
 Arrows
