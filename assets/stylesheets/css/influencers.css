@@ -381,6 +381,1434 @@ Hero
   }
 }
 
+.foodie-hero {
+  background: url(../../img/foodie.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1260px) {
+  .foodie-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.foodie-hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .foodie-hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .foodie-hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.foodie-hero .nav .logo {
+  background: url(../../img/connect_logo.png) no-repeat;
+  background-size: 170px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 50px;
+}
+
+@media (max-width: 640px) {
+  .foodie-hero .nav .logo {
+    background-size: 140px;
+  }
+}
+
+.foodie-hero .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.foodie-hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .foodie-hero .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .foodie-hero .nav .joinTeam {
+    font-size: 16px;
+  }
+}
+
+.foodie-hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.foodie-hero .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .foodie-hero .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .foodie-hero .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.foodie-hero .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.foodie-hero .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .foodie-hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .foodie-hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .foodie-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .foodie-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 180px;
+  }
+}
+
+.foodie-hero .container-hero .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+@media (max-width: 640px) {
+  .foodie-hero .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
+}
+
+.foodie-hero .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .foodie-hero .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
+  }
+}
+
+.foodie-hero .container-hero .row-signup button {
+  background: #1DB95C;
+  width: 100%;
+}
+
+.foodie-hero .container-hero .row-signup button:hover {
+  background: #1aa753;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .foodie-hero .container-hero .row-signup button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+.filmbuffs-hero {
+  background: url(../../img/filmbuff.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1260px) {
+  .filmbuffs-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.filmbuffs-hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .filmbuffs-hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .filmbuffs-hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.filmbuffs-hero .nav .logo {
+  background: url(../../img/connect_logo.png) no-repeat;
+  background-size: 170px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 50px;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .nav .logo {
+    background-size: 140px;
+  }
+}
+
+.filmbuffs-hero .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.filmbuffs-hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .filmbuffs-hero .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .nav .joinTeam {
+    font-size: 16px;
+  }
+}
+
+.filmbuffs-hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.filmbuffs-hero .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .filmbuffs-hero .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.filmbuffs-hero .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.filmbuffs-hero .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .filmbuffs-hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .filmbuffs-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 180px;
+  }
+}
+
+.filmbuffs-hero .container-hero .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
+}
+
+.filmbuffs-hero .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
+  }
+}
+
+.filmbuffs-hero .container-hero .row-signup button {
+  background: #1DB95C;
+  width: 100%;
+}
+
+.filmbuffs-hero .container-hero .row-signup button:hover {
+  background: #1aa753;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-signup button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+.filmbuffs-hero {
+  background: url(../../img/filmbuff.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1260px) {
+  .filmbuffs-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.filmbuffs-hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .filmbuffs-hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .filmbuffs-hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.filmbuffs-hero .nav .logo {
+  background: url(../../img/connect_logo.png) no-repeat;
+  background-size: 170px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 50px;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .nav .logo {
+    background-size: 140px;
+  }
+}
+
+.filmbuffs-hero .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.filmbuffs-hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .filmbuffs-hero .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .nav .joinTeam {
+    font-size: 16px;
+  }
+}
+
+.filmbuffs-hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.filmbuffs-hero .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .filmbuffs-hero .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.filmbuffs-hero .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.filmbuffs-hero .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .filmbuffs-hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .filmbuffs-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 180px;
+  }
+}
+
+.filmbuffs-hero .container-hero .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
+}
+
+.filmbuffs-hero .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
+  }
+}
+
+.filmbuffs-hero .container-hero .row-signup button {
+  background: #1DB95C;
+  width: 100%;
+}
+
+.filmbuffs-hero .container-hero .row-signup button:hover {
+  background: #1aa753;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .filmbuffs-hero .container-hero .row-signup button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+.thegreatoutdoors-hero {
+  background: url(../../img/greatoutdoors.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1260px) {
+  .thegreatoutdoors-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.thegreatoutdoors-hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .thegreatoutdoors-hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .thegreatoutdoors-hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.thegreatoutdoors-hero .nav .logo {
+  background: url(../../img/connect_logo.png) no-repeat;
+  background-size: 170px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 50px;
+}
+
+@media (max-width: 640px) {
+  .thegreatoutdoors-hero .nav .logo {
+    background-size: 140px;
+  }
+}
+
+.thegreatoutdoors-hero .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.thegreatoutdoors-hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .thegreatoutdoors-hero .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .thegreatoutdoors-hero .nav .joinTeam {
+    font-size: 16px;
+  }
+}
+
+.thegreatoutdoors-hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.thegreatoutdoors-hero .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .thegreatoutdoors-hero .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .thegreatoutdoors-hero .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.thegreatoutdoors-hero .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.thegreatoutdoors-hero .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .thegreatoutdoors-hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .thegreatoutdoors-hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .thegreatoutdoors-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .thegreatoutdoors-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 180px;
+  }
+}
+
+.thegreatoutdoors-hero .container-hero .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+@media (max-width: 640px) {
+  .thegreatoutdoors-hero .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
+}
+
+.thegreatoutdoors-hero .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .thegreatoutdoors-hero .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
+  }
+}
+
+.thegreatoutdoors-hero .container-hero .row-signup button {
+  background: #1DB95C;
+  width: 100%;
+}
+
+.thegreatoutdoors-hero .container-hero .row-signup button:hover {
+  background: #1aa753;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .thegreatoutdoors-hero .container-hero .row-signup button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+.music-hero {
+  background: url(../../img/music.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1260px) {
+  .music-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.music-hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .music-hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .music-hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.music-hero .nav .logo {
+  background: url(../../img/connect_logo.png) no-repeat;
+  background-size: 170px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 50px;
+}
+
+@media (max-width: 640px) {
+  .music-hero .nav .logo {
+    background-size: 140px;
+  }
+}
+
+.music-hero .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.music-hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .music-hero .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .music-hero .nav .joinTeam {
+    font-size: 16px;
+  }
+}
+
+.music-hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.music-hero .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .music-hero .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .music-hero .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.music-hero .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.music-hero .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .music-hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .music-hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .music-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .music-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 180px;
+  }
+}
+
+.music-hero .container-hero .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+@media (max-width: 640px) {
+  .music-hero .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
+}
+
+.music-hero .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .music-hero .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
+  }
+}
+
+.music-hero .container-hero .row-signup button {
+  background: #1DB95C;
+  width: 100%;
+}
+
+.music-hero .container-hero .row-signup button:hover {
+  background: #1aa753;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .music-hero .container-hero .row-signup button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+.theatre-hero {
+  background: url(../../img/theatre.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1260px) {
+  .theatre-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.theatre-hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .theatre-hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .theatre-hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.theatre-hero .nav .logo {
+  background: url(../../img/connect_logo.png) no-repeat;
+  background-size: 170px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 50px;
+}
+
+@media (max-width: 640px) {
+  .theatre-hero .nav .logo {
+    background-size: 140px;
+  }
+}
+
+.theatre-hero .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.theatre-hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .theatre-hero .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .theatre-hero .nav .joinTeam {
+    font-size: 16px;
+  }
+}
+
+.theatre-hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.theatre-hero .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .theatre-hero .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .theatre-hero .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.theatre-hero .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.theatre-hero .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .theatre-hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .theatre-hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .theatre-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .theatre-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 180px;
+  }
+}
+
+.theatre-hero .container-hero .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+@media (max-width: 640px) {
+  .theatre-hero .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
+}
+
+.theatre-hero .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .theatre-hero .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
+  }
+}
+
+.theatre-hero .container-hero .row-signup button {
+  background: #1DB95C;
+  width: 100%;
+}
+
+.theatre-hero .container-hero .row-signup button:hover {
+  background: #1aa753;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .theatre-hero .container-hero .row-signup button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+.sports-hero {
+  background: url(../../img/sports.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1260px) {
+  .sports-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.sports-hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .sports-hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .sports-hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.sports-hero .nav .logo {
+  background: url(../../img/connect_logo.png) no-repeat;
+  background-size: 170px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 50px;
+}
+
+@media (max-width: 640px) {
+  .sports-hero .nav .logo {
+    background-size: 140px;
+  }
+}
+
+.sports-hero .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.sports-hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .sports-hero .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sports-hero .nav .joinTeam {
+    font-size: 16px;
+  }
+}
+
+.sports-hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sports-hero .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .sports-hero .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .sports-hero .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.sports-hero .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.sports-hero .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .sports-hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .sports-hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .sports-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sports-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 180px;
+  }
+}
+
+.sports-hero .container-hero .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+@media (max-width: 640px) {
+  .sports-hero .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
+}
+
+.sports-hero .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .sports-hero .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
+  }
+}
+
+.sports-hero .container-hero .row-signup button {
+  background: #1DB95C;
+  width: 100%;
+}
+
+.sports-hero .container-hero .row-signup button:hover {
+  background: #1aa753;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .sports-hero .container-hero .row-signup button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
 /* ========================================================================================
 Arrows
 ========================================================================================
