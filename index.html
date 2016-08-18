@@ -28,7 +28,7 @@ p<!DOCTYPE html>
 	</script>
 </head>
 <body>
-	<section class="hero">
+	<section id="hero" class="hero">
 			<div class="nav">
 				<div class="logo"></div>
 				<a target="_blank" href="https://jobs.lever.co/connect"><h3 class="joinTeam">Join our team</h3></a>
@@ -79,15 +79,10 @@ p<!DOCTYPE html>
 	<section class="footer">
 		<div class="row-footer container">
 			<h4>Sign up for early access to the private beta</h4>
-			<div class="row-signup">
-				<form action="//connect.us13.list-manage.com/subscribe/post?u=a11c6ff8da895373a0ece50d9&amp;id=96f062fb52" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form">
-					<div class="col-1">
-						<input id="text" type="email" name="EMAIL" placeholder="Enter your email" autocomplete="off">
-					</div>
-					<div class="col-2">
-						<button type="submit" id="mce-success-response">I want that</button>
-					</div>
-				</form>
+			<div class="row-signup">		
+				<div class="col-2 center">
+					<a data-scroll data-options='{ "easing": "easeInOutQuad" }' href="#hero"><button>I want that</button></a>
+				</div>
 			</div>
 			<i class="center twa twa-3x twa-wave"></i>
 			<span class="center"> Copyright ©2016 Connect. All Rights Reserved</span>	
@@ -95,6 +90,7 @@ p<!DOCTYPE html>
 	</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="assets/js/typed.js"></script>
+<script src="assets/js/smooth-scroll.js"></script>
 <script>
   $(function(){
       $(".recycle").typed({
@@ -109,6 +105,7 @@ p<!DOCTYPE html>
         //infinite
         loop: true
       });
+  smoothScroll.init();
   });
 </script>
 <script src="assets/js/jquery.modal.min.js"></script>
