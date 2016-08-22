@@ -1809,6 +1809,210 @@ Hero
   }
 }
 
+.mom-hero {
+  background: url(../../img/mom.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 100%;
+  padding-bottom: 5%;
+}
+
+@media (max-width: 1260px) {
+  .mom-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.mom-hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .mom-hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .mom-hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.mom-hero .nav .logo {
+  background: url(../../img/connect_logo.png) no-repeat;
+  background-size: 170px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 50px;
+}
+
+@media (max-width: 640px) {
+  .mom-hero .nav .logo {
+    background-size: 140px;
+  }
+}
+
+.mom-hero .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+}
+
+.mom-hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .mom-hero .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mom-hero .nav .joinTeam {
+    font-size: 16px;
+  }
+}
+
+.mom-hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mom-hero .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .mom-hero .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .mom-hero .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.mom-hero .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.mom-hero .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .mom-hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .mom-hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .mom-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mom-hero .container-hero .row-header .col-1 .headerText {
+    min-height: 180px;
+  }
+}
+
+.mom-hero .container-hero .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+@media (max-width: 640px) {
+  .mom-hero .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
+}
+
+.mom-hero .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .mom-hero .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
+  }
+}
+
+.mom-hero .container-hero .row-signup button {
+  background: #1DB95C;
+  width: 100%;
+}
+
+.mom-hero .container-hero .row-signup button:hover {
+  background: #1aa753;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .mom-hero .container-hero .row-signup button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
 /* ========================================================================================
 Arrows
 ========================================================================================
