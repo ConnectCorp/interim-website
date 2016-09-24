@@ -8,6 +8,7 @@
 -Blinking Cursor
 -AboutConnect
 -Footer
+-TOS
  */
 
 
@@ -309,11 +310,24 @@ Hero
 				background-size: 140px;
 			}
 		}
+		.rightLinks {
+			width: 25%;
+			display: inline;
+			margin-top: 20px;
+			@include breakpoint(max-width 961px) {
+				width: 37.5%;
+			}
+			@include breakpoint($small) {
+				width: 50%;
+			}
+		}
 		.joinTeam {
 			font-size: 20px;
 			color: white;
 			text-decoration: none;
 			padding-top: 5px;
+			display: inline;
+			margin: 0px 15%;
 			&:hover {
 				text-decoration: underline;
 				// padding-bottom: 2px;
@@ -432,8 +446,6 @@ Hero
 
 				}
 
-	
-
 			#maitre-form.hide {
 				display: none !important;
 			}
@@ -448,7 +460,6 @@ Hero
 Arrows
 ========================================================================================
 */
-
 
 .Absolute-Center {
   margin: auto;
@@ -587,6 +598,13 @@ Footer
 	h4 {
 		text-align: center;
 	}
+	h3 {
+		text-align: center;
+	}
+	a {
+		color: $grey;
+		text-decoration: none; 
+	}
 	.row-signup {
 		width: 100%;
 		clear: both;
@@ -664,5 +682,43 @@ Footer
 	}
 }
 
+
+/* 
+========================================================================================
+TOS
+========================================================================================
+*/
+
+
+.tos {
+
+	h2 {
+		@include breakpoint($small) {
+			font-size: 18px;
+		}
+	}
+	text-align: justify;
+	.align-center {
+		text-align: center !important; 
+		color: $black;
+	}
+	p {
+		font-family: 'Edmondsans-Medium';
+		font-size: 16px;
+		color: $black;
+		font-weight: normal;
+		@include breakpoint($small) {
+			font-size: 14px;
+		}
+	}
+	div {
+		padding: 20px;
+	}
+	.row-tos {
+		width: 100%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
 
 

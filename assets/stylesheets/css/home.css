@@ -9,6 +9,7 @@
 -Blinking Cursor
 -AboutConnect
 -Footer
+-TOS
  */
 /* 
 ========================================================================================
@@ -355,11 +356,31 @@ Hero
   }
 }
 
+.hero .nav .rightLinks {
+  width: 25%;
+  display: inline;
+  margin-top: 20px;
+}
+
+@media (max-width: 961px) {
+  .hero .nav .rightLinks {
+    width: 37.5%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero .nav .rightLinks {
+    width: 50%;
+  }
+}
+
 .hero .nav .joinTeam {
   font-size: 20px;
   color: white;
   text-decoration: none;
   padding-top: 5px;
+  display: inline;
+  margin: 0px 15%;
 }
 
 .hero .nav .joinTeam:hover {
@@ -768,6 +789,15 @@ Footer
   text-align: center;
 }
 
+.footer h3 {
+  text-align: center;
+}
+
+.footer a {
+  color: #9a9a9a;
+  text-decoration: none;
+}
+
 .footer .row-signup {
   width: 100%;
   clear: both;
@@ -909,6 +939,49 @@ Footer
 
 .footer i {
   padding-bottom: 35px;
+}
+
+/* 
+========================================================================================
+TOS
+========================================================================================
+*/
+.tos {
+  text-align: justify;
+}
+
+@media (max-width: 640px) {
+  .tos h2 {
+    font-size: 18px;
+  }
+}
+
+.tos .align-center {
+  text-align: center !important;
+  color: #393939;
+}
+
+.tos p {
+  font-family: 'Edmondsans-Medium';
+  font-size: 16px;
+  color: #393939;
+  font-weight: normal;
+}
+
+@media (max-width: 640px) {
+  .tos p {
+    font-size: 14px;
+  }
+}
+
+.tos div {
+  padding: 20px;
+}
+
+.tos .row-tos {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=home.css.map */
