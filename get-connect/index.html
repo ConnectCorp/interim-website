@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Connect - Terms of Service</title>
+	<!-- Meta Information-->	
+	<meta name="description" content="Connect: get together in real life. Because there’s nothing more important than time with your favorite people.">
+   <meta name="keywords" content="connect, contacts, social, capture, inspiration, friends, location, social map, map friends, plans.">
+   <meta name="author" content="Connect">
+   <meta property="og:site_name" content="Connect"/>
+   <meta property="og:image" content="http://connect.com/assets/img/connect-share.jpg" />
+   <meta property="og:title" content="Connect: Get together in real life." />
+   <meta property="og:description" content="Because there’s nothing more important than time with your favorite people. Connect helps you capture all your ideas for things to do, people to see and places to go — and seamlessly turn them into amazing experiences.">
+   <meta property="og:url" content="http://connect.com" />
+	<!--Stylesheets-->	
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
+	<link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.png'/>
+	<link rel='stylesheet' href='../assets/stylesheets/css/home.css'/>
+	<!--Google Analytics tracking Code-->	
+	<script>
+	  (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
+branch.init('key_live_mhbZT76aGXVJWBdgr4KNPipdwFlXU11w');
+            function sendSMS(form) {
+                var phone = form.phone.value;
+                var linkData = {
+                    tags: [],
+                    channel: 'Website',
+                    feature: 'TextMeTheApp',
+                    data: {
+                        'foo': 'bar'
+                    }
+                };
+                var options = {};
+                var callback = function(err, result) {
+                    if (err) {
+                        alert("Sorry, something went wrong.");
+                    }
+                    else {
+                        alert("SMS sent!");
+                    }
+                };
+                branch.sendSMS(phone, linkData, options, callback);
+                form.phone.value = "";
+            }
+
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-43854936-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	Send SMS
+        <form onsubmit="sendSMS(this); return false;">
+        	<input id="phone" name="phone" type="tel" placeholder="(650) 123-4567" />
+        	<br/>
+        	<input type="submit"/>
+        </form>
+</body>
+</html>
