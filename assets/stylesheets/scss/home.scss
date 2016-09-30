@@ -302,16 +302,15 @@ Hero
 		}
 		.logo {
 			background: url(../../img/connect_logo.png) no-repeat;
-			background-size: 90px;
+			background-size: 150px;
 			background-position: 0 100%;
-			width: 85px;
-			height: 80px;
-			margin-top: -24px;
+			width: 170px;
+			height: 45px;
 			@include breakpoint($medium) {
-				background-size: 80px;
+				background-size: 130px;
 			}
 			@include breakpoint($small) {
-				background-size: 70px;
+				background-size: 120px;
 			}
 		}
 		.rightLinks {

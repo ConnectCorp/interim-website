@@ -344,22 +344,21 @@ Hero
 
 .hero .nav .logo {
   background: url(../../img/connect_logo.png) no-repeat;
-  background-size: 90px;
+  background-size: 150px;
   background-position: 0 100%;
-  width: 85px;
-  height: 80px;
-  margin-top: -24px;
+  width: 170px;
+  height: 45px;
 }
 
 @media (max-width: 900px) {
   .hero .nav .logo {
-    background-size: 80px;
+    background-size: 130px;
   }
 }
 
 @media (max-width: 640px) {
   .hero .nav .logo {
-    background-size: 70px;
+    background-size: 120px;
   }
 }
 
