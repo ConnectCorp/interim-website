@@ -344,15 +344,21 @@ Hero
 
 .hero .nav .logo {
   background: url(../../img/connect_logo.png) no-repeat;
-  background-size: 170px;
+  background-size: 150px;
   background-position: 0 100%;
   width: 170px;
-  height: 50px;
+  height: 45px;
+}
+
+@media (max-width: 900px) {
+  .hero .nav .logo {
+    background-size: 130px;
+  }
 }
 
 @media (max-width: 640px) {
   .hero .nav .logo {
-    background-size: 140px;
+    background-size: 120px;
   }
 }
 
@@ -396,6 +402,7 @@ Hero
 @media (max-width: 640px) {
   .hero .nav .joinTeam {
     font-size: 16px;
+    margin: 0px 10%;
   }
 }
 
