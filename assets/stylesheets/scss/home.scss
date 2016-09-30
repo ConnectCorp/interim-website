@@ -307,7 +307,7 @@ Hero
 			width: 170px;
 			height: 50px;
 			@include breakpoint($small) {
-				background-size: 140px;
+				background-size: 125px;
 			}
 		}
 		.rightLinks {
