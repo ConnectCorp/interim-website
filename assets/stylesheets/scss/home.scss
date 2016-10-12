@@ -9,6 +9,8 @@
 -AboutConnect
 -Footer
 -TOS
+
+-Team Section
  */
 
 
@@ -269,6 +271,12 @@ h4 {
 a:link {
 	text-decoration: none;
 }
+
+.align-center {
+	text-align: center;
+}
+
+
 
 
 /* 
@@ -695,7 +703,6 @@ TOS
 
 
 .tos {
-
 	h2 {
 		@include breakpoint($small) {
 			font-size: 18px;
@@ -726,3 +733,145 @@ TOS
 }
 
 
+/* 
+========================================================================================
+Team Section below 
+
+www.connect.com/team 
+========================================================================================
+*/
+
+
+.team-hero {
+	background: url(../../img/team-hero.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 62.5vh;
+	padding-bottom: 5%;
+
+	h1 {
+		font-weight: 800;
+	}
+
+	h2 {
+		color: white;
+		font-weight: 100;
+	}
+
+	@include breakpoint($x-large) {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.nav {
+		width: 90%;
+		padding: 3% 5% 0 5%;
+		margin: 0 auto;
+ 		@include display(flex);
+  		@include flex-direction(row);
+  		@include justify-content(space-between);
+  		@include breakpoint($x-large) {
+			@include col(12/12);
+			padding: 3% 0 0 0;
+		}
+		.logo {
+			background: url(../../img/connect_logo.png) no-repeat;
+			background-size: 150px;
+			background-position: 0 100%;
+			width: 170px;
+			height: 45px;
+			@include breakpoint($medium) {
+				background-size: 130px;
+			}
+			@include breakpoint($small) {
+				background-size: 120px;
+			}
+		}
+
+		.joinTeam {
+			font-size: 20px;
+			color: white;
+			text-decoration: none;
+			padding-top: 5px;
+			display: inline;
+			margin: 0px 15%;
+			&:hover {
+				text-decoration: underline;
+				// padding-bottom: 2px;
+			}
+			@include breakpoint($medium) {
+				font-size: 18px;
+			}
+			@include breakpoint($small) {
+				font-size: 16px;
+				margin: 0px 10%;
+			}
+		}
+	}
+	.container-hero {
+		max-width: 1100px;
+		margin: 0 auto;
+		.row-header {
+			padding-top: 5%;
+			@include breakpoint($x-large) {
+				padding-top: 15%;
+			}
+			@include breakpoint($small) {
+				padding-top: 25%;
+			}
+			.col-1 {
+				@include col(12/12);
+				@include breakpoint($small) {
+					@include col(12/12);
+				}
+			}
+			button {
+			background: $pink;
+			width: 65%;
+			&:hover {
+				background: shade($pink, 10%);
+				cursor: pointer;
+				@include animation(scale 1.0s ease-in, slide 2.0s ease);
+			}
+		}
+		}
+	}
+}
+
+/*Team-About */
+
+.team-about {
+	@include center(700px);
+	text-align: center;
+	padding-bottom: 100px;
+	.row-about {
+		padding-top: 120px;
+		.emoji-about {
+			font-size: 68px;
+			line-height: 0;
+		}
+	}
+}
+
+/* Team-img */
+
+.team-img {
+	@include center(900px);
+	text-align: center;
+	margin-bottom: 200px;
+	.row-img img {
+		@include col(1/3, $cycle: 3);
+		@include breakpoint($small) {
+			@include stack();
+			margin: 20px 0;
+		}
+	}
+	.row-headshot-img img {
+		@include col(1/5, $cycle: 5);
+		
+		@include breakpoint($small) {
+			@include stack();
+			margin: 20px 0;
+		}
+	}
+}

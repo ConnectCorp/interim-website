@@ -10,6 +10,8 @@
 -AboutConnect
 -Footer
 -TOS
+
+-Team Section
  */
 /* 
 ========================================================================================
@@ -273,6 +275,10 @@ h4 {
 
 a:link {
   text-decoration: none;
+}
+
+.align-center {
+  text-align: center;
 }
 
 /* 
@@ -989,6 +995,308 @@ TOS
   width: 100%;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+/* 
+========================================================================================
+Team Section below 
+
+www.connect.com/team 
+========================================================================================
+*/
+.team-hero {
+  background: url(../../img/team-hero.png);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 62.5vh;
+  padding-bottom: 5%;
+}
+
+.team-hero h1 {
+  font-weight: 800;
+}
+
+.team-hero h2 {
+  color: white;
+  font-weight: 100;
+}
+
+@media (max-width: 1260px) {
+  .team-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.team-hero .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .team-hero .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .team-hero .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.team-hero .nav .logo {
+  background: url(../../img/connect_logo.png) no-repeat;
+  background-size: 150px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 45px;
+}
+
+@media (max-width: 900px) {
+  .team-hero .nav .logo {
+    background-size: 130px;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-hero .nav .logo {
+    background-size: 120px;
+  }
+}
+
+.team-hero .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+  display: inline;
+  margin: 0px 15%;
+}
+
+.team-hero .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .team-hero .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-hero .nav .joinTeam {
+    font-size: 16px;
+    margin: 0px 10%;
+  }
+}
+
+.team-hero .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-hero .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .team-hero .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .team-hero .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.team-hero .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.team-hero .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .team-hero .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .team-hero .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+.team-hero .container-hero .row-header button {
+  background: #FF6551;
+  width: 65%;
+}
+
+.team-hero .container-hero .row-header button:hover {
+  background: #e65b49;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+/*Team-About */
+.team-about {
+  width: auto;
+  max-width: 700px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.team-about .row-about {
+  padding-top: 120px;
+}
+
+.team-about .row-about .emoji-about {
+  font-size: 68px;
+  line-height: 0;
+}
+
+/* Team-img */
+.team-img {
+  width: auto;
+  max-width: 900px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.team-img .row-img img {
+  float: left;
+  clear: none;
+  width: 31.3333333333%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.team-img .row-img img:nth-of-type(n) {
+  margin-right: 3%;
+  float: left;
+  clear: none;
+}
+
+.team-img .row-img img:nth-of-type(3n) {
+  margin-right: 0;
+  float: right;
+}
+
+.team-img .row-img img:nth-of-type(3n + 1) {
+  clear: both;
+}
+
+@media (max-width: 640px) {
+  .team-img .row-img img {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px 0;
+  }
+  .team-img .row-img img:first-child {
+    margin-left: auto;
+  }
+  .team-img .row-img img:last-child {
+    margin-right: auto;
+  }
+}
+
+.team-img .row-headshot-img img {
+  float: left;
+  clear: none;
+  width: 17.6%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.team-img .row-headshot-img img:nth-of-type(n) {
+  margin-right: 3%;
+  float: left;
+  clear: none;
+}
+
+.team-img .row-headshot-img img:nth-of-type(5n) {
+  margin-right: 0;
+  float: right;
+}
+
+.team-img .row-headshot-img img:nth-of-type(5n + 1) {
+  clear: both;
+}
+
+@media (max-width: 640px) {
+  .team-img .row-headshot-img img {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px 0;
+  }
+  .team-img .row-headshot-img img:first-child {
+    margin-left: auto;
+  }
+  .team-img .row-headshot-img img:last-child {
+    margin-right: auto;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
