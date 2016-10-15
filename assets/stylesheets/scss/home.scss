@@ -747,7 +747,7 @@ www.connect.com/team
 	background-size: cover;
 	background-position: center center;
 	position: relative;
-	height: 62.5vh;
+	height: 70%;
 	padding-bottom: 5%;
 
 	h1 {
@@ -841,11 +841,12 @@ www.connect.com/team
 /*Team-About */
 
 .team-about {
+	padding-top: 5%;
+	width: 100%;
 	@include center(700px);
 	text-align: center;
-	padding-bottom: 100px;
+	margin-bottom: 100px;
 	.row-about {
-		padding-top: 120px;
 		.emoji-about {
 			font-size: 68px;
 			line-height: 0;
@@ -857,8 +858,10 @@ www.connect.com/team
 
 .team-img {
 	@include center(900px);
+	width: 100%;
 	text-align: center;
-	margin-bottom: 200px;
+	padding-bottom: 250px;
+	padding-top: 5%;
 	.row-img img {
 		@include col(1/3, $cycle: 3);
 		@include breakpoint($small) {
@@ -875,3 +878,46 @@ www.connect.com/team
 		}
 	}
 }
+
+/*Team-About */
+
+.team-sf-ftw {
+	width: 100%;
+	padding-top: 5%;
+	.col-1 {
+		@include center(900px);
+		.row-team-sf {
+			@include col(12/12);
+			.sf-text {
+				@include col(6/12);
+				@include breakpoint($small) {
+						@include stack();
+					}
+			}
+			.map-photo {
+				@include col(6/12);
+				img {
+					max-width: 400px;
+					height: auto;
+				}
+				@include breakpoint($small) {
+					@include stack();
+				}
+			}
+		}
+	}
+}
+
+/*Team-Dinner */
+.team-dinner {
+	background: url(../../img/team/team-dinner.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	height: 100vh;
+	margin: 0;
+	margin-top: 10% !important;
+	@include col(12/12);
+}
+
+
