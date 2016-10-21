@@ -1258,7 +1258,7 @@ www.connect.com/team
   }
 }
 
-.team-img .row-headshot-img img {
+.team-img .row-headshot-img div {
   float: left;
   clear: none;
   width: 17.6%;
@@ -1266,23 +1266,23 @@ www.connect.com/team
   margin-right: 3%;
 }
 
-.team-img .row-headshot-img img:nth-of-type(n) {
+.team-img .row-headshot-img div:nth-of-type(n) {
   margin-right: 3%;
   float: left;
   clear: none;
 }
 
-.team-img .row-headshot-img img:nth-of-type(5n) {
+.team-img .row-headshot-img div:nth-of-type(5n) {
   margin-right: 0;
   float: right;
 }
 
-.team-img .row-headshot-img img:nth-of-type(5n + 1) {
+.team-img .row-headshot-img div:nth-of-type(5n + 1) {
   clear: both;
 }
 
 @media (max-width: 640px) {
-  .team-img .row-headshot-img img {
+  .team-img .row-headshot-img div {
     display: block;
     clear: both;
     float: none;
@@ -1291,10 +1291,10 @@ www.connect.com/team
     margin-right: auto;
     margin: 20px 0;
   }
-  .team-img .row-headshot-img img:first-child {
+  .team-img .row-headshot-img div:first-child {
     margin-left: auto;
   }
-  .team-img .row-headshot-img img:last-child {
+  .team-img .row-headshot-img div:last-child {
     margin-right: auto;
   }
 }

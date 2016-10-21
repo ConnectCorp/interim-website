@@ -869,7 +869,7 @@ www.connect.com/team
 			margin: 20px 0;
 		}
 	}
-	.row-headshot-img img {
+	.row-headshot-img div {
 		@include col(1/5, $cycle: 5);
 		
 		@include breakpoint($small) {
