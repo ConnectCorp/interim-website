@@ -1289,7 +1289,7 @@ www.connect.com/team
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin: 20px 0;
+    margin: 15px 0;
   }
   .team-img .row-headshot-img div:first-child {
     margin-left: auto;
@@ -1297,6 +1297,10 @@ www.connect.com/team
   .team-img .row-headshot-img div:last-child {
     margin-right: auto;
   }
+}
+
+.team-img .row-headshot-img div img {
+  width: 100%;
 }
 
 /*Team-About */

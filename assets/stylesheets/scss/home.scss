@@ -874,7 +874,10 @@ www.connect.com/team
 		
 		@include breakpoint($small) {
 			@include stack();
-			margin: 20px 0;
+			margin: 15px 0;
+		}
+		img {
+			width: 100%;
 		}
 	}
 }
