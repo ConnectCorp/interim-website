@@ -1266,6 +1266,14 @@ www.connect.com/team
   margin-right: 3%;
 }
 
+.team-img .row-headshot-img div h3 {
+  color: #393939;
+}
+
+.team-img .row-headshot-img div h4 {
+  font-size: 12px;
+}
+
 .team-img .row-headshot-img div:nth-of-type(n) {
   margin-right: 3%;
   float: left;
@@ -1413,6 +1421,148 @@ www.connect.com/team
 
 .team-dinner:last-child {
   margin-right: 0;
+}
+
+.jobs {
+  background: #F5F2F2;
+  padding-top: 5%;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.jobs .col-1 {
+  width: auto;
+  max-width: 900px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.jobs .col-1 .row-design {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.jobs .col-1 .row-design:last-child {
+  margin-right: 0;
+}
+
+.jobs .col-1 .row-design .positionName {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.jobs .col-1 .row-design .positionName:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .jobs .col-1 .row-design .positionName {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jobs .col-1 .row-design .positionName:first-child {
+    margin-left: auto;
+  }
+  .jobs .col-1 .row-design .positionName:last-child {
+    margin-right: auto;
+  }
+}
+
+.jobs .col-1 .row-design .jobCard {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.jobs .col-1 .row-design .jobCard:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .jobs .col-1 .row-design .jobCard {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .jobs .col-1 .row-design .jobCard:first-child {
+    margin-left: auto;
+  }
+  .jobs .col-1 .row-design .jobCard:last-child {
+    margin-right: auto;
+  }
+}
+
+.jobs .card {
+  width: 350px;
+  border: 1px solid white;
+  box-shadow: 1px 1px 3px #888;
+  min-height: 175px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.jobs h3 {
+  display: inline-block;
+  color: #393939;
+  font-size: 18px;
+}
+
+@media (max-width: 640px) {
+  .jobs h3 {
+    font-size: 14px;
+  }
+}
+
+.jobs button {
+  margin: 0 auto;
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+  background: #FF6551;
+  width: 100%;
+}
+
+.jobs button:last-child {
+  margin-right: 0;
+}
+
+.jobs button:hover {
+  background: #e65b49;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .jobs button {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

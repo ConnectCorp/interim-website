@@ -870,6 +870,14 @@ www.connect.com/team
 		}
 	}
 	.row-headshot-img div {
+		h3 {
+			color: $black;
+		}
+		h4 {
+			font-size: 12px;
+		}
+
+
 		@include col(1/5, $cycle: 5);
 		
 		@include breakpoint($small) {
@@ -921,6 +929,65 @@ www.connect.com/team
 	margin: 0;
 	margin-top: 10% !important;
 	@include col(12/12);
+}
+
+.jobs{
+	background: #F5F2F2;
+	padding-top: 5%;
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	.col-1 {
+		@include center(900px);
+		.row-design {
+			@include col(12/12);
+			.positionName {
+				@include col(6/12);
+				@include breakpoint($small) {
+					@include stack();
+				}
+			}
+			.jobCard {
+				@include col(6/12);
+				@include breakpoint($small) {
+					@include stack();
+				}
+			}
+		}
+	}
+	.card {
+		width: 350px;
+		border: 1px solid white;
+		box-shadow: 1px 1px 3px #888;
+		min-height: 175px;
+		padding: 10px;
+		margin: 10px;
+		text-align: center;
+		background-color: white;
+	}
+	h3 {
+		display: inline-block;
+		color: $black;
+		font-size: 18px;
+		@include breakpoint($small) {
+			font-size: 14px;
+		}
+	}
+	button {
+		margin: 0 auto;
+		@include col(12/12);
+		background: $pink;
+		width: 100%;	
+		&:hover {
+			background: shade($pink, 10%);
+			cursor: pointer;
+			@include animation(scale 1.0s ease-in, slide 2.0s ease);
+		}
+		@include breakpoint($small) {
+			width: 100%;
+			margin-left: 0px;
+		}
+	}
 }
 
 
