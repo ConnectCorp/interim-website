@@ -9,11 +9,8 @@
 -AboutConnect
 -Footer
 -TOS
-
 -Team Section
  */
-
-
 /* 
 ========================================================================================
 Imports
@@ -888,6 +885,13 @@ www.connect.com/team
 			width: 100%;
 		}
 	}
+
+	.linkedin-resize{
+		max-width: 20px;
+		height: auto;
+	}
+	
+
 }
 
 /*Team-About */
@@ -965,6 +969,7 @@ www.connect.com/team
 		text-align: center;
 		background-color: white;
 	}
+
 	h3 {
 		display: inline-block;
 		color: $black;

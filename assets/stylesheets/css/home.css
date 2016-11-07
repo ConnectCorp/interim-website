@@ -10,7 +10,6 @@
 -AboutConnect
 -Footer
 -TOS
-
 -Team Section
  */
 /* 
@@ -1309,6 +1308,11 @@ www.connect.com/team
 
 .team-img .row-headshot-img div img {
   width: 100%;
+}
+
+.team-img .linkedin-resize {
+  max-width: 20px;
+  height: auto;
 }
 
 /*Team-About */
