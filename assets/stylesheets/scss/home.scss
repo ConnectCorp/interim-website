@@ -107,6 +107,31 @@ button {
 	border-radius: 50px;
 }
 
+.sms-button {
+	border: none;
+	height: 60px;
+	font-family: 'Edmondsans-Medium';
+	font-size: 18px;
+	color: white;
+	outline: none;
+	border-radius: 50px;
+	background: #FF6551;
+	width: 30%;
+	margin: 24px 0 0 0;
+	cursor: pointer;
+}
+
+.sms-input {
+	height: 50px;
+	font-size: 38px;
+	border: none;
+	padding: 5px;
+}
+
+.sms-text {
+	font-size: 24px;
+}
+
 /* Maitre universal classes */
 
 #maitre-people-behind-number {
