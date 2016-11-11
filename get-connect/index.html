@@ -15,8 +15,8 @@
    <meta property="og:url" content="http://connect.com" />
 	<!--Stylesheets-->	
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
-	<link rel='shortcut icon' type='image/x-icon' href='assets/img/favicon.png'/>
-	<link rel='stylesheet' href='../assets/stylesheets/css/home.css'/>
+	<link rel='shortcut icon' type='image/x-icon' href='/assets/img/favicon.png'/>
+	<link rel='stylesheet' href='/assets/stylesheets/css/home.css'/>
 	<!--Google Analytics tracking Code-->	
 	<script>
 	  (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
@@ -53,11 +53,73 @@ branch.init('key_live_mhbZT76aGXVJWBdgr4KNPipdwFlXU11w');
 	</script>
 </head>
 <body>
-	Send SMS
-        <form onsubmit="sendSMS(this); return false;">
-        	<input id="phone" name="phone" type="tel" placeholder="(650) 123-4567" />
-        	<br/>
-        	<input type="submit"/>
-        </form>
+    <section id="hero" class="hero">
+            <div class="nav">
+                <div class="logo"></div>
+                    <div class="rightLinks">
+                        <a target="_blank" href="http://blog.connect.com"><h3 class="joinTeam">Blog</h3></a>
+                        <a target="_blank" href="https://jobs.lever.co/connect"><h3 class="joinTeam">Team</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-hero">
+                <div class="row-header" style="text-align: center">
+                    <div class="col-1">
+                        <h1 class="headerText">Make #<span class="recycle">life</span> happen.</h1>
+                    </div>
+                </div>
+                <div style="text-align: center">
+                    <p class="sms-text">Get your download link on your mobile phone:</p>
+                    <form onsubmit="sendSMS(this); return false;">
+                        <input class="sms-input" id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
+                        <br/>
+                        <input class="sms-button" type="submit" value="Text Me the App"/>
+                    </form>
+                </div>
+                <img class="Absolute-Center" alt="" height="24" width src="/assets/img/down.svg"/>
+            </div>
+    </section>
+
+    <section class="product">
+        <div class="row-footer container" style="text-align: center;">
+            <img width="50%" src="/assets/img/product.png"/>
+    </section>
+    <section class="footer">
+        <div class="row-footer container">
+            <h4>Make Life Happen.</h4>
+               <div style="text-align: center">
+                    <p class="sms-text">Get your download link on your mobile phone:</p>
+                    <form onsubmit="sendSMS(this); return false;">
+                        <input class="sms-input" id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
+                        <br/>
+                        <input class="sms-button" type="submit" value="Text Me the App"/>
+                    </form>
+                </div>
+            <i class="center twa twa-3x twa-wave"></i>
+            <span class="center"> Copyright ©2016 Connect. All Rights Reserved</span>   
+            <h3 class="center"><a href="http://blog.connect.com" target="_blank"> Blog</a> | <a href="https://jobs.lever.co/connect" target="_blank">Team</a> | <a href="http://www.connect.com/tos" target="_blank"> TOS</a> <!-- | <a href="" target="_blank">Support</a> --></h3>
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/assets/js/typed.js"></script>
+<script src="/assets/js/smooth-scroll.js"></script>
+<script>
+  $(function(){
+      $(".recycle").typed({
+        strings: ["parties", "potlucks","date nights","skinny dips", "camping", "night hikes", "coffee dates"],
+        typeSpeed: 150,
+        // time before typing starts
+        startDelay: 3000,
+        // backspacing speed
+        backSpeed: 30,
+         // time before backspacing
+        backDelay: 1800,
+        //infinite
+        loop: true
+      });
+  smoothScroll.init();
+  });
+</script>
+<script src="/assets/js/jquery.modal.min.js"></script>
 </body>
 </html>
