@@ -107,16 +107,18 @@ button:focus {
   outline: none;
   border-radius: 50px;
   background: #FF6551;
-  width: 30%;
+  width: 222px;
   margin: 24px 0 0 0;
   cursor: pointer;
 }
 
 .sms-input {
   height: 50px;
-  font-size: 38px;
+  font-size: 32px;
   padding: 5px;
   color: #bbbbbb;
+  border: 0;
+  width: 280px;
 }
 
 .sms-text {
