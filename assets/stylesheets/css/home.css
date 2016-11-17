@@ -94,6 +94,10 @@ button {
   border-radius: 50px;
 }
 
+button:focus {
+  outline: 0;
+}
+
 .sms-button {
   border: none;
   height: 60px;
@@ -111,12 +115,13 @@ button {
 .sms-input {
   height: 50px;
   font-size: 38px;
-  border: none;
   padding: 5px;
+  color: #bbbbbb;
 }
 
 .sms-text {
   font-size: 24px;
+  color: #4a4a4a;
 }
 
 /* Maitre universal classes */
