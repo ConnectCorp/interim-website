@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Connect - Terms of Service</title>
+	<title>Connect</title>
 	<!-- Meta Information-->	
 	<meta name="description" content="Connect: get together in real life. Because there’s nothing more important than time with your favorite people.">
    <meta name="keywords" content="connect, contacts, social, capture, inspiration, friends, location, social map, map friends, plans.">
@@ -17,6 +17,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0, maximum-scale=1.0">
 	<link rel='shortcut icon' type='image/x-icon' href='/assets/img/favicon.png'/>
 	<link rel='stylesheet' href='/assets/stylesheets/css/home.css'/>
+    <link rel="stylesheet" type="text/css" href="/bower_components/sweetalert/dist/sweetalert.css">
+    <script src="/bower_components/sweetalert/dist/sweetalert.min.js"></script>
 	<!--Google Analytics tracking Code-->	
 	<script>
 	  (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode banner closeBanner creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode".split(" "), 0);
@@ -34,10 +36,10 @@ branch.init('key_live_mhbZT76aGXVJWBdgr4KNPipdwFlXU11w');
                 var options = {};
                 var callback = function(err, result) {
                     if (err) {
-                        alert("Sorry, something went wrong.");
+                        swal("Uh-oh! I don't think that's a valid number! 🤔");
                     }
                     else {
-                        alert("SMS sent!");
+                        swal("SMS sent!");
                     }
                 };
                 branch.sendSMS(phone, linkData, options, callback);
@@ -65,16 +67,18 @@ branch.init('key_live_mhbZT76aGXVJWBdgr4KNPipdwFlXU11w');
             <div class="container-hero">
                 <div class="row-header" style="text-align: center">
                     <div class="col-1">
-                        <h1 class="headerText">Make #<span class="recycle">life</span> happen.</h1>
+                        <h1 class="smsHeaderText">Make #<span class="recycle">life</span> happen.</h1>
+                        <h3 class="whiteText">Get the download link on your phone!</h3>
                     </div>
                 </div>
-                <div style="text-align: center">
-                    <p class="sms-text">Get your download link on your mobile phone:</p>
-                    <form onsubmit="sendSMS(this); return false;">
-                        <input class="sms-input" id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
-                        <br/>
-                        <input class="sms-button" type="submit" value="Text Me the App"/>
-                        <p>*Delivers to US phone numbers only</p>
+                <div class="row-signup" style="text-align: center">
+                    <form autocomplete="off" onsubmit="sendSMS(this); return false;">
+                        <div id="smsInput">
+                            <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
+                        </div>
+                        <div id="smsButton">
+                            <button class="sms-button" type="submit">Get the app</button>
+                        </div>
                     </form>
                 </div>
                 <img class="Absolute-Center" alt="" height="24" width src="/assets/img/down.svg"/>
@@ -83,18 +87,16 @@ branch.init('key_live_mhbZT76aGXVJWBdgr4KNPipdwFlXU11w');
 
     <section class="product">
         <div class="row-footer container" style="text-align: center;">
-            <img width="50%" src="/assets/img/product.png"/>
+            <h2>One place for all your real life experiences.</h2>
+            <img class="productShot" src="/assets/img/product.png"/>
     </section>
     <section class="footer">
         <div class="row-footer container">
             <h4>Make Life Happen.</h4>
-               <div style="text-align: center">
-                    <p class="sms-text">Get your download link on your mobile phone:</p>
-                    <form onsubmit="sendSMS(this); return false;">
-                        <input class="sms-input" id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
-                        <br/>
-                        <input class="sms-button" type="submit" value="Text Me the App"/>
-                    </form>
+                <div class="row-signup">     
+                    <div class="col-2 center">
+                        <a data-scroll data-options='{ "easing": "easeInOutQuad" }' href="#hero"><button>I want the app</button></a>
+                    </div>
                 </div>
             <i class="center twa twa-3x twa-wave"></i>
             <span class="center"> Copyright ©2016 Connect. All Rights Reserved</span>   

@@ -108,28 +108,55 @@ button {
 }
 
 .sms-button {
-	border: none;
-	height: 60px;
-	font-family: 'Edmondsans-Medium';
-	font-size: 18px;
-	color: white;
-	outline: none;
-	border-radius: 50px;
-	background: #FF6551;
-	width: 30%;
-	margin: 24px 0 0 0;
-	cursor: pointer;
+	@include col(4/12);
+		background: $pink;
+		width: 100%;		
+		margin-left: 25px;
+		&:hover {
+			background: shade($pink, 10%);
+			cursor: pointer;
+			@include animation(scale 1.0s ease-in, slide 2.0s ease);
+		}
+		@include breakpoint($small) {
+			width: 100%;
+			margin-top: 20px;
+			margin-left: 0px;
+		}
+	@include breakpoint($small) {
+		@include stack();
+	}
 }
 
 .sms-input {
-	height: 50px;
-	font-size: 38px;
-	border: none;
-	padding: 5px;
+	@include col(6/12);
+	border: 0;
+	outline: 0;
+	margin-top: 14px;
+	padding-bottom: 14px;
+	background: transparent;
+	border-bottom: 4px solid white;
+	font-size: 24px;
+	color: white;
+	width: 92.5%;
+	-webkit-appearance: none;
+	border-radius: 0;
+	font-family: 'Edmondsans-Medium';
+	@include placeholder {
+		color: white;
+		opacity: 100;
+		margin-top: 4px;
+	}
+	@include breakpoint($small) {
+		@include stack();
+	}
 }
 
 .sms-text {
 	font-size: 24px;
+}
+
+.whiteText {
+	color: white;
 }
 
 /* Maitre universal classes */
@@ -393,8 +420,17 @@ Hero
 						min-height: 180px;
 					}
 				}
+				.smsHeaderText {
+					@include breakpoint(max-width 1140px) {
+						min-height: 150px;
+					}
+					@include breakpoint($small) {
+						min-height: 100px;
+					}
+				}
 			}
 		}
+
 		.row-signup {
 			width: 100%;
 			clear: both;
@@ -411,6 +447,53 @@ Hero
 					font-size: 17px;
 				}
 			}
+			#smsInput {
+				@include col(6/12);
+				input {
+					border: 0;
+					outline: 0;
+					margin-top: 14px;
+					padding-bottom: 14px;
+					background: transparent;
+					border-bottom: 4px solid white;
+					font-size: 24px;
+					color: white;
+					width: 92.5%;
+					-webkit-appearance: none;
+		  			border-radius: 0;
+					font-family: 'Edmondsans-Medium';
+					@include placeholder {
+						color: white;
+						opacity: 100;
+						margin-top: 4px;
+					}
+				}
+				@include breakpoint($small) {
+					@include stack();
+				}
+			}
+			#smsButton {
+				@include col(6/12);
+				button {
+					background: $pink;
+					width: 100%;		
+					margin-left: 25px;
+					&:hover {
+						background: shade($pink, 10%);
+						cursor: pointer;
+						@include animation(scale 1.0s ease-in, slide 2.0s ease);
+					}
+					@include breakpoint($small) {
+						width: 100%;
+						margin-top: 20px;
+						margin-left: 0px;
+					}
+				}
+				@include breakpoint($small) {
+					@include stack();
+				}	
+			}
+
 			#maitre-field-email {
 				@include col(6/12);
 				input {
@@ -512,7 +595,6 @@ Arrows
 	}
 }
 
-
 /* 
 ========================================================================================
 Blinking Cursor
@@ -546,7 +628,6 @@ About
 ========================================================================================
 */
 
-
 .about {
 	text-align: center;
 	padding-bottom: 160px;
@@ -558,7 +639,6 @@ About
 		}
 	}
 }
-
 
 /* 
 ========================================================================================
@@ -750,4 +830,22 @@ TOS
 	}
 }
 
+/* 
+========================================================================================
+Product
+========================================================================================
+*/
+
+.product {
+	h2{
+		padding-top: 60px;
+		font-weight: 300;
+		margin-bottom: 60px;
+	}
+
+	.productShot {
+		max-width: 60%;
+		height: auto;
+	}
+}
 

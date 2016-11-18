@@ -95,28 +95,124 @@ button {
 }
 
 .sms-button {
-  border: none;
-  height: 60px;
-  font-family: 'Edmondsans-Medium';
-  font-size: 18px;
-  color: white;
-  outline: none;
-  border-radius: 50px;
+  float: left;
+  clear: none;
+  width: 31.3333333333%;
+  margin-left: 0;
+  margin-right: 3%;
   background: #FF6551;
-  width: 30%;
-  margin: 24px 0 0 0;
+  width: 100%;
+  margin-left: 25px;
+}
+
+.sms-button:last-child {
+  margin-right: 0;
+}
+
+.sms-button:hover {
+  background: #e65b49;
   cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .sms-button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .sms-button {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sms-button:first-child {
+    margin-left: auto;
+  }
+  .sms-button:last-child {
+    margin-right: auto;
+  }
 }
 
 .sms-input {
-  height: 50px;
-  font-size: 38px;
-  border: none;
-  padding: 5px;
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+  border: 0;
+  outline: 0;
+  margin-top: 14px;
+  padding-bottom: 14px;
+  background: transparent;
+  border-bottom: 4px solid white;
+  font-size: 24px;
+  color: white;
+  width: 92.5%;
+  -webkit-appearance: none;
+  border-radius: 0;
+  font-family: 'Edmondsans-Medium';
+}
+
+.sms-input:last-child {
+  margin-right: 0;
+}
+
+.sms-input::-webkit-input-placeholder {
+  color: white;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+.sms-input::-moz-placeholder {
+  color: white;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+.sms-input:-moz-placeholder {
+  color: white;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+.sms-input:-ms-input-placeholder {
+  color: white;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .sms-input {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sms-input:first-child {
+    margin-left: auto;
+  }
+  .sms-input:last-child {
+    margin-right: auto;
+  }
 }
 
 .sms-text {
   font-size: 24px;
+}
+
+.whiteText {
+  color: white;
 }
 
 /* Maitre universal classes */
@@ -489,6 +585,18 @@ Hero
   }
 }
 
+@media (max-width: 1140px) {
+  .hero .container-hero .row-header .col-1 .smsHeaderText {
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-header .col-1 .smsHeaderText {
+    min-height: 100px;
+  }
+}
+
 .hero .container-hero .row-signup {
   width: 100%;
   clear: both;
@@ -511,6 +619,125 @@ Hero
 @media (max-width: 640px) {
   .hero .container-hero .row-signup h3.waitlistText {
     font-size: 17px;
+  }
+}
+
+.hero .container-hero .row-signup #smsInput {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.hero .container-hero .row-signup #smsInput:last-child {
+  margin-right: 0;
+}
+
+.hero .container-hero .row-signup #smsInput input {
+  border: 0;
+  outline: 0;
+  margin-top: 14px;
+  padding-bottom: 14px;
+  background: transparent;
+  border-bottom: 4px solid white;
+  font-size: 24px;
+  color: white;
+  width: 92.5%;
+  -webkit-appearance: none;
+  border-radius: 0;
+  font-family: 'Edmondsans-Medium';
+}
+
+.hero .container-hero .row-signup #smsInput input::-webkit-input-placeholder {
+  color: white;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+.hero .container-hero .row-signup #smsInput input::-moz-placeholder {
+  color: white;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+.hero .container-hero .row-signup #smsInput input:-moz-placeholder {
+  color: white;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+.hero .container-hero .row-signup #smsInput input:-ms-input-placeholder {
+  color: white;
+  opacity: 100;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-signup #smsInput {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .container-hero .row-signup #smsInput:first-child {
+    margin-left: auto;
+  }
+  .hero .container-hero .row-signup #smsInput:last-child {
+    margin-right: auto;
+  }
+}
+
+.hero .container-hero .row-signup #smsButton {
+  float: left;
+  clear: none;
+  width: 48.5%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.hero .container-hero .row-signup #smsButton:last-child {
+  margin-right: 0;
+}
+
+.hero .container-hero .row-signup #smsButton button {
+  background: #FF6551;
+  width: 100%;
+  margin-left: 25px;
+}
+
+.hero .container-hero .row-signup #smsButton button:hover {
+  background: #e65b49;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-signup #smsButton button {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero .container-hero .row-signup #smsButton {
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .container-hero .row-signup #smsButton:first-child {
+    margin-left: auto;
+  }
+  .hero .container-hero .row-signup #smsButton:last-child {
+    margin-right: auto;
   }
 }
 
@@ -1014,6 +1241,22 @@ TOS
   width: 100%;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+/* 
+========================================================================================
+Product
+========================================================================================
+*/
+.product h2 {
+  padding-top: 60px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.product .productShot {
+  max-width: 60%;
+  height: auto;
 }
 
 /*# sourceMappingURL=home.css.map */
