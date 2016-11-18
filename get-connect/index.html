@@ -38,7 +38,12 @@ branch.init('key_live_mhbZT76aGXVJWBdgr4KNPipdwFlXU11w');
                         swal("Uh-oh! I don't think that's a valid number! 🤔");
                     }
                     else {
-                        swal("SMS sent!");
+                        swal("Link sent to your phone! 🤗");
+                        var smsButton = document.getElementById("appButton");
+                        smsButton.style.background ='#1DB954';
+                        smsButton.innerHTML = 'Sent to your phone!';
+                        smsButton.disabled = true; 
+
                     }
                 };
                 branch.sendSMS(phone, linkData, options, callback);
@@ -76,7 +81,7 @@ branch.init('key_live_mhbZT76aGXVJWBdgr4KNPipdwFlXU11w');
                             <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555" />
                         </div>
                         <div id="smsButton">
-                            <button class="sms-button" type="submit">Get the app</button>
+                            <button id="appButton" class="sms-button" type="submit">Get the app</button>
                         </div>
                     </form>
                 </div>
