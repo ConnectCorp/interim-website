@@ -39,11 +39,6 @@ branch.init('key_live_mhbZT76aGXVJWBdgr4KNPipdwFlXU11w');
                     }
                     else {
                         swal("Link sent to your phone! 🤗");
-                        var smsButton = document.getElementById("appButton");
-                        smsButton.style.background ='#1DB954';
-                        smsButton.innerHTML = 'Sent to your phone!';
-                        smsButton.disabled = true; 
-
                     }
                 };
                 branch.sendSMS(phone, linkData, options, callback);
