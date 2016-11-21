@@ -1008,7 +1008,7 @@ www.connect.com/team
   background-size: cover;
   background-position: center center;
   position: relative;
-  height: 70%;
+  height: 80vh;
   padding-bottom: 5%;
 }
 
@@ -1518,13 +1518,10 @@ www.connect.com/team
 
 .jobs .card {
   width: 350px;
-  border: 1px solid white;
-  box-shadow: 1px 1px 3px #888;
   min-height: 175px;
   padding: 10px;
   margin: 10px;
   text-align: center;
-  background-color: white;
 }
 
 .jobs h3 {
@@ -1566,6 +1563,221 @@ www.connect.com/team
   .jobs button {
     width: 100%;
     margin-left: 0px;
+  }
+}
+
+/*Top White Section*/
+.whiteHeader {
+  margin-bottom: 5%;
+}
+
+.whiteHeader h1 {
+  color: #393939;
+}
+
+.whiteHeader .nav {
+  width: 90%;
+  padding: 3% 5% 0 5%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+
+@media (max-width: 1260px) {
+  .whiteHeader .nav {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+    padding: 3% 0 0 0;
+  }
+  .whiteHeader .nav:last-child {
+    margin-right: 0;
+  }
+}
+
+.whiteHeader .nav .logo {
+  background: url(../../img/black_connect_logo.png) no-repeat;
+  background-size: 150px;
+  background-position: 0 100%;
+  width: 170px;
+  height: 45px;
+}
+
+@media (max-width: 900px) {
+  .whiteHeader .nav .logo {
+    background-size: 130px;
+  }
+}
+
+@media (max-width: 640px) {
+  .whiteHeader .nav .logo {
+    background-size: 120px;
+  }
+}
+
+.whiteHeader .nav .rightLinks {
+  width: 25%;
+  display: inline;
+  margin-top: 20px;
+}
+
+@media (max-width: 961px) {
+  .whiteHeader .nav .rightLinks {
+    width: 37.5%;
+  }
+}
+
+@media (max-width: 640px) {
+  .whiteHeader .nav .rightLinks {
+    width: 50%;
+  }
+}
+
+.whiteHeader .nav .joinTeam {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+  display: inline;
+  margin: 0px 15%;
+}
+
+.whiteHeader .nav .joinTeam:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .whiteHeader .nav .joinTeam {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .whiteHeader .nav .joinTeam {
+    font-size: 16px;
+    margin: 0px 10%;
+  }
+}
+
+.whiteHeader .container-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.whiteHeader .container-hero .row-header {
+  padding-top: 5%;
+}
+
+@media (max-width: 1260px) {
+  .whiteHeader .container-hero .row-header {
+    padding-top: 15%;
+  }
+}
+
+@media (max-width: 640px) {
+  .whiteHeader .container-hero .row-header {
+    padding-top: 25%;
+  }
+}
+
+.whiteHeader .container-hero .row-header button {
+  background: #FF6551;
+  width: 65%;
+}
+
+.whiteHeader .container-hero .row-header button:hover {
+  background: #e65b49;
+  cursor: pointer;
+  -webkit-animation: scale 1s ease-in, slide 2s ease;
+  -moz-animation: scale 1s ease-in, slide 2s ease;
+  animation: scale 1s ease-in, slide 2s ease;
+}
+
+.whiteHeader .container-hero .row-header .col-1 {
+  float: left;
+  clear: none;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 3%;
+}
+
+.whiteHeader .container-hero .row-header .col-1:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 640px) {
+  .whiteHeader .container-hero .row-header .col-1 {
+    float: left;
+    clear: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 3%;
+  }
+  .whiteHeader .container-hero .row-header .col-1:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1140px) {
+  .whiteHeader .container-hero .row-header .col-1 .headerText {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 640px) {
+  .whiteHeader .container-hero .row-header .col-1 .headerText {
+    min-height: 180px;
+  }
+}
+
+.whiteHeader .container-hero .row-signup {
+  width: 100%;
+  clear: both;
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+
+@media (max-width: 640px) {
+  .whiteHeader .container-hero .row-signup {
+    padding-top: 2.5%;
+  }
+}
+
+.whiteHeader .container-hero .row-signup h3.waitlistText {
+  color: white;
+  font-size: 22px;
+  text-shadow: 0px 0px 20px rgba(40, 124, 149, 0.6);
+}
+
+@media (max-width: 640px) {
+  .whiteHeader .container-hero .row-signup h3.waitlistText {
+    font-size: 17px;
   }
 }
 
