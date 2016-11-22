@@ -1181,7 +1181,7 @@ www.connect.com/team
 
 /*Team-About */
 .team-about {
-  padding-top: 5%;
+  padding-top: 5% !important;
   width: 100%;
   width: auto;
   max-width: 700px;
@@ -1193,6 +1193,10 @@ www.connect.com/team
   padding-right: 0;
   text-align: center;
   margin-bottom: 100px;
+}
+
+.team-about .row-about {
+  margin-top: 5% !important;
 }
 
 .team-about .row-about .emoji-about {
@@ -1258,9 +1262,10 @@ www.connect.com/team
 }
 
 .team-img .row-headshot-img div {
+  margin: 25px 0;
   float: left;
   clear: none;
-  width: 17.6%;
+  width: 22.75%;
   margin-left: 0;
   margin-right: 3%;
 }
@@ -1279,12 +1284,12 @@ www.connect.com/team
   clear: none;
 }
 
-.team-img .row-headshot-img div:nth-of-type(5n) {
+.team-img .row-headshot-img div:nth-of-type(4n) {
   margin-right: 0;
   float: right;
 }
 
-.team-img .row-headshot-img div:nth-of-type(5n + 1) {
+.team-img .row-headshot-img div:nth-of-type(4n + 1) {
   clear: both;
 }
 

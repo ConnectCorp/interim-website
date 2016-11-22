@@ -833,12 +833,13 @@ www.connect.com/team
 /*Team-About */
 
 .team-about {
-	padding-top: 5%;
+	padding-top: 5% !important;
 	width: 100%;
 	@include center(700px);
 	text-align: center;
 	margin-bottom: 100px;
 	.row-about {
+		margin-top: 5% !important;
 		.emoji-about {
 			font-size: 68px;
 			line-height: 0;
@@ -862,15 +863,14 @@ www.connect.com/team
 		}
 	}
 	.row-headshot-img div {
+		margin: 25px 0;
 		h3 {
 			color: $black;
 		}
 		h4 {
 			font-size: 12px;
 		}
-
-
-		@include col(1/5, $cycle: 5);
+		@include col(1/4, $cycle: 4);
 		
 		@include breakpoint($small) {
 			@include stack();
