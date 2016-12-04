@@ -318,6 +318,10 @@ div[data-maitre-content] {
   text-align: center;
 }
 
+a#maitre-status {
+  display: none !important;
+}
+
 /* End Maitre universal classes
  */
 /* 
